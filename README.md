@@ -10,6 +10,8 @@ Consulte a [análise da ampliação e seus limites](docs/ANALISE-ANEXO-III.md) e
 
 ## Iniciar no Windows
 
+Para publicar o frontend na Vercel e integrar o backend na Render depois, consulte [as instruções de deploy](docs/VERCEL.md).
+
 Requisito: Python 3.12 ou superior. Na pasta do projeto:
 
 ```powershell
