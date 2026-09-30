@@ -86,6 +86,10 @@ document.addEventListener('keydown',event=>{if((event.ctrlKey||event.metaKey)&&e
 window.addEventListener('hashchange',()=>{if(modal.open)closeModal();route();});
 modal.addEventListener('click',event=>{if(event.target===modal){const r=modal.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)closeModal();}});
 async function loadAccount(){state.me=await api('/me');state.csrf=state.me.csrf;prepareERP();shell();if(state.me.user.force_password){$('#main').innerHTML=heading('Atualize sua senha','Defina uma nova senha para acessar seu ambiente de trabalho.',button('Alterar senha','password','lock','primary'));passwordModal(true);}else await route();}
-async function start(){try{if(location.pathname==='/portal'){await publicPage();return;}const status=await api('/status');if(status.setup_required){showAuth(true);return;}try{await loadAccount();}catch{state.me=null;showAuth(false);}}catch(e){$('#app').innerHTML=`<div class="boot">${icon('info')}<strong>Não foi possível conectar</strong><p>${esc(e.message)}</p><a class="button" href="/">Tentar novamente</a></div>`;}}
+async function start(){try{if(location.pathname==='/portal'){await publicPage();return;}const status=await api('/status');if(status.setup_required){showAuth(true);return;}try{await loadAccount();}catch{state.me=null;showAuth(false);}}catch(e){
+ if(location.pathname==='/portal'){$('#app').innerHTML=`<div class="boot">${icon('info')}<strong>Publicações indisponíveis no momento</strong><p>${esc(e.message)}</p><a class="button" href="/portal">Tentar novamente</a><a href="/">Voltar ao início</a></div>`;return;}
+ state.me=null;showAuth(false);
+ $('#auth-form').insertAdjacentHTML('beforebegin',`<div role="status">${notice(esc(e.message),true)}</div>`);
+}}
 setInterval(()=>{if(!document.hidden)pollNotifications();},30000);
 start();

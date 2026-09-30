@@ -42,8 +42,19 @@ const button=(text,action,i='plus',cls='')=>`<button type="button" class="button
 const empty=(title='Nenhum registro encontrado',description='Os registros aparecerão aqui assim que forem cadastrados.',action='')=>`<div class="empty">${icon('file')}<h3>${title}</h3><p>${description}</p>${action}</div>`;
 const notice=(text,warning=false)=>`<div class="notice ${warning?'warning':''}">${icon('info')}<div>${text}</div></div>`;
 function toast(message,error=false){const el=document.createElement('div');el.className='toast'+(error?' error':'');el.innerHTML=icon(error?'info':'check')+`<span>${esc(message)}</span>`;$('#toasts').append(el);setTimeout(()=>el.remove(),6500);}
-async function api(path,method='GET',body){const options={method,credentials:'same-origin',headers:{}};if(method!=='GET'){options.headers['X-CSRF-Token']=state.csrf;options.headers['Content-Type']='application/json';if(body!==undefined)options.body=JSON.stringify(body);}const res=await fetch('/api'+path,options);const data=await res.json();if(!res.ok){if(res.status===401 && state.me && !['/login','/logout'].includes(path)){clearAccount();closeModal();showAuth(false);}if(res.status===428){passwordModal(true);}throw new Error(data.error || 'Não foi possível concluir a solicitação.');}return data;}
-async function download(path){const res=await fetch('/api'+path,{credentials:'same-origin'});if(!res.ok){let data=await res.json();throw new Error(data.error || 'Falha ao gerar arquivo.');}const blob=await res.blob();const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=res.headers.get('Content-Disposition')?.match(/filename="?([^";]+)"?/)?.[1]||'relatorio';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+const connectionMessage='O serviço está temporariamente indisponível. O acesso estará disponível quando a conexão com o servidor for restabelecida.';
+async function apiFetch(path,options={}){
+ try{return await fetch('/api'+path,{...options,signal:AbortSignal.timeout(15000)});}
+ catch{throw new Error(connectionMessage);}
+}
+async function apiJson(response){
+ if(!response.headers.get('Content-Type')?.toLowerCase().includes('application/json'))throw new Error(connectionMessage);
+ let data;try{data=await response.json();}catch{throw new Error(connectionMessage);}
+ if(!data||typeof data!=='object'||Array.isArray(data))throw new Error(connectionMessage);
+ return data;
+}
+async function api(path,method='GET',body){const options={method,credentials:'same-origin',headers:{}};if(method!=='GET'){options.headers['X-CSRF-Token']=state.csrf;options.headers['Content-Type']='application/json';if(body!==undefined)options.body=JSON.stringify(body);}const res=await apiFetch(path,options);const data=await apiJson(res);if(!res.ok){if(res.status===401 && state.me && !['/login','/logout'].includes(path)){clearAccount();closeModal();showAuth(false);}if(res.status===428){passwordModal(true);}throw new Error(data.error || 'Não foi possível concluir a solicitação.');}return data;}
+async function download(path){const res=await apiFetch(path,{credentials:'same-origin'});if(!res.ok){const data=await apiJson(res);throw new Error(data.error || 'Falha ao gerar arquivo.');}const blob=await res.blob();const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=res.headers.get('Content-Disposition')?.match(/filename="?([^";]+)"?/)?.[1]||'relatorio';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
 const modal=$('#modal');
 function openModal(title,body,subtitle=''){modal.innerHTML=`<div class="modal-head"><div><h2 id="modal-title">${title}</h2>${subtitle?`<p>${subtitle}</p>`:''}</div><button class="icon-btn" data-action="close-modal" aria-label="Fechar janela">${icon('x')}</button></div><div class="modal-body">${body}</div>`;if(!modal.open)modal.showModal();setTimeout(()=>modal.querySelector('input:not([type=hidden]),select,textarea,button')?.focus(),30);}
 function closeModal(){modal.close();modal.innerHTML='';}

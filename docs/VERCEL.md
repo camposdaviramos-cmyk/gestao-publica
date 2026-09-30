@@ -12,7 +12,7 @@ Envie as alterações ao repositório conectado à Vercel e faça um novo deploy
 
 ## Integração posterior com a Render
 
-As requisições continuam usando `/api/...`. Até conectar o backend, a interface exibirá uma mensagem de conexão indisponível; login, cadastros e consultas não estarão disponíveis.
+As requisições continuam usando `/api/...`. Até conectar o backend, a interface exibe a tela de login com um aviso de serviço indisponível; autenticação, cadastros e consultas não estarão disponíveis. Respostas que não sejam JSON são tratadas sem mostrar erros técnicos ao usuário.
 
 Quando a URL do backend estiver definida, adicione um rewrite de `/api/:path*` para `https://SEU-BACKEND.onrender.com/api/:path*`. Isso mantém as chamadas do navegador no domínio do frontend. Valide o encaminhamento de host e protocolo, os cookies e a verificação de origem/CSRF do Flask antes de liberar o acesso.
 
