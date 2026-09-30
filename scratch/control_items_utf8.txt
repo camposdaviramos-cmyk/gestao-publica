@@ -1,0 +1,255 @@
+=== control.1 (item 1) ===
+O sistema deverá estar totalmente na plataforma web, não exigindo emuladores, com acesso aos principais browsers disponibilizados pelo mercado.
+
+=== control.2 (item 2) ===
+Os dados devem ser armazenados na nuvem (cloud) com os devidos critérios de segurança.
+
+=== control.3 (item 3) ===
+Possuir Banco de dados multi exercício e multi entidades através de base corporativa.
+
+=== control.4 (item 4) ===
+Aplicação baseada em tecnologias de código aberto (open source) ou gratuitas (free).
+
+=== control.5 (item 5) ===
+Permitir identificar toda a estrutura governamental do Município, cadastrando as entidades da administração direta e indireta dos Poderes Executivo e Legislativo que compõem o Sistema de Controle Interno do ente federado.
+
+=== control.6 (item 6) ===
+Permitir identificar e fazer as manutenções dos dados do município em relação as informações publicadas pelo IBGE (Instituto Brasileiro de Geografia e Estatística) para fins de apuração de percentuais permitidos pela Constituição Federal, baseados no censo populacional.
+
+=== control.7 (item 7) ===
+Possuir cadastro de usuários com as seguintes características: • permitir o livre cadastramento de usuários. • permitir restringir o acesso às entidades da estrutura governamental pertencentes ao Município para determinados usuários. • permitir restringir o acesso à determinadas funcionalidades conforme o perfil do usuário.
+
+=== control.8 (item 8) ===
+Possuir um Processo de Carga de Obrigações. Disponibilizar Obrigações Legais, Federais e Estaduais, para carga automática no calendário conforme a necessidade e escolha do Cliente.
+
+=== control.9 (item 9) ===
+Possuir um ACESSO FÁCIL E SIMPLES ao Controle do Calendários: Possibilitar uma Visão das Obrigações em formato de Calendário Organizando visualmente as Obrigações e suas Ocorrências de forma amigável, em formato de calendário. Isso facilita ações necessárias para cobrança no atendi mento das obrigações; A situação de cada ocorrência com relação ao prazo para atendimento definido por lei, pode ser facilmente identificado através de cores correspondentes ao seu Status;
+
+=== control.10 (item 10) ===
+Possibilitar a Criação de Grupos Responsáveis viabilizando a associação de responsáveis as ocorrências de obrigação e direcionar a obrigação para quem deve ser cobrado quanto a seu atendimento;
+
+=== control.11 (item 11) ===
+Possuir Cadastramento de Obrigações / Ocorrências seguindo o conceito de Obrigação dividida em Recorrências e Ocorrências. Seguindo esse conceito, torna-se mais fácil o reaproveitamento de obrigações, de um exercício para o outro e a concentração acompanhamentos por ocorrências. Obrigações não previstas na carga inicial, podem ser incluídas de forma manual e simples.
+
+=== control.12 (item 12) ===
+Possuir Cadastramento de Obrigações contendo as seguintes informações: Título - Título da Obrigação; Descrição da obrigação legal - Detalhamento da Obrigação; Espécie de legislação - Federal, Estadual e Municipal; Grupo de Assunto - Classificação de Grupo de Assunto conforme a Obrigação; Legislação pertinente - Informar a legislação que originou a Obrigação; Forma de envio - Descrever as formas de envio da obrigação no momento do seu atendimento; Destino - Informar a quem se destina as informações que serão geradas na Obrigação; Link - Link do Site onde foi pesquisado e identificado a obrigação e suas datas de ocorrências; Observações - Campo livre para mas detalhes sobre a obrigação.
+
+=== control.13 (item 13) ===
+Possuir um Cadastramento de Recorrências para viabilizar o reaproveitamento de Obrigações de um exercício para o outro.
+
+=== control.14 (item 14) ===
+Possibilitar a Criação e Atualização de Ocorrências de obrigação, geradas automaticamente a partir de informações de Recorrência.
+
+=== control.15 (item 15) ===
+Viabilizar o acompanhamento do andamento das obrigações possibilitando a inclusão de observações, anexação arquivos / evidências e registro do encerramento da ocorrência. Os acompanhamentos são classificados por tipos (Justificativa, Comentário, Encerramen to e Reabertura) e todos os acompanhamentos devem ser armazenados em histórico.
+
+=== control.16 (item 16) ===
+Possibilitar a comunicação com os responsáveis pelo atendimento das Obrigações, através de e -mail em qualquer momento. Esse e -mail já deve estar com as informações referentes a Ocorrência de Obrigação, destinatário identificado e área livre para que o oper ador possa escrever as instruções que precisa passar sobre a Ocorrência de Obrigação.
+
+=== control.17 (item 17) ===
+Possibilitar o Encerramento da Ocorrência de obrigação de forma rápido, para ocorrências de Obrigação que só necessitem do registro do encerramento.
+
+=== control.18 (item 18) ===
+Possuir apresentação de Obrigações em Lista para facilitar a visualização e a manutenção das obrigações cadastradas na ferramenta.
+
+=== control.19 (item 19) ===
+Possibilitar a geração de Relatórios para listar as obrigações e suas ocorrências em um determinado período.
+
+=== control.20 (item 20) ===
+Possibilitar a geração de Relatórios para listar as Ocorrências de Obrigações e seus registros de Acompanhamento em um determinado período.
+
+=== control.21 (item 21) ===
+Possuir um Painel de Controle, que apresenta uma visão geral do andamento das obrigações Legais e suas Ocorrências no Ano de exercício. Esse painel apresenta gráficos com visão anual e mensal, informações estatísticas e possibilita ações em ocorrências de Obrigação que estão com status a vencer.
+
+=== control.22 (item 22) ===
+Possibilitar a criação de usuários com Perfis de acesso. ADMINISTRADOR – Para consultores do Sistema com acesso ilimitado ao produto; CONTROLADOR – Para os principais usuários do produto, com acesso a todas as funções, mas com restrições a criação de Usuários e configurações do Cliente na plataforma; OPERADOR - Para usuários de auxílio ao processo, mas que não terão permissão de Carga de Obrigações e exclusões de uma forma geral.
+
+=== control.23 (item 23) ===
+Possibilitar que os e -mails enviados, passem a ser mais um tipo de Acompanhamento e incluídos no histórico de acompanhame ntos da Ocorrência da Obrigação com o E-mail anexado.
+
+=== control.24 (item 24) ===
+Possibilitar que as agendas de obrigações de exercícios anteriores sejam incluídas no sistema.
+
+=== control.25 (item 25) ===
+Possibilitar que as agendas de obrigações sejam atualizadas através de API do SICONFI, utilizando o serviço de Extrato de Obrigações.
+
+=== control.26 (item 26) ===
+Possibilitar que o usuário seja avisado através de notificação quando existirem atualizações de status das obrigações da API do SICONFI.
+
+=== control.27 (item 27) ===
+Possibilitar que os responsáveis e seus gestores sejam avisados através de e - mail quando uma obrigação está prestes a vencer e ou vencida.
+
+=== control.28 (item 28) ===
+Possibilitar que os responsáveis justifiquem os possíveis atrasos das obrigações sobre sua responsabilidade.
+
+=== control.29 (item 29) ===
+Possibilitar integração com API do SICONFI dos serviços de Dados abertos da Secretaria do Tesouro Nacional.
+
+=== control.30 (item 30) ===
+Possibilitar carga de regras específicas para Verificações das Dimensões 2 e 3 de apuração do Ranking de Qualidade do SICONFI.
+
+=== control.31 (item 31) ===
+Possibilitar a visualização, duplicação e edição das reg ras específicas para Verificações das Dimensões 2 e 3 de apuração do Ranking de Qualidade do SICONFI.
+
+=== control.32 (item 32) ===
+Possibilitar a vinculação de um responsável por uma ou mais Verificações.
+
+=== control.33 (item 33) ===
+Possibilitar selecionar o ano da verificação das informações do Ranking da Qualidade da informação Contábil e Fiscal do Setor Público Brasileiro (SICONFI).
+
+=== control.34 (item 34) ===
+Possibilitar selecionar a Dimensão das informações do Ranking da Qualidade da informação Contábil e Fiscal do Setor Público Brasileiro (SICONFI).
+
+=== control.35 (item 35) ===
+Possibilitar que seja filtrado o poder executivo e ou poder legislativo, conforme regras de envio da informação estabelecida pela secretaria do Tesouro Nacional (STN)
+
+=== control.36 (item 36) ===
+Possibilitar a exclusão de uma competência importada e já processa e processa- la novamente.
+
+=== control.37 (item 37) ===
+Possibilitar a apresentação de um painel do tipo Dashboard, com minimamente as informações de: Número da Validação, Descrição da Verificação, Intervalo de Validação (mensal, bimestral e ou quadrimestral).
+
+=== control.38 (item 38) ===
+Possibilitar através de Painel / Dashboard, com identificação visual de cor (verde para atendida e vermelha para não atendida) de atendimento ou não dos Verificações, o acompanhamento mensal, bimestral e semestral das Verificações que são utilizadas pela STN para apuração do Ranking de Qualidade do SICONFI. através de integração com API do SICONFI.
+
+=== control.39 (item 39) ===
+Possibilitar a evidenciação de Itens em Conformidade e Itens em "em conformidade" e em "não conformidade" da Dimensão 2 - Dimensão Contábil, do Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (SICONFI), por meio de Dashboard, com cores específicas para o "positivo - em conformidade e / ou atendido" e para o "negativo - em não conformidade e / ou não atendidos", a ssim como evidenciação das regras de cada cor, por meio de Legendas.
+
+=== control.40 (item 40) ===
+Possibilitar a evidenciação de Itens em Conformidade e Itens em "em conformidade" e em "não conformidade" da Dimensão 3 - Dimensão Fiscal, do Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (SICONFI), por meio de Dashboard, com cores específicas para o "positivo - em conformidade e/ou atendido" e para o "negativo - em não conformidade e / ou não atendidos", assim como evidenciação das regras de cada cor, por meio de Legendas.
+
+=== control.41 (item 41) ===
+Possibilitar realizar um "plano de ação" para os itens que estão em "não conformidade e ou não atendidos" por meio da identificação do "Fato" da "Causa" e da "Ação" a ser estabelecida para o cumprimento do item.
+
+=== control.42 (item 42) ===
+Possibilitar o envio de notificação ao responsável pela Verificação.
+
+=== control.43 (item 43) ===
+Possibilitar o recebimento de aviso (através de dispositivo em tela / sininho de notificação) de quando uma notificação for respondida.
+
+=== control.44 (item 44) ===
+Possibilitar a evidenciação em tela dos descritivos feitos no plano de ação, de tal modo que um agente público seja notificado quanto ao item que foi apontado como "não conformidade e / ou não atendido".
+
+=== control.45 (item 45) ===
+Possibilitar que seja demonstrado em gráfico, a quantidade de itens que estão em conformidade e itens que estão em "não conformidade". Este gráfico deve ser apresentado para a dimensão 2 - Contábil do Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro.
+
+=== control.46 (item 46) ===
+Possibilitar que seja demonstrado em gráfico, a quantidade de itens que estão em conformidade e itens que estão em "não conformidade". Este gráfico deve ser apresentado para a dimensão 3 - Contábil do Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro.
+
+=== control.47 (item 47) ===
+Permitir a emissão de relatório conclusivo mensal das Verificações de forma consolidado ou por entidade da administração direta ou indireta. deverá ser possível emitir relatório por Poder Executivo.
+
+=== control.48 (item 48) ===
+Permitir ao usuário personalizar, editar os textos padrões apresentados para cada parecer.
+
+=== control.49 (item 49) ===
+Permitir ao usuário personalizar textos de considerações finais.
+
+=== control.50 (item 50) ===
+Permitir configurações de assinaturas pelos próprios usuários para que esta seja impressa no relatório conclusivo do Controle Interno.
+
+=== control.51 (item 51) ===
+Permitir selecionar quais Verificações deverão compor o relatório conclusivo do Controle Interno.
+
+=== control.52 (item 52) ===
+Permitir selecionar quais ocorrências das Verificações deverão compor o relatório conclusivo do Controle Interno.
+
+=== control.53 (item 53) ===
+Permitir o armazenamento das diversas versões dos Relatórios Conclusivos do Controle Interno, que poderão existir para um mesmo período, garantindo assim o verificabilidade da informação existente em cada relatório conclusivo realizado.
+
+=== control.54 (item 54) ===
+Possibilitar integração com CAUC dos servi ços de Dados abertos da Secretaria do Tesouro Nacional.
+
+=== control.55 (item 55) ===
+Possibilitar a vinculação de um responsável por um ou mais itens de Requisitos Fiscais do CAUC.
+
+=== control.56 (item 56) ===
+Possibilitar a importação atualizada dos itens de Requisitos Fiscais do CAUC.
+
+=== control.57 (item 57) ===
+Possibilitar a apresentação de um painel do tipo Dashboard, com as informações das entidades e os itens / grupos de Requisitos Fiscais do CAUC.
+
+=== control.58 (item 58) ===
+Possibilitar através de Painel / Dashboard, com identificação visual de cor (verde para atendida e vermelha para não atendida) de atendimento os itens de Requisitos Fiscais do CAUC.
+
+=== control.59 (item 59) ===
+Possibilitar realizar um "plano de ação" para os itens que estão em "não conformidade e ou não atendidos" por meio da identificação do "Fato" da "Causa" e da "Ação" a ser estabelecida para o cumprimento do item.
+
+=== control.60 (item 60) ===
+Possibilitar o envio de notificação ao responsável pela itens de Requisito Fiscal do CAUC.
+
+=== control.61 (item 61) ===
+Possibilitar o recebimento de aviso (através de dispositivo em tela / sininho de notificação) de quando uma notificação for respondida.
+
+=== control.62 (item 62) ===
+Possibilitar a evidenciação em tela dos descritivos feitos no plano de ação, de tal modo que um agente público sej a notificado quanto ao item que foi apontado como "não conformidade e / ou não atendido".
+
+=== control.63 (item 63) ===
+Permitir a emissão de relatório conclusivo mensal dos itens de Requisito Fiscal do CAUC.
+
+=== control.64 (item 64) ===
+Permitir ao usuário personalizar, editar os textos padrões apresentados para cada parecer do CAUC.
+
+=== control.65 (item 65) ===
+Permitir ao usuário personalizar textos de considerações finais do CAUC.
+
+=== control.66 (item 66) ===
+Permitir configurações de assinaturas pelos próprios usuários para que esta seja impressa no relatório conclusivo do Controle Interno.
+
+=== control.67 (item 67) ===
+Permitir selecionar quais Requisitos Fiscais deverão compor o relatório conclusivo do Controle Interno.
+
+=== control.68 (item 68) ===
+Permitir selecionar quais ocorrências dos Requisitos fiscais que deverão compor o relatório conclusivo do Controle Interno referente ao CAUC.
+
+=== control.69 (item 69) ===
+Permitir o armazenamento das diversas versões dos Relatórios Conclusivos do Controle Interno referente ao CAUC, que poderão existir para um mesmo período, garantindo assim o verificabilidade da informação existente em cada relatório conclusivo realizado.
+
+=== control.70 (item 70) ===
+Possibilitar integração com Extrato de Convênios dos serviços de Dados abertos da Secretaria do Tesouro Nacional.
+
+=== control.71 (item 71) ===
+Possibilitar a vinculação de um responsável por um ou mais itens de Extrato de Convênio.
+
+=== control.72 (item 72) ===
+Possibilitar a importação atualizada dos itens de Extrato de Convênios.
+
+=== control.73 (item 73) ===
+Possibilitar a apresentação de um painel do tipo Dashboard, com as informações das entidades e os Convênios.
+
+=== control.74 (item 74) ===
+Possibilitar através de Painel / Dashboard, com identificação visual de cor (verde para atendida e vermelha para não atendida) de atendimento aos Convênios.
+
+=== control.75 (item 75) ===
+Possibilitar realizar um "plano de ação" para os itens que estão em "não conformidade e ou não atendidos" por meio da identificação do "Fato" da "Causa" e da "Ação" a ser estabelecida para o cumprimento do item.
+
+=== control.76 (item 76) ===
+Possibilitar o envio de notificação ao responsável pela itens os Convênios.
+
+=== control.77 (item 77) ===
+Possibilitar o recebimento de aviso (através de dispositivo em tela/ sininho de notificação) de quando uma notificação for respondida.
+
+=== control.78 (item 78) ===
+Possibilitar a evidenciação em tela dos descritivos feitos no plano de ação, de tal modo que um agente público seja notificado quanto ao item que foi a pontado como "não conformidade e / ou não atendido".
+
+=== control.79 (item 79) ===
+Permitir a emissão de relatório conclusivo mensal dos itens de Convênios.
+
+=== control.80 (item 80) ===
+Permitir ao usuário personalizar, editar os textos padrões apresentados para cada parecer dos Convênios.
+
+=== control.81 (item 81) ===
+Permitir ao usuário personalizar textos de considerações finais dos Convênios.
+
+=== control.82 (item 82) ===
+Permitir configurações de assinaturas pelos próprios usuários para que esta seja impressa no relatório conclusivo do Controle Interno.
+
+=== control.83 (item 83) ===
+Permitir selecionar quais Requisitos Fiscais deverão compor o relatório conclusivo do Controle Interno.
+
+=== control.84 (item 84) ===
+Permitir selecionar quais ocorrências dos Convênios que deverão compor o relatório conclusivo do Controle Interno referente aos Convênios.
+
+=== control.85 (item 85) ===
+Permitir o armazenamento das diversas versões dos Relatórios Conclusivos do Controle Interno referente aos Convênios, que poderão existir para um mesmo período, garantindo assim o verificabilidade da informação existente em cada relatório conclusivo realizado.
+

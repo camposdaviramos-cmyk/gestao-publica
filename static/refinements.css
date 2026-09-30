@@ -1,0 +1,9 @@
+/* Contenção de tabelas e grades em telas estreitas. */
+.auth-card#main{max-width:380px;min-height:0;padding:0;margin:0}
+@media print{details>*{display:block!important}}
+.dashboard-grid>*,.settings-grid>*,.stack,.panel,.stats>*{min-width:0}
+.brand span{font-size:8.5px;letter-spacing:1.1px;white-space:nowrap}
+.report-filters{grid-template-columns:2fr 1fr 1fr}
+[hidden]{display:none!important}
+@media(max-width:1020px){.dashboard-grid,.settings-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:760px){.report-filters{grid-template-columns:1fr}.chart{overflow:hidden}.table-wrap table{min-width:550px}.panel-head{gap:8px}.chart-legend{white-space:nowrap}.activity time{font-size:8px}.activity h3{overflow-wrap:anywhere}.page-heading>div{min-width:0}.brand span{font-size:8px}}

@@ -1,0 +1,9 @@
+dialog.inventory-report-dialog{width:min(1180px,calc(100vw - 32px));max-width:1180px}
+.inventory-report-dialog .form-grid{grid-template-columns:repeat(4,minmax(0,1fr));align-items:start}
+.inventory-report-dialog .inv-reference{grid-column:span 2}
+.inv-reference-search{display:flex;gap:8px;align-items:center;margin:6px 0 8px}
+.inv-reference-search input{min-width:0;flex:1}
+.inv-reference-search button{flex:none;white-space:nowrap}
+.inventory-report-dialog .table-wrap{max-height:48vh;overflow:auto}
+@media(max-width:800px){.inventory-report-dialog .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.inventory-report-dialog .inv-reference{grid-column:auto}}
+@media(max-width:520px){.inventory-report-dialog .form-grid{grid-template-columns:1fr}.inv-reference-search{flex-wrap:wrap}.inv-reference-search input{flex-basis:70%}}

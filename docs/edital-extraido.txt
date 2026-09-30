@@ -1,0 +1,660 @@
+
+=== Página 35 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+35 
+ 
+4. REQUISITOS DA CONTRATAÇÃO  
+4.1. A presente contratação orienta-se pelos seguintes requisitos de negócio: 
+Requisitos de Capacitação 
+4.1. O treinamento dos funcionários para operar os Softwares, durante a implantação deverá 
+iniciar-se imediatamente após a carga e instalação dos dados, abrangendo, também, os 
+procedimentos para a geração de backups diários para segurança dos dados. Este treinamento 
+será ministrado nas dependências da CONTRATANTE, devendo todos os custos ser arcados pela 
+empresa contratada tendo a duração máxima de 40 (quarenta) horas. 
+4.2. Entende-se por implantação, o conjunto de serviços necessários para instalar, colocar em 
+funcionamento e deixar em condições de uso para os usuários executarem suas tarefas, do sistema 
+aplicativo (software) especificado nesse edital, com aprovação positiva dos usuários de cada 
+departamento responsável. 
+4.3. A empresa Contratada deverá oferecer treinamento, durante a implantação, para os 
+servidores indicados pelo(a) Contratante de forma a garantir adequada e plena utilização do 
+sistema. 
+4.4. Os referidos treinamentos serão realizados na sede do Contratante s endo de inteira 
+responsabilidade das Entidades Municipais a identificação e reserva de local e equipamentos para 
+a realização do mesmo, a prestação de serviço será realizada dentro da sede da Prefeitura, na 
+Secretaria Municipal de Fazenda. 
+4.5. O treinamento presencial será destinado a 30 usuários, podendo ocorrer de forma individual 
+ou em turmas, conforme listagem fornecida pela CONTRATANTE. 
+4.6. A CONTRATADA deverá oferecer ambiente EAD com vídeos, tutoriais e conteúdos 
+relacionados ao treinamento, com acesso ilimi tado e gratuito para todos os servidores públicos 
+municipais envolvidos. 
+4.7. O treinamento deverá ter no máximo, carga horária de 8 (oito) horas diárias, e dispor em 
+sua programação o seguinte conteúdo mínimo: 
+4.7.1. Operação do sistema para organização em programas das ações dos órgãos da 
+administração, assegurando o alinhamento destes com a orientação estratégica do governo e com 
+as previsões de disponibilidade de recursos; 
+4.7.2.  Operação do sistema para dispor o usuário de condições para avaliação e mensuração dos 
+produtos das ações do governo e dos efeitos destas ações sobre a realidade de seu território; 
+4.7.3.  Operação do sistema para dotar os administradores públicos de um instrumento gerencial 
+estruturado e atualizado, objetivando facilitar a tomada de decisões, corrigir desvios e direcionar a 
+aplicação de recursos para a realização dos resultados pretendidos. 
+4.8. As instalações físicas, equipamentos e materiais necessários para aplicação dos 
+treinamentos serão providenciados e disponibilizados pela Entidade Municipal. 
+Requisitos Legais 
+4.9. O presente processo de contratação deve estar aderente à Constituição Federal, à Lei nº 
+14.133, de 01 de abril de 2021, à Instrução Normativa SGD/ME nº 94, de 2022, Instrução Normativa 
+
+=== Página 36 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+36 
+ 
+SEGES/ME nº 65, de 7 de julho de 2021, Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de 
+Proteção de Dados Pessoais – LGPD), da Lei nº 14.133, de 01 de abril de 2021, Decreto Municipal 
+nº 3884/2024 e demais legislações aplicáveis; 
+Requisitos de Manutenção 
+4.10. A prestação dos serviços de atualização de Softwares se dará nas seguintes modalidades: 
+4.10.1. Corretiva, que visa corrigir erros e defeitos de funcionamento do Software, podendo a 
+critério da empresa, limitar -se à substituição da cópia com falhas por uma cópia corrigida, não 
+incluindo nestas ações que se tornem necessárias por uso incorreto ou não autorizado, vandalismo, 
+sinistros ou apropriações indébitas; 
+4.10.2. Adaptativa, visando adaptações legais para adequar o Software às alterações da Legislação, 
+desde que não impliquem em desenvolvimento de novas telas, novas funções ou rotinas, ou, ainda, 
+alterações na arquitetura do Software.  
+4.10.3. Evolutiva, que visa garantir a atualização do Software, através da adição de novas 
+funcionalidades aos SOFTWARES não constantes no momento atual, isto é, não previstas nas 
+especificações técnicas do instrumento convocatório, ou da proposta apresentada pela 
+CONTRATADA, ou ainda inexistente no momento do recebimento do software, sempre 
+obedecendo aos critérios da metodologia de desenvolvimento da CONTRATADA. 
+4.10.4. Para cumprimento, a CONTRATANTE deverá comunicar à CONTRATADA a alteração nas 
+legislações federal, estadual e municipal, encaminhando o diploma legal anterior e o novo, 
+informando a data de sua publicação e o início de sua vigência. A CONTRATADA de posse dessas 
+informações fará uma anális e técnica e apresentará uma estimativa do esforço e prazo para a 
+entrega da versão do software adequada à alteração, sempre respeitando sua metodologia de 
+desenvolvimento. A CONTRATANTE se compromete, ainda, a atuar como interlocutora da 
+CONTRATADA, quando necessário, junto aos órgãos reguladores / fiscalizadores, para dirimir 
+dúvidas técnicas e / ou pedidos de esclarecimentos. 
+4.11. A segurança dos arquivos relacionados com o Software é de responsabilidade de quem o 
+opera. A CONTRATADA não se responsabiliza, apó s a disponibilização do Software, por erros 
+decorrentes de negligência, imprudência ou imperícia da CONTRATANTE, seus empregados ou 
+prepostos na sua utilização, assim como problemas provenientes de “caso fortuito” ou “força maior”, 
+contemplados pelo art. 3 93 do Novo Código Civil Brasileiro. A má utilização das técnicas 
+operacionais de trabalho, como operações indevidas de “BACKUPS” (anormalidade nos meios 
+magnéticos - utilização de mídias defeituosas), ou que possam gerar resultados equivocados, ou, 
+ainda, danos causados por “vírus” de computador, são de exclusiva responsabilidade da 
+CONTRATANTE. 
+4.12. A tolerância da CONTRATADA no cumprimento pela CONTRATANTE dos itens e das 
+condições do presente Contrato, não caracteriza novação, podendo a qualquer momento ser 
+exigido seu rigoroso cumprimento. 
+4.13. A CONTRATANTE reconhece e aceita que o estado da técnica não permite a elaboração 
+de programas de computador totalmente isentos de defeitos, reconhece, ademais, que a obrigação 
+da CONTRATADA sob este Contrato consiste em ap licar seus melhores esforços na correção ou 
+reparação dos defeitos ou deficiências de funcionamento apresentados pelo Software. O Software 
+
+=== Página 37 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+37 
+ 
+objeto deste contrato é garantido por 90 (noventa) dias contra defeitos de funcionamento, a partir 
+da data da emissão da Nota Fiscal correspondente à cessão da Licença de Uso. 
+4.14. Em nenhuma hipótese a CONTRATADA será responsável por qualquer erro, má 
+interpretação ou pela aplicação ou utilização inadequada do Software. A CONTRATADA tampouco 
+será responsabilizada por qualque r dano emergente, lucro cessante ou outros danos diretos ou 
+indiretos sofridos pela CONTRATANTE ou por terceiros, decorrentes do erro, má interpretação ou 
+pela aplicação ou utilização inadequada do Software. 
+4.15. Prazos de Atendimento: 
+CLASSIFICAÇÃO PRAZO DE RESPOSTA PRAZO DE SOLUÇÃO 
+Crítico 2 horas 6 horas 
+Alto 4 horas 8 horas úteis 
+Médio 8 horas úteis 24 horas úteis 
+Baixo 24 horas úteis 48 horas úteis 
+4.16. Em casos excepcionais, a solução poderá ser prorrogada mediante justificativa aceita pela 
+fiscalização. 
+4.17. Quando não for possível solução imediata, deverá ser fornecida solução provisória 
+(workaround). 
+4.18. Resumo dos Serviços Técnicos: 
+CATEGORIA DESCRIÇÃO 
+Manutenção 
+Preventiva Inspeção, atualização de softwares básicos, limpeza, testes, relatórios. 
+Manutenção 
+Corretiva 
+Correção de falhas, substituição de peças, reinstalação de sistemas, ajuste 
+de desempenho, substituição emergencial. 
+Suporte Técnico Atendimento remoto e presencial, instalação/configuração de softwares e 
+periféricos, ajustes de rede. 
+Exclusões Sistemas de terceiros, backups de usuários, softwares não homologados. 
+Horário Regular Segunda a sexta, das 08h00 às 17h00. 
+Horário 
+Extraordinário 
+Sábados, domingos, feriados e fora do horário regular, mediante solicitação 
+prévia. 
+ 
+Requisitos Temporais 
+4.19. Os serviços de Implantação dos SOFTWARES terão início na data seguinte da assinatura 
+do contrato e deverão ser implantados em até 90 (noventa) dias, a contar da assinatura do contrato 
+e emissão de ordem de serviço, podendo, excepcionalmente, por fatos supervenientes, ser este 
+prazo prorrogado por mais 30 (trinta) dias. 
+4.20. A implantação do sistema e migração dos dados deverá ser iniciado pelos módulos 
+Orçamentários, Contábeis, Folha de Pagamento e Portal de Tran sparência. Estes necessitam 
+estarem disponíveis nos primeiros 30 (trinta) dias. Após, serão alinhados todos os outros módulos 
+em decisão conjunta com a comissão definida pela prefeitura. 
+
+=== Página 38 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+38 
+ 
+4.21. Os serviços de reprocessamento, conversão e dos elementos, informaçõe s e dados 
+necessários para sua execução. Devem ser convertidos os dados disponíveis nas bases de dados 
+disponibilizadas pela Prefeitura. 
+4.22. Durante a implantação dos sistemas, a contratada deverá prestar os serviços que abrangem 
+as tarefas descritas neste ins trumento, que devem ser agrupadas em etapas e realizadas em 
+paralelo, ou seja, sem interrupção e nenhum impacto inerente às funcionalidades dos setores ou 
+departamentos dependentes do sistema de gestão atualmente utilizado pelo Município. 
+Requisitos de Segurança e Privacidade 
+4.23. Todas as atividades, processos e dados realizados e/ou desenvolvidos no âmbito do 
+MUNICÍPIO, relacionados aos serviços, são estritamente confidenciais e estão protegidos pelo 
+sigilo fiscal. Em conformidade com as leis e regulamentos pe rtinentes, a Contratante e seus 
+funcionários são obrigados a manter essa informação sob sigilo absoluto. 
+4.24. Qualquer divulgação não autorizada dessas informações é considerada uma violação grave 
+e constitui crime, sujeita a medidas legais rigorosas. A quebra de sigilo é passível de penalidades 
+severas, conforme estabelecido por lei. A Contratante e seus funcionários estão proibidos de 
+compartilhar, reproduzir ou divulgar, de qualquer forma, qualquer informação confidencial 
+relacionada aos serviços prestados ao MUNICÍPIO. 
+4.25. Essa obrigação de sigilo permanece em vigor mesmo após o término do contrato entre a 
+Contratante e o MUNICÍPIO. A divulgação não autorizada de informações confidenciais pode 
+resultar em consequências legais significativas para a Contratante e para os indivíduos envolvidos. 
+4.26. Portanto, é imprescindível que a Contratante e seus funcionários compreendam a gravidade 
+dessa questão e adiram estritamente a essa política de confidencialidade. A divulgação de 
+informações confidenciais só é permitida median te autorização expressa e por escrito do 
+MUNICÍPIO. O descumprimento desta política resultará em medidas legais imediatas e pode 
+prejudicar seriamente a reputação da Contratante. 
+4.27. A Contratante e seus profissionais estão estritamente comprometidos em zelar pela 
+segurança da informação, aderindo às melhores práticas do mercado, bem como às diretrizes e 
+políticas de segurança estabelecidas pelo MUNICÍPIO. Este compromisso abrange todo o ciclo de 
+vida da informação e/ou dados, incluindo sua fase de armazenament o, transporte, descarte e 
+devolução. 
+4.28. Caso exista a necessidade de armazenamento de arquivos, os dados e informações devem 
+ser protegidos por medidas de segurança robustas, garantindo sua integridade e confidencialidade. 
+Isso inclui a implementação de siste mas de proteção, controle de acesso restrito e criptografia, 
+conforme necessário para prevenir acessos não autorizados e vazamentos. 
+4.29. No que diz respeito ao transporte, devem ser adotadas práticas seguras para evitar 
+interceptações ou perdas durante a trans ferência de dados. Utilizar métodos de comunicação 
+segura e redes protegidas são essenciais para proteger a informação durante seu trânsito entre 
+diferentes locais ou sistemas. 
+4.30. Para a fase de descarte, é fundamental seguir procedimentos adequados para assegurar a 
+eliminação segura de dados e informações. Métodos de descarte seguros, como a destruição física 
+
+=== Página 39 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+39 
+ 
+de mídias ou a utilização de software especializado de eliminação de dados, são essenciais para 
+prevenir qualquer possibilidade de recuperação indevida de informações sensíveis. 
+4.31. Quando se trata da devolução de equipamentos ou dados ao MUNICÍPIO, é necessário 
+garantir que todos os dados e informações tenham sido removidos completamente dos dispositivos, 
+para evitar qualquer risco de vazamento ou acesso não autorizado após a devolução. 
+4.32. Essas práticas, alinhadas às políticas de segurança do MUNICÍPIO, não apenas garantem 
+a proteção da informação, mas também demonstram o comprometimento da Empresa e de seus 
+profissionais com a integridade e a confidencialidade  dos dados. Ao aderir a esses padrões 
+elevados de segurança da informação, contribuímos para um ambiente digital seguro e protegido 
+contra ameaças, promovendo a confiança e a segurança de todos os envolvidos. 
+Requisitos Sociais, Ambientais e Culturais 
+4.33. A so lução deverá atender a requisitos sociais, ambientais e culturais, garantindo 
+acessibilidade digital conforme normas vigentes, inclusão de usuários com diferentes níveis de 
+letramento digital e conformidade com a legislação de proteção de dados pessoais, especialmente 
+a LGPD. 
+4.34. Deverá ainda observar princípios de sustentabilidade, priorizando eficiência no uso de 
+recursos computacionais, redução de consumo energético e incentivo à digitalização de processos. 
+4.35. No aspecto cultural, a solução deverá estar adequad a ao contexto organizacional e local, 
+contemplando idioma português (Brasil), usabilidade intuitiva, respeito à diversidade e possibilidade 
+de parametrização conforme necessidades institucionais. 
+Requisitos da Arquitetura Tecnológica 
+4.36. Requisitos obrigatórios: 
+4.36.1. Prover recurso para utilização da senha do usuário, dispondo de níveis de segurança, 
+divididos nos níveis Fraca (contendo apenas caracteres alfanuméricos), Média (número total de 
+caracteres da senha maior que 8, contendo caracteres especiais, alfanuméricos e números) e Forte 
+(número total de caracteres da senha superior a 10, contendo mais do que 1 caractere especial, 
+alfanuméricos e números). Também deve impor uma quantidade mínima de caracteres da senha, 
+sendo esta configuração flexível em termos de uso e da quantidade de caracteres. 
+4.37. As aplicações devem disponibilizar ao usuário acesso fácil a uma funcionalidade de ajuda 
+online, acessível a partir de qualquer tela da aplicação. O mesmo deve apresentar informações e 
+orientações sobre o uso das funcionalidades existentes na tela exibida. 
+4.38. O sistema deverá ser acessível a partir de qualquer dispositivo com conexão à Internet. 
+4.39. Prover o bloqueio do acesso de um usuário a aplicação, após determinado número de 
+tentativas de ações inválidas, com a definição de período de tempo determinado para bloqueio do 
+acesso, por usuário. Também deverá prover recurso exigindo a troca da senha, no próximo acesso 
+do usuário, a aplicação. 
+4.40. Prover a definição de um período de tempo determinado, sendo este a definição dos dias 
+da semana e períodos de horários para acesso a aplicação por usuário, bloqueando seu acesso 
+ao sistema nos demais períodos. 
+
+=== Página 40 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+40 
+ 
+4.41. Prover recurso de agrupamento de usuários, no qual seja possível gerenciar de forma única 
+as permissões vinculadas a um determinado usuário, ou um grupo deles. 
+4.42. Prover recurso de dupla custódia quando o acesso a uma determinada funcionalidade ou 
+ações de exclusão, inclusão e alteração, dentro dela necessitam da autorização de outrem, 
+utilizando o conceito de usuário ou grupo autorizador. 
+4.43. Prover atribuição, para um usuário individualmente ou grupo de usuários, um conjunto de 
+permissões específicas para executar as ações de gravar, consultar e excluir dados, configurações 
+de dupla custódia, para todas as funções que contemplem entrada de dados. 
+4.44. Registrar em arquivo de auditoria as tentativas de login efetuadas com sucesso, bem como 
+as que não obtiveram sucesso, registrando um conjunto de informações sobre data, hora e o 
+usuário. 
+4.45. Realizar a validação dos dados digitados em um campo de um formulário, no momento da 
+inclusão ou alteração de dados, no mesmo instante em que os mesmos estiverem sendo 
+informados. 
+4.46. Prover a atualização dos sistemas nas estações dos usuários finais de forma automática, 
+transparente, a partir de um servidor. 
+4.47. Prover que sejam configurados atalhos para ferramentas externas, para serem acessadas 
+diretamente pelo sistema. Esses atalhos devem ser configurados pelo usuário, através de 
+mecanismo flexível disponível no sistema. 
+4.48. Disponibilizar recurso no sistema onde seja re alizada a execução de comandos de 
+manutenção de dados (scripts) sem a necessidade de acessar diretamente o sistema de 
+gerenciamento de banco de dados, e que esses scripts sejam criptografados. 
+4.49. Prover a visualização de relatórios em tela, possibilitando que os mesmos sejam salvos em 
+disco para posterior reimpressão, distribuição pela rede, inclusive permitindo selecionar a 
+impressão de intervalos de páginas e o número de cópias a serem impressas, além de também 
+permitir a seleção da impressora de rede desejada. 
+4.50. Prover o registro do histórico de acessos às funcionalidades do sistema por usuário, 
+registrando o momento em que ela aconteceu (data/hora), o nome do usuário e detalhes de ações 
+efetuadas (inclusão, alteração e exclusão). 
+4.51. Disponibilizar recurso para que seja configurado nos relatórios o uso da assinatura digital, 
+de forma individual em cada relatório ou em todos de uma só vez. 
+4.52. Disponibilizar recurso para acionamento de suporte técnico através da inclusão de 
+chamados bem como o acompanhamento da evolução dos mesmos a partir dos próprios produtos 
+/ softwares utilizados pelos usuários (sem acesso a ferramenta externa para tal). Também deverá 
+ter recurso de notificação ao usuário quando houver evolução de situação do chamado. 
+4.53. Hospedagem em Nuvem: 
+4.53.1. A hospedagem em datacenter ou nuvem facilita de forma imediata a vida dos usuários e 
+gestores de TI, não sendo à toa que essa tecnologia passou de uma tendência para uma realidade 
+concreta em poucos anos, sendo utilizada no mercado em todos os segmentos. Nesse passo, não 
+
+=== Página 41 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+41 
+ 
+se trata do objeto ou do serviço, mas apenas do ambiente em que este será disponibilizado ao ente 
+contratante, daí ser uma obrigação implícita de funcionamento dos sistemas; 
+4.53.2. Através da tecnologia de armazenamento em nuvem, com comodidade e a segurança, o 
+órgão público reduz os custos com investimento em hardware para o armazenamento de dados e 
+manutenção; 
+4.53.3. A exigência em referência, na realidade, trata do ambiente de utilização do objeto e visa 
+apenas garantir a segurança e integridade dos da dos dos softwares licitados. Assim, os mesmos 
+apenas terão uma proteção e disponibilidade de armazenamento, evitando que algum vírus ou 
+pane traga a suspensão dos trabalhos ou perda de dados; 
+4.53.4. A solução licitada funcionará armazenando dados do município e informações, muitas delas 
+inclusive sigilosas. Por isso, mostra -se imperioso garantir a segurança destes. E, de modo 
+completamente abrangente e não intencionando qualquer restrição; 
+4.53.5. Feito esse importante esclarecimento, vale destacar, ainda, que, tecnicamente e na prática 
+já se comprovou que a alta disponibilidade com redundância geográfica compatível com SLA é o 
+meio adequado para se otimizar o desempenho e as taxas de transmissão na operação de objetos 
+dessa natureza, já que serão demandados volumes de armazenamento que suportem mídias SSD 
+(solid state drive) com o intuito de se alcançar latências da ordem de milissegundos;  
+4.54. Evolução Tecnológica. 
+4.54.1. Sempre que houver uma evolução tecnológica no sistema, a CONTRATADA deverá realizar 
+o aprimoramento técnico sem custos para a CONTRATANTE. 
+Requisitos de Projeto e de Implementação 
+4.55. Conforme detalhado neste Termo de Referência.  
+Requisitos de Implantação 
+4.56. Os requisitos pertencentes às categorias para as quais este Termo de Referência e o Anexo 
+III – Prova de Conceito estabeleçam percentual mínimo de atendimento inferior a 100% (cem por 
+cento), eventualmente não demonstrados pela licitante durante a Prova de Conceito, observado o 
+percentual máximo de não atendimento admitido, deverão ser desenvolvidos, parametr izados, 
+implantados, testados e disponibilizados em perfeito funcionamento pela CONTRATADA dentro 
+dos respectivos prazos de implantação estabelecidos no tópico “Requisitos Temporais” deste 
+Termo de Referência. 
+4.56.1. Ao término do prazo de implantação do respecti vo módulo ou solução, será exigido o 
+atendimento integral de 100% (cem por cento) dos requisitos previstos neste Termo de Referência, 
+inclusive daqueles cuja demonstração tenha sido dispensada em razão do percentual mínimo de 
+atendimento admitido na Prova de Conceito. 
+4.56.2. Não será admitida a implementação dos requisitos remanescentes em prazo posterior ao 
+estabelecido para a implantação do respectivo módulo ou solução, ressalvada exclusivamente a 
+hipótese de prorrogação do prazo de implantação expressamente pre vista neste Termo de 
+Referência. 
+Requisitos de Experiência Profissional 
+
+=== Página 42 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+42 
+ 
+4.57. Os serviços de assistência técnica e suporte deverão ser prestados por técnicos 
+devidamente capacitados nos produtos em questão, bem como com todos os recursos ferramentais 
+necessários para a prestação dos serviços; 
+Requisitos de Formação da Equipe 
+4.58. Acompanhamento Permanente: 
+4.58.1. A Contratada deverá disponibilizar profissional técnico qualificado para dar assessoria 
+conforme detalhado no Termo de Referência. Fisicamente ou de forma remota, para atendimento 
+a implementação de novas ferramentas, treinamentos, entre outras atividades do dia a dia. 
+Requisitos de Metodologia de Trabalho 
+4.59. A execução dos serviços está condicionada ao recebimento pelo Contratado de Ordem de 
+Serviço (OS) emitida pela Contratante. 
+4.60. A OS indicará o serviço, a quantidade e a localidade na qual os deverão ser prestados. 
+4.61. O Contratado deve fornecer meios para contato e registro de ocorrências da seguinte forma: 
+com funcionamento de 8:00 às 17:00 horas por dia e de segunda a sexta-feira de maneira eletrônica 
+ou por via telefônica. 
+Sustentabilidade 
+4.62. A CONTRATADA deverá adotar, no que couber, as disposições da Instrução Normativa 
+SLTI/MP nº 01/2010; da Resolução Conama nº 362, de 23 de junho de 2005; da Resolução 
+Conama nº 416, de 30 de setembro de 2009; bem como da Resolução Conama nº 340, de 25 de 
+setembro de 2003, para que seja assegurada a viabilidade técnica e o adequado tratamento dos 
+impactos ambientais específicos. 
+4.63. É de responsabilidade da CONTRATADA, adotar, na pre stação dos serviços objeto desta 
+contratação, no que couber, as práticas de sustentabilidade constantes nas disposições da 
+Instrução Normativa SLTI/MPOG nº 1, de 19 de janeiro de 2010, bem como que sejam observados 
+os requisitos ambientais do Instituto nacional de Metrologia, Normalização e Qualidade Industrial – 
+INMETRO para uso de produtos sustentáveis ou de menos impacto ambiental em relação aos seus 
+similares. 
+4.64. No que couber, visando a atender o disposto na legislação aplicável, em destaque a IN 
+SGD-ME nº 94/2022, a CONTRATADA deverá priorizar, para o fornecimento do objeto, a utilização 
+de bens que sejam no todo ou em parte compostos por materiais recicláveis, atóxicos e 
+biodegradáveis. 
+Da exigência de carta de solidariedade 
+4.65. Não será exigida a carta de solidariedade. 
+Subcontratação 
+4.66. Será admitida a subcontratação parcial de parcelas acessórias ou especializadas 
+necessárias à execução da solução, limitada a 25% (vinte e cinco por cento) do valor total 
+contratado, mediante prévia e expressa autorização da CO NTRATANTE, permanecendo a 
+CONTRATADA integralmente responsável pela execução, qualidade, segurança, disponibilidade e 
+conformidade dos serviços subcontratados. 
+
+=== Página 43 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+43 
+ 
+4.66.1. Poderão ser objeto de subcontratação, desde que não impliquem transferência da 
+responsabilidade técnica e contratual da solução principal, serviços especializados de 
+infraestrutura de datacenter e computação em nuvem, telecomunicações, conectividade, serviços 
+especializados de segurança, monitoramento, backup, continuidade e outros serviços acessório s 
+necessários ao funcionamento da solução. 
+4.66.2. A eventual utilização de infraestrutura de computação em nuvem pertencente a terceiro não 
+afastará a responsabilidade integral da CONTRATADA pelo cumprimento de todos os requisitos 
+de segurança, disponibilidade, continuidade, desempenho, certificação, proteção e tratamento de 
+dados estabelecidos neste Termo de Referência. 
+4.66.3. A CONTRATADA deverá comunicar previamente à CONTRATANTE qualquer 
+subcontratação pretendida, identificando a empresa subcontratada, o respectivo o bjeto e sua 
+participação na execução contratual, ficando sua efetivação condicionada à autorização da 
+Administração. 
+Da verificação de amostra / prova de conceito 
+4.67. A apresentação técnica dos sistemas será realizada pela licitante convocada em sessão 
+pública, na data e horário previamente definidos pela Administração, podendo ocorrer de forma 
+presencial, remota ou híbrida, conforme definido na convocação, observados os princípios da 
+isonomia, publicidade, julgamento objetivo e vinculação ao instrumento convocatório. 
+4.67.1. Quando adotada a modalidade presencial, a demonstração será realizada em 
+dependência indicada pela Administração no Município de Rio das Ostras. 
+4.67.2. Quando adotada a modalidade remota ou híbrida, será assegurado à Comissão 
+Técnica Avaliadora e aos demais interessados o acompanhamento da sessão por meio de 
+ferramenta tecnológica adequada. 
+4.68. O prazo para a demonstração dos sistemas pela licitante vencedora será de 05 (cinco) dias 
+úteis. 
+4.69. A análise da apresentação do sistema será encargo de Comissão técnica avaliadora, a ser 
+nomeada em ato prévio devidamente publicado na imprensa oficial, e será realizada em até 05 
+(cinco) dias úteis após a convocação do Pregoeiro, onde serão confrontadas as informações 
+constantes na proposta e na demonstração com as especificações preestabelecidas no Termo de 
+Referência e Edital. 
+4.70. Após devidamente habilitado, o licitante será convocado no dia da sessão pelo pregoeiro 
+para em até 05 (cinco) dias úteis iniciar a Apresentação Técnica do Sistema, a fim de comprovar o 
+atendimento dos requisitos citados neste TR. 
+4.71. A licitante que não cumprir os prazos estabelecidos será imediatamente desclassificada. 
+Contudo, caso, durante a demonstração da Prova de Conceito, seja constatada ausência, falha ou 
+insuficiência na demonstração de requisito previsto no instrumento convocatório, será concedido à 
+licitante o prazo improrrogável de 2 (dois) dias úteis para realizar a complementação, limitada 
+exclusivamente aos itens expressamente apontados pela Comissão Técnica Avaliadora, vedada a 
+alteração substancial da solução apresentada, hipótese em que, não realizada a complementação 
+no prazo ou persistindo o não atendimento aos requisitos exigidos, a licitante será desclassificada. 
+
+=== Página 44 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+44 
+ 
+4.72. A demonstração técnica da solução poderá ser realizada de forma prese ncial, remota ou 
+híbrida, mediante utilização de ferramentas tecnológicas de videoconferência, acesso remoto ou 
+outras soluções equivalentes que permitam à Comissão Técnica acompanhar, em tempo real, a 
+execução e comprovação das funcionalidades exigidas neste Termo de Referência. 
+4.72.1. A modalidade de realização da demonstração deverá ser aplicada de forma isonômica aos 
+licitantes convocados, observando -se critérios objetivos previamente estabelecidos, vedada a 
+adoção de condições distintas que possam proporcionar vantagem ou ônus diferenciado entre os 
+participantes. 
+4.72.2. Quando a Prova de Conceito for realizada presencialmente nas dependências indicadas 
+pela Administração, caberá à CONTRATANTE disponibilizar o espaço físico necessário à 
+realização da sessão, energia e létrica e acesso à internet para utilização da Comissão Técnica 
+Avaliadora. Caberá à licitante disponibilizar o ambiente funcional da solução, credenciais de 
+acesso, dados fictícios necessários à demonstração e os equipamentos e demais recursos 
+tecnológicos sob seu domínio necessários à apresentação de sua solução. 
+4.72.3. Quando a Prova de Conceito for realizada de forma remota ou híbrida, a licitante será 
+responsável por disponibilizar, sem ônus para a Administração, o ambiente funcional da solução, 
+as credenciai s de acesso, os dados fictícios eventualmente necessários à demonstração e os 
+demais recursos tecnológicos sob seu domínio indispensáveis à comprovação dos requisitos 
+previstos no edital, bem como por assegurar a participação de seus representantes técnico s por 
+meio da plataforma de videoconferência ou outro meio previamente definido. A Administração será 
+responsável pela disponibilização do meio de comunicação e dos recursos necessários à 
+participação de seus representantes e da Comissão Técnica Avaliadora, não podendo ser exigido 
+da licitante o deslocamento ou a instalação de equipamentos nas dependências da Administração, 
+salvo quando expressamente necessária à demonstração de requisito técnico específico previsto 
+no instrumento convocatório. 
+4.72.4. Não será exigida a presença física de representante, procurador ou técnico da licitante para 
+cada módulo objeto da demonstração, devendo a empresa assegurar, durante toda a sessão, a 
+disponibilidade de profissionais tecnicamente capacitados para apresentar a solução, prestar 
+esclarecimentos e executar os procedimentos solicitados pela Comissão Técnica. 
+4.72.5. A demonstração deverá possibilitar a execução efetiva das funcionalidades previstas neste 
+Termo de Referência, incluindo, quando aplicável, inclusão, alteração, exclusão  e consulta de 
+dados, geração de relatórios, execução de rotinas, integração entre módulos e demais 
+procedimentos necessários à comprovação objetiva do atendimento aos requisitos. 
+4.72.6. A Comissão Técnica poderá solicitar a repetição de procedimentos, realização de consultas, 
+inserção de dados de teste ou execução de operações adicionais diretamente relacionadas aos 
+requisitos avaliados, com a finalidade de assegurar a adequada comprovação das funcionalidades 
+da solução. 
+4.72.7. As sessões de demonstração deverão ser int egralmente gravadas e documentadas, 
+inclusive quando realizadas de forma remota ou híbrida, devendo os respectivos registros ser 
+juntados ao processo administrativo para fins de transparência, fiscalização e eventual controle 
+posterior. 
+
+=== Página 45 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+45 
+ 
+4.72.8. Os links de acesso,  horários, ferramentas utilizadas e demais orientações necessárias à 
+participação e acompanhamento da sessão deverão ser previamente divulgadas pela 
+Administração, garantindo -se publicidade ao procedimento e condições adequadas de 
+acompanhamento pelos interessados, respeitadas as limitações técnicas da plataforma utilizada. 
+4.72.9. A eventual ocorrência de falha técnica imputável à licitante, que impeça a continuidade ou 
+a comprovação da funcionalidade avaliada, será registrada pela Comissão Técnica, observadas as 
+regras de avaliação e os prazos estabelecidos neste Termo de Referência. 
+4.73. Aprovada pela comissão técnica avaliadora a utilização de ferramentas tecnológicas de 
+apresentação, os links deverão ser gerados de acordo com a ferramenta que for definida, e a 
+comissão técnica de avaliação irá dar a devida publicidade para que todos os interessados possam 
+acompanhar a realização dos testes, respeitado o limite de participantes por cada apresentação 
+previsto na sala virtual que for criada. 
+4.74. Durante a realização dos testes utilizando-se a ferramenta tecnológica definida, somente a 
+comissão técnica avaliadora, o proponente que estiver fazendo a sua apresentação poderá se 
+manifestar, os demais participantes ficarão somente como ouvintes e não poderão em hipótese 
+alguma se manifestar no ato da apresentação diretamente a quem tiver apresentando ou a 
+comissão técnica avaliadora. 
+4.75. Todas as dúvidas deverão ser manifestadas no final da avaliação de cada módulo onde 
+será avaliada a procedência do questionamento pela comissão técnic a avaliadora e o licitante 
+classificado responsável pela apresentação da conformidade responderá o questionamento 
+durante a apresentação do módulo. 
+4.76. A exposição da conformidade da solução deverá ser por cada módulo demonstrando todos 
+os requisitos da Fase 1 e todos os obrigatórios da Fase 2 descritos no Termo de Referência. 
+4.77. A avaliação da Prova de Conceito observará os critérios e percentuais mínimos de 
+atendimento expressamente estabelecidos no Anexo III – Prova de Conceito, devendo a solução 
+ofertada atender, no mínimo, a 90% (noventa por cento) dos requisitos relativos às Características 
+Gerais do Sistema e, individualmente, a 90% (noventa por cento) dos requisitos previstos para 
+cada módulo, de forma nativa ou parametrizável, sendo exigido o atendimento i ntegral de 100% 
+(cem por cento) exclusivamente dos requisitos relativos às Características Gerais do Provedor em 
+Nuvem (Cloud Computing). 
+4.78. A avaliação será dividida em etapas conforme abaixo definidas, e todo o processo será 
+avaliado por uma Comissão técnica avaliadora, composta de Técnicos e servidores da Prefeitura 
+capazes de avaliar a conformidade da solução, e isto nas condições objetivas e claras em 
+conformidade com os Requisitos Funcionais e Requisitos Tecnológicos Obrigatórios definidos  no 
+Termo de Referência e conforme descritos nas Fases 1 e 2 logo abaixo. 
+4.79. FASE 1: DEMONSTRAÇÃO ITEM A ITEM DOS REQUISITOS TECNOLÓGICOS 
+OBRIGATÓRIOS: 
+4.79.1. A Fase 1 ou seja a demonstração dos Requisitos Tecnológicos obrigatórios conforme 
+definidos no Termo de Referência, do licitante que apresentar a melhor proposta comercial na fase 
+de lances, após devidamente habilitado será realizada primeiramente; 
+
+=== Página 46 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+46 
+ 
+4.79.2. Ao final da demonstração dos requisitos correspondentes à Fase 1, a Comissão Técnica 
+Avaliadora apurará o percentu al de atendimento alcançado pela solução apresentada. Para 
+aprovação nesta fase, a licitante deverá atender, no mínimo, a 90% (noventa por cento) dos 
+requisitos relativos às Características Gerais do Sistema e a 100% (cem por cento) dos requisitos 
+relativos às Características Gerais do Provedor em Nuvem (Cloud Computing), conforme 
+estabelecido no Anexo III – Prova de Conceito; 
+4.79.3. Caso a solução apresentada não alcance qualquer dos percentuais mínimos definidos no 
+item anterior, após observada, quando aplicável , a oportunidade de complementação prevista no 
+item 4.71 deste Termo de Referência, a licitante será desclassificada, cabendo ao Pregoeiro 
+convocar a licitante subsequente, observada a ordem de classificação, para realização da 
+respectiva Prova de Conceito, aplicando-se os mesmos critérios e percentuais de avaliação. 
+4.80. FASE 2: DEMONSTRAÇÃO ITEM A ITEM E POR CADA MÓDULO DOS REQUISITOS 
+FUNCIONAIS: 
+4.80.1. Somente será submetida à Fase 2 da Prova de Conceito a licitante que tenha alcançado, 
+na Fase 1, os percentuais mín imos estabelecidos neste Termo de Referência. Na Fase 2, cada 
+módulo funcional será avaliado individualmente, devendo a solução ofertada atender, no mínimo, 
+a 90% (noventa por cento) dos respectivos requisitos funcionais, de forma nativa ou parametrizável, 
+conforme estabelecido no Anexo III – Prova de Conceito; 
+4.80.1.1. O não atendimento ao percentual mínimo de 90% (noventa por cento) em qualquer 
+módulo implicará a reprovação da solução, após observada, quando aplicável, a oportunidade de 
+complementação prevista nos itens deste documento, cabendo ao Pregoeiro convocar a licitante 
+subsequente na ordem de classificação. 
+4.80.2. Cabe ressaltar que cada módulo será avaliado de forma objetiva conforme os itens descritos 
+para o mesmo, deste modo, um item somente será considerado “de acordo” se estiver apto em sua 
+totalidade. Isso implica que todos os seus subitens, obrigatoriamente, sejam atendidos, não sendo 
+considerados válidos os itens compostos que atendam apenas parte de seus subitens; 
+4.80.3. A licitante deverá assegurar a disponibil idade e o adequado funcionamento do ambiente 
+tecnológico de sua solução durante toda a demonstração, incluindo sistema, base de testes, 
+credenciais, dados fictícios e demais componentes necessários à execução das funcionalidades 
+objeto da avaliação; 
+4.80.4. Os rec ursos adicionais necessários exclusivamente à apresentação da solução e que 
+estejam sob domínio da licitante deverão ser por ela providenciados, sem ônus adicional para a 
+Administração; 
+4.80.5. Quando a demonstração ocorrer presencialmente, a Administração disponi bilizará local 
+físico adequado, energia elétrica e acesso à internet para utilização de sua Comissão Técnica 
+Avaliadora. Quando realizada de forma remota ou híbrida, aplicar -se-á a divisão de 
+responsabilidades estabelecidas neste Termo de Referência; 
+4.80.6. A apresentação deverá ser feita em ambiente simulado pelo proponente, contando com 
+todos os equipamentos e conexões que o mesmo considerar necessárias, de modo a realizar em 
+tempo de execução, ou seja: cada funcionalidade deverá ser simulada contemplando inclusões de 
+dados, exclusões de dados, alterações de dados, emissões de relatórios, gerações de consultas, 
+
+=== Página 47 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+47 
+ 
+produção de arquivos, envio de mensagens para usuários por e -mail e sms, enfim a realização 
+efetiva de cada item constante em cada requisito exigido; 
+4.80.7. Caso, o proponente não consiga qualificar o seu produto nesta fase de apresentação, o 
+mesmo será desclassificado e o proponente seguinte, conforme lista de classificados, será 
+convocado para o mesmo processo de demonstração. Esta etapa será realizada até que u m 
+proponente consiga atender ao quanto exigido no presente certame. Caso nenhum proponente 
+seja habilitado a Entidade Municipal encerrará o certame sem proceder a homologação do objeto 
+a nenhum dos interessados; 
+4.80.8. As apresentações dos licitantes serão integr almente documentadas utilizando -se os 
+métodos e recursos que se fizerem necessários. Os arquivos gerados serão juntados ao processo 
+e visam dar completa transparência e lisura ao mesmo, em relação a todos os atos praticados, 
+demonstrando aos interessados, bem como, aos órgãos de fiscalização e controle a correção dos 
+gestores e demais envolvidos no julgamento deste processo; 
+4.80.9. As fases de apresentação não poderão ser alteradas e será primeiro realizada a fase 1, 
+para somente depois ser realizada a Fase 2 conforme descritas acima; 
+4.80.10. A ordem de apresentação dos módulos da Fase 2 deverá ser conforme a ordem da 
+especificação técnica detalhada; 
+4.80.11. Em atendimento ao princípio da eficiência Princípio do Julgamento Objetivo, 
+Princípio da vinculação ao instrumento convocatório, e ainda Princípio da Celeridade, caso o 
+proponente ao final da apresentação de qualquer dos módulos não atenda ao percentual mínimo 
+dos Requisitos Funcionais conforme Termo de Referência , conforme comprovado e apontado em 
+ata, o licitante será imediatamente desclassificado, e desta forma o Pregoeiro convocará a empresa 
+licitante subsequente, na ordem de classificação, para que se habilitada faça a respectiva 
+demonstração da fases conforme definidas neste Termo de Referência; 
+4.80.12. Após a finalização da demonstração de todos os módulos, a comissão técnica 
+avaliadora lavrará uma ata da sessão e posteriormente em sessão pública convocada pelo 
+Pregoeiro apresentará relatório detalhado da análise da conformidade da apresentação do licitante 
+classificado; 
+4.80.13. O questionário com as funcionalidades obrigatórias e gerais estão dispostas no 
+Anexo III. 
+4.81. JUSTIFICATIVA TÉCNICA DOS PERCENTUAIS ESTABELECIDOS PARA A PROVA DE 
+CONCEITO 
+4.81.1. A definição dos percentuais mínimos de atendimento estabelecidos para a Prov a de 
+Conceito considerou a natureza, complexidade e abrangência da solução integrada de gestão 
+pública objeto da contratação, composta por elevado número de funcionalidades distribuídas entre 
+diversos módulos administrativos, financeiros, contábeis e operacionais. 
+4.81.2. Para as Características Gerais do Sistema e para os requisitos funcionais de cada módulo 
+foi estabelecido percentual mínimo de atendimento de 90% (noventa por cento), de forma nativa 
+ou parametrizável. Tal percentual busca compatibilizar a necessidade de demonstração efetiva de 
+que a solução ofertada se encontra madura, operacional e substancialmente aderente às 
+necessidades da Administração com a preservação da ampla competitividade do certame. 
+
+=== Página 48 ===
+  
+EDITAL – PREGÃO ELETRÔNICO Nº 552/2026 
+PROCESSO ADMINISTRATIVO Nº 44505/2025 – GOVTIC 
+48 
+ 
+4.81.3. Considerando as particularidades dos processos admini strativos de cada ente público, é 
+tecnicamente comum que soluções de gestão pública demandem parametrizações e adequações 
+residuais para atendimento integral de procedimentos específicos da Administração contratante. 
+Nesse contexto, exigir o atendimento de 100% de todas as funcionalidades já durante a Prova de 
+Conceito poderia restringir desnecessariamente a competição e privilegiar soluções previamente 
+configuradas para realidade específica. 
+4.81.4. O percentual mínimo de 90% assegura que apenas soluções substanci almente prontas e 
+tecnicamente maduras sejam admitidas, limitando a parcela passível de posterior adequação a, no 
+máximo, 10% dos requisitos de cada categoria ou módulo. 
+4.81.5. Ressalta-se que a flexibilização prevista para a fase de Prova de Conceito não represe nta 
+dispensa definitiva de qualquer requisito. Todos os requisitos não demonstrados durante a POC 
+deverão ser obrigatoriamente desenvolvidos, parametrizados, implantados, testados e 
+disponibilizados pela futura contratada dentro do prazo previsto para implantação, sendo exigido o 
+atendimento integral de 100% dos requisitos para o recebimento definitivo da solução. 
+4.81.6. Diversamente, para as Características Gerais do Provedor em Nuvem – Cloud Computing, 
+foi mantida a exigência de atendimento de 100% (cem por cento), por se tratarem de características 
+estruturais relacionadas à segurança, disponibilidade, continuidade, capacidade, proteção e 
+recuperação dos dados e infraestrutura necessária à sustentação da solução. 
+4.81.7. Tais requisitos não correspondem, em regra, a fun cionalidades passíveis de 
+desenvolvimento ou simples parametrização posterior do sistema, constituindo características que 
+devem estar previamente disponíveis para que a infraestrutura possa ser considerada apta a 
+hospedar os sistemas e dados da Administração. 
+4.81.8. Dessa forma, a diferenciação dos percentuais de 90% e 100% encontra fundamento na 
+própria natureza técnica dos requisitos avaliados, preservando simultaneamente a competitividade 
+do certame e a segurança necessária à contratação 
+Garantia da Contratação 
+4.82. O Contrato conta com garantia de execução, nos moldes do , de 01 de abril de 2021, 
+correspondente a 5 % (cinco por cento) de seu valor do Contrato. 
+4.83. O contratado apresentará, no prazo máximo de 10 (dez) dias úteis, prorrogáveis por igual 
+período, a critério do contratante, contado da assinatura do contrato, comprovante de prestação de 
+garantia, podendo optar por caução em dinheiro ou títulos da dívida pública ou, ainda, pela fiança 
+bancária, em valor correspondente a 5% (cinco por cento) do valor inicial/total/anual do contrato. 
+4.84. Caso utilizada a modalidade de seguro -garantia, a apólice deverá ter validade durante a 
+vigência do contrato e por mais 90 (noventa) dias após término deste prazo de vigência, 
+permanecendo em vigor mesmo que o contratado não pague o prêmio nas datas convencionadas. 
+4.85. A apólice do seguro garantia deverá acompanhar as modificações referentes à vigência do 
+contrato principal mediante a emissão do respectivo endosso pela seguradora. 
+4.86. Será permitida a substituição da apólice de segu ro-garantia na data de renovação ou de 
+aniversário, desde que mantidas as condições e coberturas da apólice vigente e nenhum período 
+fique descoberto, ressalvado o disposto no parágrafo seguinte. 

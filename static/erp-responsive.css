@@ -1,0 +1,2 @@
+.breadcrumb{min-width:0;flex:1}.breadcrumb strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.top-actions{flex-shrink:0}
+@media(max-width:1020px){.sidebar{transform:translateX(-100%);width:246px;transition:transform .2s}.sidebar.open{transform:translateX(0)}.scrim.open{display:block;position:fixed;inset:0;background:#001d1b80;z-index:29}.layout{margin-left:0}.menu-toggle{display:inline-flex}.breadcrumb>span:first-of-type{display:none}.user-menu>div:not(.avatar),.user-menu>.icon{display:none}}

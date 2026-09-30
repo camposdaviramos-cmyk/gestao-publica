@@ -1,0 +1,147 @@
+[transparency.1] (p. 155) -> Permitir a impressão dos resultados das consultas. Para tanto, o usuário após preencher os dados pertinentes à consulta e gerar as informações, poderá imprimi-las através do botão "imprimir".
+[transparency.2] (p. 155) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.3] (p. 155) -> Possibilidade de mergulhar nas informações até chegar ao empenho que originou a despesa orçamentária.
+[transparency.4] (p. 155) -> Possibilidade de mergulhar nas informações até chegar aos credores com seus respectivos empenhos que originaram a despesa orçamentária.
+[transparency.5] (p. 155) -> Histórico de navegação e filtros utilizados em cada consulta.
+[transparency.6] (p. 155) -> Resumo explicativo em todas as consultas da Receita e da Despesa. Esta informação deve ser parametrizável, ficando a critério do administrador do sistema informar o conteúdo que achar necessário.
+[transparency.7] (p. 155) -> Movimentação diária das despesas, contendo o número do empenho, data de emissão, unidade gestora e credor, além do valor empenhado, em liquidação (esta informação deve ser parametrizável pelo administrador do sistema), liquidado, pago e anulado relacionado ao empenho e ao período informado.
+[transparency.8] (p. 155) -> Movimentação diária das despesas, com possibilidade de impressão dos empenhos orçamentários, extra orçamentários e de restos a pagar.
+[transparency.9] (p. 155) -> Movimentação diária das despesas, com possibilidade de selecionar os registros por: período, unidade gestora, credor, documento do credor (CPF/CNPJ), número do empenho e tipo do empenho (orçamentário, extra orçamentário ou restos a pagar).
+[transparency.10] (p. 155) -> Dados cadastrais do empenho com as seguintes informações: Unidade gestora; Data de emissão; Funcional programática; Categoria Econômica; Grupo da Despesa; Modalidade de Aplicação; Natureza da Despesa; Desdobramento da Despesa; Fonte de recursos; Credor, com seu respectivo documento; Tipo, número, ano e data de homologação da licitação (quando houver); Número do processo de compra (quando houver); Número do convênio (quando houver); Número do contrato (quando houver); Descrição da conta extra (para os empenhos extra orçamentários); Itens do empenho com as suas respectivas quantidades, unidade e valor unitário; Registros de comprovação da despesa (opcional).
+[transparency.11] (p. 156) -> Histórico do empenho contendo descrição do item, quantidade, unidade, valor unitário e valor total.
+[transparency.12] (p. 156) -> Histórico das liquidações contendo data de liquidação, número de liquidação, complemento histórico, valor liquidado e valor estornado.
+[transparency.13] (p. 156) -> Histórico dos pagamentos contendo data do pagamento, número do pagamento, número de liquidação, complemento histórico, valor pago e valor estornado.
+[transparency.14] (p. 156) -> Histórico das retenções contendo data da retenção, número da retenção, número de liquidação, complemento histórico, valor da retenção e valor estornado.
+[transparency.15] (p. 156) -> Dados de movimentação do empenho contendo os valores: empenhado, em liquidação (esta informação deve ser parametrizável pelo administrador do sistema), liquidado, pago e anulado.
+[transparency.16] (p. 156) -> Filtros para selecionar o exercício, mês inicial / final, e Unidade Gestora.
+[transparency.17] (p. 156) -> Movimentação das Despesas e Receitas de uma determinada unidade gestora ou de todas de forma consolidada.
+[transparency.18] (p. 156) -> Movimentação das Despesas por Classificação Institucional, contendo valores individuais e totais por Órgão, Unidade, 3º Nível (quando existir), Natureza da Despesa e Credores.
+[transparency.19] (p. 156) -> Movimentação das Despesas por Programa de Governo, contendo valores individuais e totais por Programa de Governo, Ação de Governo, Natureza da Despesa e Credores.
+[transparency.20] (p. 156) -> Movimentação das Despesas por Ação de Governo, contendo valores individuais e totais por Tipo da Ação (Projeto, Atividade, Operação Especial), Ação de Governo, Natureza da Despesa e Credores.
+[transparency.21] (p. 156) -> Movimentação das Despesas por Categoria Econômica, conten do valores individuais e totais por Natureza da Despesa, Grupo de Despesa, Modalidade de Aplicação, Elemento de Despesa e Credores.
+[transparency.22] (p. 156) -> Movimentação das Despesas por Fonte de Recursos, contendo valores individuais e totais por Fonte de Recursos, Detalhamento da Fonte, Natureza da Despesa e Credores.
+[transparency.23] (p. 156) -> Movimentação das Despesas por Esfera Administrativa, contendo valores individuais e totais por Esfera, Natureza da Despesa e Credores.
+[transparency.24] (p. 156) -> Movimentação das Despesas envolvendo “Diári as”, “Passagens” e “Adiantamentos de Viagem”, contendo valores individuais e totais por Credor, além de dados complementares que mostram a Lei Autorizativa, Ato de Concessão, Data Inicial / Final da Viagem, Meio de Transporte, Objetivo da Viagem, Quantidade de Diárias, Valor Unitário das Diárias, Valor Total, Matrícula, Nome e Cargo dos Beneficiários.
+[transparency.25] (p. 156) -> Movimentação de Arrecadação das Receitas por Natureza da Receita, contendo valores individuais e totais por Categoria Econômica, Origem, Espécie, Rubrica, Alínea, Sublínea e Detalhamento.
+[transparency.26] (p. 157) -> Movimentação de Arrecadação das Receitas por Fonte de Recurso s, contendo valores individuais e totais por Natureza da Receita, Origem, Espécie, Rubrica, Alínea, Sublínea e Detalhamento.
+[transparency.27] (p. 157) -> Movimentação de Arrecadação das Receitas contendo os valores de Previsão Inicial, Previsão das Deduções, Previsão Atualizada Líquida, Arrecadação Bruta, Deduções da Receita e Arrecadação Líquida.
+[transparency.28] (p. 157) -> Movimentação das Despesas contendo os valores da Dotação Inicial, Créditos Adicionais, Dotação Atualizada, Valor Empenhado, em Liquidação (esta informação deve ser parametrizável pelo administrador do sistema), Valor Liquidado e Valor Pago.
+[transparency.29] (p. 157) -> Movimentação diária de arrecadação das receitas, contendo os valores totais de arrecadação no dia, no mês e no período selecionado.
+[transparency.30] (p. 157) -> Movimentação diária das despesas, contendo os valores totais efetuados no dia, no mês e no período selecionado.
+[transparency.31] (p. 157) -> Movimentação dos empenhos a pagar contendo a Data de Vencimento, Fornecedor, Valor a Pagar, Número do Empenho, Tipo do Empenho, Fonte de Recursos, Descrição do Movimento, Processo Licitatório (se houver), Valor Empenhado e Valor a Pagar.
+[transparency.32] (p. 157) -> Movimentação de recursos financeiros extraorçamentários repassados entre entidades públicas da mesma esfera de governo contendo unidade concessora / recebedora, finalidade da transferência, programação inicial, histórico de movimentos e resumo da transferência.
+[transparency.33] (p. 157) -> Movimentação de recursos recebidos da União, Estado ou outras entidades contendo a origem, fonte de recursos, detalhamento da fonte, previsão bruta, previsão das deduções, previsão líquida, arrecadação bruta, deduções e arrecadação líquida.
+[transparency.34] (p. 157) -> Movimentação de recursos concedidos a outras entidades para consecução de atividades de interesse público, que não sejam decorrentes de determinação legal ou constitucional contendo o tipo da transferência, nome do beneficiário, CPF / CNPJ, valor empenhado, valor liquidado, valor pago e valor anulado, bem como os detalhes do empenho realizado.
+[transparency.35] (p. 157) -> Visão detalhada da Ordem Cronológica de Pagamentos, demonstrando fonte de recursos, empenho, histórico do empenho, data de liquidação, data de vencimento, data de pagamento, CPF / CNPJ do fornecedor, nome/razão social do fornecedor, valor, situação (a paga r, pagos, todos), contrato, processo licitatório, processo de compra, processo administrativo, processo de pagamento.
+[transparency.36] (p. 157) -> Localização de uma despesa, como o(s) bairro(s) ou regiões beneficiárias dos referidos gastos.
+[transparency.37] (p. 157) -> Possibilidade de buscar as despesas filtrando por data
+[transparency.38] (p. 157) -> Apresentar a relação de participantes da Licitação, bem como a relação de fornecedores classificados, desclassificados e o motivo da desclassificação.
+[transparency.39] (p. 157) -> Apresentar os vencedores e seus respectivos fornecimentos à unidade gestora, identificando seus contratos e itens fornecidos.
+[transparency.40] (p. 157) -> Apresentar os produtos consumidos e seus respectivos fornecedores e contratos, permitindo selecioná-los por unidade gestora, descrição e períodos.
+[transparency.41] (p. 157) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.42] (p. 157) -> Possibilidade de impressão de todas as informações que são disponibilizadas.
+[transparency.43] (p. 157) -> Data da última atualização dos dados efetuada.
+[transparency.44] (p. 157) -> Data da abertura das propostas.
+[transparency.45] (p. 157) -> Informações do quadro de servidores ativos contendo nome, matrícula, cargo/função, lotação e vínculo.
+[transparency.46] (p. 157) -> Informações dos servidores efetivos contendo legislação regulamentadora, data de admissão, forma de contratação, carga horária, horário de trabalho e situação funcional
+[transparency.47] (p. 158) -> Informações dos servidores comissionados contendo data de nomeação, número do ato de nomeação, data de exoneração, número do ato de exoneração, existência de vínculo efetivo, carga horária, detalhamento das atribuições, legislação regulamentadora e situação funcional.
+[transparency.48] (p. 158) -> Informações dos servidores cedidos/recebidos contendo legislação regulamentadora, carga horária, número do ato de cessão, ônus do pagamento e prazo de cessão.
+[transparency.49] (p. 158) -> Informações dos servidores temporários contendo data inicial e final da contratação.
+[transparency.50] (p. 158) -> Informações dos estagiários contendo data de admissão, curso vinculado ao estágio e carga horária.
+[transparency.51] (p. 158) -> Informações do quadro de servidores inativos contendo nome, matrícula, cargo / função em que se deu a aposentadoria, data de ingresso no quadro de inativos e regime de aposentadoria.
+[transparency.52] (p. 158) -> Informações da quantidade de servidores, salário base, vencimentos totais, descontos e valor líquido em níveis de visão por Entidade, Período, Secretaria, Departamento, Sessão, Setor, Cargo e Servidor.
+[transparency.53] (p. 158) -> Informações analíticas de pagamento contendo matrícula, nome do servidor, cargo, vínculo, data de admissão, salário base, proventos, vantagens, vencimentos totais, descontos e valor líquido em níveis de visão por Entidade e Período.
+[transparency.54] (p. 158) -> Informações detalhadas da folha de pagamento contendo códigos de verbas, descrição das verbas, valores de proventos, vantagens e descontos.
+[transparency.55] (p. 158) -> Informações detalhadas da folha de pagamento complementar contendo códigos de verbas, descrição das verbas, valores de proventos, vantagens e descontos.
+[transparency.56] (p. 158) -> Informações detalhadas da folha de pagamento complementar contendo códigos de verbas, descrição das verbas, valores de proventos, vantagens e descontos.
+[transparency.57] (p. 158) -> Informações detalhadas de rescisão contendo códigos de verbas, descrição das verbas, valores de proventos, vantagens e descontos.
+[transparency.58] (p. 158) -> Informações detalhadas da folha de 13º salário contendo códigos de verbas, descrição das verbas, valores de proventos, vantagens e descontos.
+[transparency.59] (p. 158) -> Informações detalhadas do servidor, contendo nome, matrícula, data admissão, lotação, cargo, carga horária, situação, vínculo e CPF.
+[transparency.60] (p. 158) -> Informações do número de vagas criadas, preenchidas e disponíveis, por cargo, conforme o regime de contratação
+[transparency.61] (p. 158) -> Informações sobre plano de cargos e salários contendo informações sobre código, descrição, lei, faixa salarial, vínculo e quantidade de funcionários dentro da faixa.
+[transparency.62] (p. 158) -> Informações de Concursos em Andamento contendo o tipo de concurso, número/ano, decre to lei, datas de publicação, homologação, validade e prorrogação e anexo, filtrados por órgão e a partir de um determinado mês / ano.
+[transparency.63] (p. 158) -> Informações de Concursos Encerrados contendo o tipo de concurso, número/ano, decreto lei, datas de publicação, homologação, validade e prorrogação e anexo, filtrados por órgão e a partir de um determinado mês/ano.
+[transparency.64] (p. 158) -> Informações de Nomeações e Convocações de servidores públicos aprovados em concurso.
+[transparency.65] (p. 158) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.66] (p. 158) -> Possibilidade de impressão de todas as informações que são disponibilizad as.
+[transparency.67] (p. 158) -> Data da última atualização dos dados efetuada.
+[transparency.68] (p. 158) -> Valores Arrecadados, em níveis de visão por Natureza da Receita, detalhamento das receitas e seus valores.
+[transparency.69] (p. 158) -> Valores Deduzidos, em níveis de visão por Natureza da Receita e seus valores.
+[transparency.70] (p. 158) -> Valores Lançados, Período, Tipo de tributo, Descrição do Tributo e seus valores.
+[transparency.71] (p. 159) -> Valores Lançados detalhados por níveis de Categoria, Origem, Espécie, Rubrica, Alínea, Subalínea e Detalhes (Unidade Gestora, Descrição, Data Lançamento e Valor) de cada Tributo.
+[transparency.72] (p. 159) -> Valores Arrecadados, em níveis de visão por Fonte de Recurso, Natureza da Receita e seus valores.
+[transparency.73] (p. 159) -> Valores Deduzidos, em níveis de visão por Fonte de Recurso, Natureza da Receita e seus valores.
+[transparency.74] (p. 159) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.75] (p. 159) -> Possibilidade de impressão de todas as informações que são disponibilizadas.
+[transparency.76] (p. 159) -> Data da última atualização dos dados efetuada.
+[transparency.77] (p. 159) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.78] (p. 159) -> Possibilidade de impressão de todas as informações que são disponibilizadas.
+[transparency.79] (p. 159) -> Data da última atualização dos dados efetuada.
+[transparency.80] (p. 159) -> Relação de materiais contendo unidade gestora, descrição, unidade de medida, saldo anterior, entradas, saídas e saldo atual
+[transparency.81] (p. 159) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.82] (p. 159) -> Possibilidade de impressão de todas as informações que são disponibilizadas.
+[transparency.83] (p. 159) -> Data da última atualização dos dados efetuada.
+[transparency.84] (p. 159) -> Relação de veículos contendo unidade gestora, tipo de veículo, descrição, data de aquisição, localização, placa, ano de fabricação, situação, tipo do bem, chassi, estado de conservação, número do RENAVAM, combustível utilizado, cor e data de aquisição
+[transparency.85] (p. 159) -> Relação das despesas com abastecimento, impostos e outras manutenções contendo data do movimento, descrição, quantidade e valor.
+[transparency.86] (p. 159) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.87] (p. 159) -> Possibilidade de impressão de todas as informações que são disponibilizadas.
+[transparency.88] (p. 159) -> Data da última atualização dos dados efetuada.
+[transparency.89] (p. 159) -> Possibilidade de consultar as opções de menu disponíveis, publicações e respostas as perguntas frequentes com base em um argumento simples de pesquisa.
+[transparency.90] (p. 159) -> Possibilidade de saber quais são os recursos de acessibilidade disponíveis.
+[transparency.91] (p. 159) -> Possibilidade de consultar, imprimir e exportar as respostas as perguntas mais frequentes que facilitam o entendimento sobre os objetivos e conteúdo do portal.
+[transparency.92] (p. 159) -> Possibilidade de consultar, imprimir e exportar informações sobre a estrutura organizacional da entidade. Tais dados compreendem: nome, endereço, horário de atendimento, telefones, atribuições e responsável.
+[transparency.93] (p. 159) -> Possibilidade de apresentar os principais programas, projetos e ações realizados pelo órgão e unidade gestora.
+[transparency.94] (p. 159) -> Possibilidade de consultar, imprimir e exportar informações sobre o local responsável pelo Serviço de Informações ao Cidadão (SIC). Tais da dos compreendem: nome, endereço, horário de atendimento, telefones, atribuições e responsável.
+[transparency.95] (p. 159) -> Possibilidade de obter informações básicas sobre os pedidos de informação, bem como o endereço eletrônico para efetuar seu registro e acompanhamento.
+[transparency.96] (p. 159) -> Possibilidade de consultar informações do responsável pela manutenção do portal. Tais dados compreendem: nome, endereço, horário de atendimento, telefones e contato eletrônico.
+[transparency.97] (p. 159) -> Possibilidade de disponibilizar o acesso rápido a u ma ou mais consultas sem a necessidade de navegar pelos menus.
+[transparency.98] (p. 160) -> Possibilidade de disponibilizar o acesso via webservice ou outra ferramenta que permita leitura automatizada via API em um formato aberto (geração nos formatos XML e JSON).
+[transparency.99] (p. 160) -> Possibilidade de exportar as informações em um ou mais arquivos através de um formato aberto (não proprietário).
+[transparency.100] (p. 160) -> Possibilidade de criar Menus personalizados no Portal de Transparência. Permitindo ao órgão vincular Links, Páginas da Internet, ou qualquer arquivo dentro dos temas correlatos, bem como destacar algum tema específico.
+[transparency.101] (p. 160) -> Possibilidade de criar submenus nas abas disponíveis no Portal de Transparência personalizáveis a critério do Órgão.
+[transparency.102] (p. 160) -> Apresentar os Contratos da Administração Pública com seus aditivos, reajustes e demais alterações. Permitindo a seleção por exercício, unidade gestora, finalidade, fornecedor, valor e período. Os contratos serão exibidos a partir da data de publicação.
+[transparency.103] (p. 160) -> Apresentar os Processos Licitatórios e afastados de licitação, permitindo selecioná-los pelo exercício, unidade gestora, modalidade, finalidade, objeto e expedição. Os processos serão exibidos a partir da sua data de publicação. Permitir a visualização em processos Lici tatórios já homologados, de despesas não previstas.
+[transparency.104] (p. 160) -> Movimentação das Despesas por Função de Governo Educação, através de uma consulta específica para esta função.
+[transparency.105] (p. 160) -> Movimentação das Despesas por Função de Governo, contendo valores individuais e totais por Função, Subfunção, Programa de Governo, Natureza da Despesa e Credores. Poderá visualizar as despesas de todas as funções ou de uma função em específico.
+[transparency.106] (p. 160) -> Deve permitir a visualização dos contratos de um determinado órgão, através do filtro por órgão.
+[transparency.107] (p. 160) -> Deve permitir a visualização dos Licitações de um determinado órgão, através do filtro por órgão.
+[transparency.108] (p. 160) -> Menu em destaque para o tema COVID -19. Deverá direcionar para uma página específica com acesso as publicações do tema.
+[transparency.109] (p. 160) -> Menu em destaque para o tema COVID -19 com a opção de um menu para visualizar os Contratos específicos do tema.
+[transparency.110] (p. 160) -> Menu em destaque para o tema COVID -19 com a opção de um menu para visualizar as Licitações específicos do tema.
+[transparency.111] (p. 160) -> Menu em destaque para o tema COVID -19 com a opção de um menu para visualizar as Contratações de Pessoal específicos do tema.
+[transparency.112] (p. 160) -> Menu em destaque para o tema COVID -19 com a opção de um menu para visualizar as Despesas específicos do tema.
+[transparency.113] (p. 160) -> Menu em destaque para o tema COVID -19 com a opção de um menu para visualizar as Receitas específicos do tema.
+[transparency.114] (p. 160) -> Possibilitar habilitar e desabilitar os menus / botões do COVID-19.
+[transparency.115] (p. 160) -> Menu em destaque para o tema COVID -19 com a opção de um menu para visualizar Receita X Despesa específicos do tema.
+[transparency.116] (p. 160) -> Possibilitar acessar diretamente a consulta de Licitações com filtro parametrizado, ou seja, sem a necessidade de passar pela tela de filtro.
+[transparency.117] (p. 160) -> Na consulta de ordem cronológica de pagamentos, permitir a exibição das colunas Justificativa e Ordem de Pagamentos.
+[transparency.118] (p. 160) -> Possibilitar habilitar e desabilitar as colunas Justificativa e Ordem de pagamento.
+[transparency.119] (p. 160) -> Menu em destaque para o tema COVID-19 com a opção de habilitar o filtro de Categorias para a consulta de Despesas (Movimentação diária).
+[transparency.120] (p. 160) -> Permitir que ao consultar o termo COVID, sejam listadas todas as consultas do Tema específico.
+[transparency.121] (p. 160) -> Exibir em cada consulta de informação, a Data e a Hora da última atualização por área. Ou seja, ao executar uma consulta no TB de qualquer exercício, será apresentado a Data e Hora da última atualização dessa área nesse exercício.
+[transparency.122] (p. 161) -> Menu em destaque para o tema COVID -19 com a o pção de um menu para visualizar Patrimônios específicos do tema.
+[transparency.123] (p. 161) -> Menu em destaque para o tema COVID -19 com a opção de um menu para visualizar Compras Diretas específicos do tema.
+[transparency.124] (p. 161) -> Possibilitar de criação de Temas e Link relacionados a Calamidade Pública na página do Covid 19.
+[transparency.125] (p. 161) -> Exibir na Página Covid-19 os Temas e Links relacionado a Calamidade Pública.
+[transparency.126] (p. 161) -> Apresentar o “Código da Fundamentação” na tela de detalhamento da Licitação, área de Informações do Edital.
+[transparency.127] (p. 161) -> Demonstrar na consulta de licitações os fornecedores vencedores da licitação, a partir da adjudicação do processo, momento no qual, são declarados os fornecedores como vencedores.
+[transparency.128] (p. 161) -> Possibilitar a consulta de Licitações para todas as combinações de Modalidades.
+[transparency.129] (p. 161) -> Possibilitar consultar empenhos de “Restos a Pagar” em Consulta de Despesas > Covid-19
+[transparency.130] (p. 161) -> Permitir a visualização das etapas de empenho, colunas Valor do Empenho, em Liquidação, Liquidado, Pago e Anulado.
+[transparency.131] (p. 161) -> Permitir a visualização das Fonte de Recurso nas consultas de Despesas > Covid- 19.
+[transparency.132] (p. 161) -> Permitir a consulta de arquivos anexos de bens patrimoniais.
+[transparency.133] (p. 161) -> Relação de bens contendo identificação do bem, unidade gestora, descrição, número da placa, situação, data de aquisição, valor de aquisição, tipo de ingresso, data da baixa, tipo da baixa, valor atual, data de avaliação, nota fiscal, número série, processo licitatório, fornecedor, data de cedência, data de devolução, documento de entrega, documento de recebimento, observação de ingresso, observação de saída.
+[transparency.134] (p. 161) -> Permitir a visualização do Fornecedor na consulta de Estoque.
+[transparency.135] (p. 161) -> Proporcionar ao usuário uma consulta com mais detalhado dos tipos de Despesas Diárias, Passagens e Adiantamento com a inclusão do filtro Desdobramentos das Despesas.
+[transparency.136] (p. 161) -> Possibilitar a visualização do Número do Processo Administrativo nas consultas de Contratos e Licitações para amplia a transparência.
+[transparency.137] (p. 161) -> Viabilizar a consulta da informação do Custo com Meio de Transporte na consulta de Diárias.
+[transparency.138] (p. 161) -> Possibilitar a consulta de "DESPESA COVID19", onde as despesas “Orçamentárias” e "Restos a Pagar" possam ser consultadas separadamente.
+[transparency.139] (p. 161) -> Apresentar a ordenação de qualquer publicação em ordem decrescente de Data de Inclusão, caso o usuário não utilize o parâmetro de Critérios de Ordenação contido na página de Filtro de Publicações.
+[transparency.140] (p. 161) -> Apresentar Temas da página específica do COVID19 no Portal de Transparências em ordem alfabética.
+[transparency.141] (p. 161) -> Apresentar indicação no Portal de Transparência do caminho que está sendo navegado nas pesquisas de informações.
+[transparency.142] (p. 161) -> Consultar os dados do processo licitatório através de hiperlink contido na consulta de empenho.
+[transparency.143] (p. 161) -> Possibilitar a visualização da data de repasse das transferências recebidas.
+[transparency.144] (p. 161) -> Possibilidade de consultar publicações diversas da entidade que envolvem temas como: Prestação de Contas, Planejamento/Orçamento, Lei 9.755/98 (Contas Públicas), Lei de Responsabilidade Fiscal (RREO e RGF), Anexos da Lei 4.320/64, Licitações, Lei de Acesso à Informação, Contratos, Gestão Pessoal e Auditorias e Inspeções de Controle Interno. Apresentar separaçã o por paginação dos resultados da consulta de Outras Publicações.
+[transparency.145] (p. 161) -> Deverá ser capaz de localizar e exibir as licitações que se caracterizam no contexto de "Registro de Preços", contexto esse aplicável com o uso da Nova Lei de Licitações, 14.133/2021.
+[transparency.146] (p. 162) -> Deverá exibir uma consulta onde conste os Devedores Inscritos em Dívida Ativa para com a Fazenda Pública Municipal. Deverá exibir como resultado dessa consulta, minimamente, as informações respectivas.
+[transparency.147] (p. 162) -> Deverá exibir página destacada que possibilite localizar Emendas Impositivas de Parlamentares das esferas Federais, Estaduais e Municipais.

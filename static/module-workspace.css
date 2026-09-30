@@ -1,0 +1,80 @@
+/* The same municipal design tokens, sizing and surfaces used by the ERP shell. */
+.module-workspace {
+  --panel:var(--surface); --paper:var(--surface-2); --ink-muted:var(--muted); --danger:var(--red);
+  width:100%; max-width:none; min-width:0; margin:0; padding:0 0 24px; gap:20px;
+}
+.module-workspace :is(.finance-header,.control-header,.people-header,.social-header,.bi-header) {
+  background:none; border:0; border-radius:0; box-shadow:none; padding:0; margin:0 0 24px;
+  display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:18px;
+}
+.module-workspace :is(.finance-header,.control-header,.people-header,.social-header,.bi-header) h1 {
+  display:block; font-size:24px; line-height:1.3; font-weight:600; letter-spacing:-.6px; color:var(--ink); margin:0 0 8px;
+}
+.module-workspace :is(.finance-header,.control-header,.people-header,.social-header,.bi-header) p {
+  color:var(--muted)!important; font-size:12px!important; line-height:1.7; max-width:760px;
+}
+.module-workspace :is(.finance-header,.control-header,.people-header,.social-header,.bi-header) h1:before {
+  content:'GESTÃO MUNICIPAL'; display:block; font-size:9px; font-weight:600; letter-spacing:1.2px;
+  color:var(--accent); margin-bottom:9px;
+}
+.module-workspace :is(.finance-nav-tabs,.control-tabs,.people-tabs,.social-nav-tabs,.bi-nav-tabs) {
+  display:flex; gap:4px; border:1px solid var(--line); background:var(--surface); border-radius:9px;
+  padding:5px; margin:0 0 20px; overflow-x:auto; max-width:100%; min-width:0;
+}
+.module-workspace :is(.finance-tab-btn,.control-tab-btn,.people-tab-btn,.social-tab-btn,.bi-tab-btn) {
+  font-family:inherit; font-size:11px; font-weight:500; white-space:nowrap; padding:10px 13px;
+  background:transparent; color:var(--muted); border:0; border-radius:6px; flex-shrink:0;
+}
+.module-workspace :is(.finance-tab-btn,.control-tab-btn,.people-tab-btn,.social-tab-btn,.bi-tab-btn).active {
+  background:var(--accent-soft); color:var(--accent); box-shadow:none; font-weight:600;
+}
+.module-workspace :is(.finance-card,.control-card,.people-card,.social-card,.bi-card,.people-kpi-card,.control-kpi-card) {
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:none;
+  padding:20px; min-width:0; overflow-wrap:anywhere;
+}
+.module-workspace :is(.finance-card-title,.social-card-title,.bi-card-title) {
+  color:var(--ink); font-size:13px; font-weight:600; flex-wrap:wrap; gap:12px;
+}
+.module-workspace :is(.finance-stat-value,.social-stat-value,.bi-stat-value,.kpi-value) {
+  font-size:26px; font-weight:600; letter-spacing:-.6px; font-variant-numeric:tabular-nums;
+}
+.module-workspace :is(.finance-stat-label,.social-stat-label,.bi-stat-label,.kpi-sub,.kpi-label) {font-size:11px; color:var(--muted);}
+.module-workspace :is(button,input,select,textarea) {font-family:inherit;}
+.module-workspace :is(.finance-btn-primary,.social-btn-primary,.bi-btn-primary,.people-btn) {
+  display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:35px; padding:8px 12px;
+  font-size:11px; font-weight:500; line-height:1.4; background:var(--accent); color:white;
+  border:1px solid var(--accent); border-radius:7px; box-shadow:none; cursor:pointer;
+}
+.module-workspace :is(.finance-btn-secondary,.social-btn-secondary,.bi-btn-secondary,.people-btn.secondary,.control-bell-btn) {
+  min-height:35px; padding:8px 12px; font-size:11px; font-weight:500; line-height:1.4;
+  color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:7px;
+  box-shadow:none; cursor:pointer;
+}
+.module-workspace .people-btn.danger {background:var(--red);border-color:var(--red);}
+.module-workspace button:hover {filter:brightness(.97);transform:none;}
+.module-workspace :is(button,input,select,textarea):focus-visible {outline:2px solid var(--accent);outline-offset:3px;}
+[data-busy=true] {opacity:.65;cursor:progress!important;}
+.module-workspace :is(input,select,textarea) {background:var(--surface)!important;color:var(--ink)!important;border:1px solid var(--line)!important;border-radius:7px;min-height:36px;padding:8px 10px;max-width:100%;}
+.module-workspace :is(.finance-table,.social-table,.bi-table,.people-table,.control-table) th {background:var(--surface-2);color:var(--muted);font-size:10px;font-weight:500;padding:12px;}
+.module-workspace :is(.finance-table,.social-table,.bi-table,.people-table,.control-table) td {color:var(--ink);border-color:var(--line);font-size:11px;padding:12px;}
+.module-workspace :is(.finance-grid,.social-grid,.bi-grid) {grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:18px;}
+.module-workspace :is(.bi-header-actions,.control-top-actions) {flex-wrap:wrap;gap:8px;}
+.module-workspace main {min-width:0;}
+.module-workspace .calendar-event-chip {font-family:inherit;text-align:left;width:100%;border:0;cursor:pointer;}
+.module-workspace .control-notif-item {font-family:inherit;text-align:left;width:100%;border:0;cursor:pointer;}
+.module-workspace .table-wrap {max-width:100%;}
+@media(max-width:760px) {
+  .module-workspace :is(.finance-header,.control-header,.people-header,.social-header,.bi-header) h1 {font-size:21px;}
+  .module-workspace :is(.finance-grid,.social-grid,.bi-grid,.people-kpis,.control-kpis) {grid-template-columns:minmax(0,1fr);}
+  .module-workspace [style*="grid-column: span 2"] {grid-column:1/-1!important;}
+  .module-workspace :is(.finance-card,.social-card,.bi-card,.people-card,.control-card) {padding:15px;}
+  .module-workspace :is(.finance-header,.social-header)>div:last-child {flex-wrap:wrap;}
+  .module-workspace .control-calendar {overflow-x:auto;}
+}
+
+@media(min-width:1200px) {.module-workspace .module-kpis {grid-template-columns:repeat(4,minmax(0,1fr));}}
+
+.module-workspace :is(.people-table,.finance-table,.social-table,.control-table) {min-width:680px;overflow-wrap:normal;}
+.module-workspace :is(.people-table-wrapper,.table-wrap) {overflow-x:auto;max-width:100%;}
+[data-theme=dark] .module-workspace :is(.finance-btn-primary,.social-btn-primary,.bi-btn-primary,.people-btn:not(.secondary):not(.danger)) {color:#102720;}
+

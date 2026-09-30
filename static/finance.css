@@ -1,0 +1,220 @@
+/* ==============================================================================
+   Módulo Financeiro, Contábil, Orçamentário e Tesouraria
+   Design System Oficial do Município de Rio das Ostras
+   Compatível com Light Mode e Dark Mode (tokens --panel, --ink, --paper, etc.)
+   ============================================================================== */
+
+.finance-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md, 16px);
+  padding: var(--space-md, 16px);
+}
+
+.finance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--panel, #ffffff);
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: var(--radius-lg, 12px);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.finance-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--ink, #1e293b);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.finance-nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--line, #e2e8f0);
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+}
+
+.finance-tab-btn {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink-muted, #64748b);
+  cursor: pointer;
+  border-radius: var(--radius-md, 8px);
+  transition: all 0.2s ease;
+}
+
+.finance-tab-btn:hover {
+  background: var(--paper, #f8fafc);
+  color: var(--ink, #1e293b);
+}
+
+.finance-tab-btn.active {
+  background: var(--accent, #0284c7);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.finance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.finance-card {
+  background: var(--panel, #ffffff);
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: var(--radius-lg, 12px);
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.finance-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--ink, #1e293b);
+  border-bottom: 1px solid var(--line, #e2e8f0);
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finance-stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent, #0284c7);
+  margin-bottom: 0.25rem;
+}
+
+.finance-stat-label {
+  font-size: 0.85rem;
+  color: var(--ink-muted, #64748b);
+}
+
+.finance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.finance-table th {
+  background: var(--paper, #f8fafc);
+  color: var(--ink, #1e293b);
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--line, #e2e8f0);
+  font-weight: 600;
+}
+
+.finance-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line, #e2e8f0);
+  color: var(--ink, #1e293b);
+}
+
+.finance-table tr:hover {
+  background: var(--paper, #f8fafc);
+}
+
+.finance-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+.finance-badge-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+}
+
+.finance-badge-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+}
+
+.finance-badge-danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: #dc2626;
+}
+
+.finance-badge-info {
+  background: rgba(2, 132, 199, 0.15);
+  color: #0284c7;
+}
+
+.finance-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.finance-form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink, #1e293b);
+}
+
+.finance-input, .finance-select, .finance-textarea {
+  background: var(--paper, #f8fafc);
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: var(--radius-md, 6px);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  color: var(--ink, #1e293b);
+}
+
+.finance-input:focus, .finance-select:focus, .finance-textarea:focus {
+  outline: none;
+  border-color: var(--accent, #0284c7);
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
+}
+
+.finance-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.finance-btn-primary {
+  background: var(--accent, #0284c7);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-md, 6px);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.finance-btn-primary:hover {
+  background: #0369a1;
+}
+
+.finance-btn-secondary {
+  background: var(--paper, #f8fafc);
+  color: var(--ink, #1e293b);
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: var(--radius-md, 6px);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.finance-btn-secondary:hover {
+  background: var(--line, #e2e8f0);
+}

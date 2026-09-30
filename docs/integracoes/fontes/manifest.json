@@ -1,0 +1,35 @@
+{
+  "retrieved_on": "2026-09-23",
+  "files": [
+    {
+      "file": "esocial-manual-v1.16.pdf",
+      "bytes": 2818590,
+      "sha256": "56937fcde60a55f7a674e44b44076f707429808a255476108c2a614da56fa722"
+    },
+    {
+      "file": "esocial-manual-v1.16.txt",
+      "bytes": 135158,
+      "sha256": "0f01052e5427145b83039cfcce693c22664ffa793097ea05c193d1350c04c4e8"
+    },
+    {
+      "file": "pncp-openapi.json",
+      "bytes": 395540,
+      "sha256": "5254033d793402a1a6027f49b1b6bc7a6df5708d84fbb5f5c17edc582633c694"
+    },
+    {
+      "file": "pncp-swagger-config.json",
+      "bytes": 211,
+      "sha256": "877433cb25172a0bb5231a1e58feaff24a2d7de8f1bccf1d86951073483f820f"
+    },
+    {
+      "file": "siconfi-index.html",
+      "bytes": 2139,
+      "sha256": "4868b28d74754c37f34abe972604680771e89dc74a6c88a0d41a57ad63634b94"
+    },
+    {
+      "file": "siconfi.yaml",
+      "bytes": 44465,
+      "sha256": "e7c46693b184c40df45934d3deef3419854977a998ffea579e71c09efc757478"
+    }
+  ]
+}

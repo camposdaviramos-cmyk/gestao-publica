@@ -1,0 +1,344 @@
+/* ==========================================================================
+   PORTAL DA TRANSPARÊNCIA — RIO GESTÃO / RIO DAS OSTRAS
+   Compatível com Light Mode e Dark Mode e Mídia de Impressão (@media print)
+   ========================================================================== */
+
+.transparency-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 24px 60px;
+}
+
+/* Barra de Acessibilidade Superior */
+.accessibility-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.access-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.access-links button, .access-links a {
+  background: none;
+  border: none;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.access-links button:hover, .access-links a:hover {
+  background: var(--line);
+}
+
+/* Header do Portal */
+.transparency-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--line);
+  margin-bottom: 24px;
+}
+
+.portal-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.portal-brand img {
+  width: 44px;
+  height: 44px;
+}
+
+.portal-brand h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.portal-brand span {
+  font-size: 13px;
+  color: var(--muted);
+  display: block;
+}
+
+/* Breadcrumb */
+.transparency-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.transparency-breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.transparency-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Banner de Destaque COVID / Calamidade */
+.covid-highlight-banner {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.08) 0%, rgba(239, 68, 68, 0.04) 100%);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  border-left: 6px solid #dc2626;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.covid-highlight-banner h3 {
+  margin: 0 0 4px;
+  color: #b91c1c;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+html[data-theme="dark"] .covid-highlight-banner h3 {
+  color: #f87171;
+}
+
+.covid-highlight-banner p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+/* Abas de Navegação */
+.transparency-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.transp-tab {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+}
+
+.transp-tab:hover {
+  border-color: var(--accent);
+  background: var(--paper);
+}
+
+.transp-tab.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.transp-tab.covid-tab {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #dc2626;
+}
+
+.transp-tab.covid-tab.active {
+  background: #b91c1c;
+  color: #ffffff;
+}
+
+/* KPI Cards */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kpi-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.kpi-card h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.kpi-card .val {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.kpi-card small {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Barra de Ações da Consulta (Imprimir, Exportar, Carimbo de Atualização) */
+.consultation-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+}
+
+.update-stamp {
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.consultation-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Explanatory text box (transparency.6) */
+.transparency-explanation {
+  background: var(--panel);
+  border-left: 4px solid var(--accent);
+  padding: 12px 16px;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+/* Modais de Drilldown */
+.drilldown-modal-content {
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.data-field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.data-field-box {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.data-field-box label {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.data-field-box span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* Regras de Mídia para Impressão (transparency.1, 42, 66, 75, 78, 82, 87) */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10pt;
+  }
+  .accessibility-bar,
+  .transparency-header,
+  .transparency-tabs,
+  .consultation-actions,
+  .app-footer,
+  .toolbar,
+  button,
+  .icon-btn,
+  .scrim,
+  .sidebar,
+  .topbar {
+    display: none !important;
+  }
+  .transparency-container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .panel {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+  th, td {
+    border: 1px solid #cccccc !important;
+    padding: 6px !important;
+    font-size: 9pt !important;
+  }
+  .print-header {
+    display: block !important;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+  }
+}
+
+.print-header {
+  display: none;
+}

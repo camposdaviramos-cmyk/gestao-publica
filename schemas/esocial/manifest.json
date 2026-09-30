@@ -1,0 +1,24 @@
+{
+  "source": "https://www.gov.br/esocial/pt-br/documentacao-tecnica",
+  "retrieved": "2026-09-23",
+  "packages": [
+    {
+      "package": "eventos-s1.3-nt06-alfa",
+      "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/2026-07-01_esquemas_xsd_v_s_01_03_00.zip",
+      "sha256": "32535dba33d0470cf44afce410840af450028fd32d3ddf9123f601c45cf9af8e",
+      "files": 52
+    },
+    {
+      "package": "comunicacao-1.6",
+      "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/pacote-de-comunicacao-esocial-v1-6.zip",
+      "sha256": "8f1ed77472df9ee749b489bd981443d89664ea164f1ad24e8beeebd2f1fb5996",
+      "files": 20
+    },
+    {
+      "package": "comunicacao-1.6-alfa",
+      "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/pacote-de-comunicacao-esocial-v1-6-alfa.zip",
+      "sha256": "09b864ce66f9a9b9afb675280ec9c01c0201dcd861490a20ea7945948b5a7ae7",
+      "files": 20
+    }
+  ]
+}

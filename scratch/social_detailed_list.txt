@@ -1,0 +1,410 @@
+social.1 (Status: Não implementado): Cadastros Gerais
+social.2 (Status: Não implementado): Possuir cadastro de objetivos de encaminhamentos, contendo descrição e seu tipo. Possibilitar a inclusão, edição, exclusão e inativação.
+social.3 (Status: Não implementado): Permitir a inclusão, edição, exclusão e inativação das necessidades especiais, permitindo informar a descrição do registro e selecionar o tipo da necessidade. O sistema já deve contar com as principais necessidades especiais de forma padrão.
+social.4 (Status: Parcial): Possibilitar a inclusão, edição, exclusão do cadastro de pessoa jurídica contendo no mínimo razão social, nome fantasia, CNPJ, e-mail, telefone e endereço.
+social.5 (Status: Não implementado): Permitir o cadastramento de Logradouros contendo no mínimo: tipo, nome e município.
+social.6 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação do cadastro de cartório, contendo no mínimo os campos, nome do cartório, telefone, nome do titular e substituto e endereço completo.
+social.7 (Status: Não implementado): Possuir cadastro de parcerias, contendo sua descrição. Possibilitar a inclusão, edição, exclusão e inativação.
+social.8 (Status: Não implementado): Possuir cadastro das origens dos encaminhamentos, contendo sua descrição. Possibilitar a inclusão, edição, exclusão e inativação.
+social.9 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação do cadastro de potencialidades.
+social.10 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação do cadastro do motivo de acolhimento.
+social.11 (Status: Parcial): Controle dos programas sociais, permitindo no mínimo informar a descrição e o tipo do programa. Além de demais ações como inclusão, alteração, remoção e inativação.
+social.12 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação das equipes de atendimento, permitindo no mínimo informar a descrição da equipe, unidade a qual pertence e profissionais participantes.
+social.13 (Status: Não implementado): Tornar possível a inclusão, modificação, inativação e remoção dos registros do cadastro de orientações sexuais.
+social.14 (Status: Não implementado): Possuir cadastro de motivos de encerramento do acolhimento, possibilitando a inclusão, edição e exclusão.
+social.15 (Status: Não implementado): Possuir cadastro de tipos de atividades coletivas, contendo descrição e vínculo com algum programa. Possibilitar a inclusão, edição, exclusão e inativação.
+social.16 (Status: Parcial): Deverá permitir o cadastro de informações de escolaridade da pessoa.
+social.17 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação do cadastro de unidade federativa, contendo no mínimo descrição e sigla (Rio de Janeiro, São Paulo, Minas Gerais, ...). O sistema já deve conter todos os estados cadastrados.
+social.18 (Status: Não implementado): Permitir a inclusão, edição, exclusão e inativação das formações superiores, permitindo o a descrição do registro, grau acadêmico e área de atuação. O sistema já deve contar com as principais formações superiores de forma padrão.
+social.19 (Status: Não implementado): Possuir cadastro de motivos de cancelamentos, contendo sua descrição. Possibilitar a inclusão, edição, exclusão e inativação.
+social.20 (Status: Não implementado): Possuir lista padrão dos distritos de cada município, sem a necessidade de cadastramento manual.
+social.21 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação dos motivos de inativação dos programas sociais, permitindo no mínimo informar a descrição do registro.
+social.22 (Status: Não implementado): Dispor de lista padrão dos países, sem precisar cadastrar manualmente.
+social.23 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação do cadastro de órgão emissor (SSP, CRESS, CRP, CREFI, ...).
+social.24 (Status: Não implementado): Possibilitar a inclusão, edição e exclusão do cadastro de feriados.
+social.25 (Status: Não implementado): Permitir a inclusão, alteração, remoção e inativação dos motivos de inativações de pessoas e famílias. O sistema já deve dispor dos principais motivos de inativação de forma padrão.
+social.26 (Status: Não implementado): Permitir a inclusão, edição, exclusão e inativação do cadastro de relações de parentesco, permitindo no mínimo informar a descrição do registro. O sistema já deve contar com os principais cadastros de relações de parentesc o sendo possível informar se o vínculo é consanguíneo ou por afinidade.
+social.27 (Status: Não implementado): Possibilitar a inclusão, edição e exclusão do cadastro de pontos de embarque contendo no mínimo descrição e endereço.
+social.28 (Status: Não implementado): Viabilizar a inclusão, edição e exclusão do cadastro de unidades de medidas, permitindo, no mínimo, o preenchimento da descrição e sigla do registro.
+social.29 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação das instituições, permitindo no mínimo informar a descrição do registro.
+social.30 (Status: Não implementado): Permitir a inclusão, alteração e remoção dos grupos de insumos, contendo seleção de grupos e subgrupos de insumos.
+social.31 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação do cadastro de religião.
+social.32 (Status: Não implementado): Deverá possuir o cadastro de CBO (Cadastro Brasileiro de Ocupações), sem a necessidade de realizar o cadastro manualmente.
+social.33 (Status: Não implementado): Possuir a opção de definir as estratégias de atendimento (inclusão, edição, exclusão e inativação), permitindo informar a descrição e o tipo da mesma.
+social.34 (Status: Não implementado): Permitir a inclusão, edição, exclusão e inativação do cadastro de procedimentos realizados, permitindo no mínimo informar a descrição do registro.
+social.35 (Status: Não implementado): Permitir a inclusão, edição, exclusão e inativação do cadastro de vulnerabilidades, que deve conter, no mínimo, o campo de descrição da vulnerabilidade. Além disso, o cadastro deve permitir a seleção da área à qual a vulnerabilidade se refere, como social, educação, saúde ou habitacional.
+social.36 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação dos regimes de contratações, permitindo no mínimo informar a descrição e tipo do vínculo.
+social.37 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação das especialidades, permitindo no mínimo informar a descrição e CBO relacionado à especialidade. Deve ser possível ainda informar se a especialidade é voltada à área social, ou não.
+social.38 (Status: Parcial): Permitir que seja cadastrado as operações de estoque para Entrada, Saída, Transferência e Requisição.
+social.39 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação dos cargos, permitindo no mínimo a descrição do registro.
+social.40 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação dos motivos de reinserção, permitindo no mínimo informar a descrição do registro.
+social.41 (Status: Não implementado): Possibilitar a inclusão, edição e exclusão dos bairros, permitindo no mínimo informar a descrição do registro, informar qual a localização do bairro e o município ao qual o mesmo pertence.
+social.42 (Status: Não implementado): Possuir opção de definir quais os motivos de atendimentos a unidade atenderá.
+social.43 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação dos atos infracionais, permitindo no mínimo informar a descrição e o artigo infringido.
+social.44 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação do cadastro de estado civil (casado, solteiro, viúvo, união estável, ...). Mapas Temáticos
+social.45 (Status: Não implementado): Possibilitar a delimitação da área de abrangência dos equipamentos.
+social.46 (Status: Não implementado): Apresentar em formato de mapa (georreferenciamento) a localização dos equipamentos privados e públicos da rede socioassistencial.
+social.47 (Status: Não implementado): Viabilizar a visualização na estrutura de mapa de calor (heatmap), que tem como objetivo demonstrar a intensidade de determinadas ocorrências utilizando cores e dimensões, em relação aos filtros aplicados. Quanto mais intensa for a cor exibida, maior será a intensidade da situação específica dentro daquela área no mapa.
+social.48 (Status: Não implementado): Possibilitar mapa detalhado, visando à obtenção de dados das áreas com maior incidência de pessoas ou famílias de acordo com os filtros aplicados.
+social.49 (Status: Não implementado): Permitir o georreferenciamento dos endereços de famílias para apresentação em mapa facilitando o diagnóstico territorial, no qual será possível visualização da vulnerabilidade social do Município. Permitir a ampliação no mapa gerado do município, para visualizar maiores detalhes nas informações apresentadas.
+social.50 (Status: Não implementado): Possibilitar a utilização de vistas panorâmicas de 360° na horizontal e 290° na vertical que permite visualização da região ao nível do chão / solo.
+social.51 (Status: Não implementado): Permitir a filtragem dos dados no mapa para exibição personalizada de informações.
+social.52 (Status: Não implementado): Permitir, visualizar as vulnerabilidades das famílias pelo mapa de calor e ainda pelo mapa detalhado.
+social.53 (Status: Não implementado): Permitir a visualização de toda a região no município, com o mapeamento por imagens de satélite.
+social.54 (Status: Não implementado): Georreferenciamento das informações com plotagem em mapa, possibilitando visualizar em tela cheia.
+social.55 (Status: Não implementado): A georreferenciação automática deve ser realizada durante o cadastro da pessoa, ao atribuir às informações de município, bairro, logradouro e número do endereço, as respectivas latitude e longitude serão consideradas.
+social.56 (Status: Não implementado): Permitir alternar a visualização do mapa detalhado entre pessoas e famílias do município.
+social.57 (Status: Não implementado): Permitir alternar a visualização do mapa de calor entre pessoas e famílias do município.
+social.58 (Status: Não implementado): Estoque
+social.59 (Status: Parcial): Visualizar saldo dos insumos em cada local de estoque.
+social.60 (Status: Não implementado): Definir locais de estoque que cada profissional terá acesso.
+social.61 (Status: Parcial): Quando, a movimentação for do tipo Transferência, permitir que seja relacionado o Local de destino da transferência.
+social.62 (Status: Parcial): Viabilizar a entrada de insumos por compras, doações ou transferências.
+social.63 (Status: Parcial): Possibilitar filtrar apenas movimentações desejadas de entradas, saídas, transferências e requisição de insumos.
+social.64 (Status: Não implementado): Possibilitar realizar a devolução de insumos que não foram aceitos na transferência.
+social.65 (Status: Parcial): Permitir a movimentação de entradas, saídas, transferências e requisição de insumos por uma única tela.
+social.66 (Status: Parcial): Possibilitar informar as observações de uma movimentação de estoque.
+social.67 (Status: Parcial): Ao gerar uma movimentação do tipo entrada, fornecer a capacidade de registrar o lote e a data de vencimento dos insumos.
+social.68 (Status: Parcial): Permitir a parametrização para controlar se o insumo terá controle por lote e data de vencimento, ou não.
+social.69 (Status: Parcial): Deverá consistir se o Local de armazenamento possui saldo naquele insumo para realizar esta uma movimentação de Saída ou Transferência.
+social.70 (Status: Parcial): Realizar entrada de insumos selecionando fornecedor dos insumos.
+social.71 (Status: Não implementado): Disponibilizar configuração nas unidades de medida se será trabalhado com valor fracionado ou não.
+social.72 (Status: Parcial): Possibilitar realizar o controle de movimentação de estoque por privilégio de acesso.
+social.73 (Status: Não implementado): Viabilizar a visualização das solicitações de insumos que estão pendentes e aguardando aprovação.
+social.74 (Status: Parcial): Permitir o controle de estoque através de insumos, contendo informações como: unidade de medida, grupo de insumos e fabricante.
+social.75 (Status: Não implementado): Parametrizar se o local de estoque aceita requisição de outros locais ou não.
+social.76 (Status: Não implementado): Relacionar múltiplos insumos a uma mesma movimentação, indicando as quantidades.
+social.77 (Status: Parcial): Permitir o controle de estoque de diversos locais de estoque nas unidades de assistência social.
+social.78 (Status: Parcial): Permitir a visualização da soma total dos itens de entrada em uma tela, eliminando a necessidade de cálculos manuais por parte do profissional.
+social.79 (Status: Não implementado): Permitir a visualização do local de estoque que fez a requisição de insumos na própria lista de pendências aguardando aprovação.
+social.80 (Status: Não implementado): Possibilitar parametrizar se local de estoque terá acesso a visualizar os saldos dos insumos nas requisições.
+social.81 (Status: Não implementado): Permitir parametrizar se as entradas geradas através das transferências serão feitas de forma automática ou requererão confirmação.
+social.82 (Status: Parcial): Possibilitar o cadastro das operações de estoque para Entrada, Saída, Transferência e Requisição.
+social.83 (Status: Implementado): Possibilitar vincular os insumos do estoque, com os benefícios sociais.
+social.84 (Status: Implementado): Permitir que ao efetuar a concessão de um benefício vinculado a um item de estoque, o sistema gere uma saída automática para a pessoa ou família.
+social.85 (Status: Não implementado): Permitir o controle das quantidades para cada item de benefício, visualizando saldos e movimentações.
+social.86 (Status: Implementado): Possibilitar selecionar de qual local de estoque será gerado a saída do insumo quando realizado uma concessão de benefício integrado a um insumo do estoque.
+social.87 (Status: Parcial): Emitir relatório das transferências de estoque mostrando insumos e quantidades.
+social.88 (Status: Parcial): Possibilitar a emissão de relatório das devoluções de estoque mostrando insumos e quantidades.
+social.89 (Status: Parcial): Disponibilizar relatório exibindo os insumos e suas respectivas quantidades das saídas de estoque.
+social.90 (Status: Parcial): Emitir relatório das entradas de estoque mostrando insumos, valores e quantidades.
+social.91 (Status: Não implementado): Emitir relatório das requisições de estoque mostrando insumos e quantidades. Formulários Mensais de Atendimento - RMA
+social.92 (Status: Não implementado): Permitir que seja aplicado filtro por unidade de assistência social, mês e ano para carregamento das informações.
+social.93 (Status: Não implementado): Permitir a geração do formulário mensal de atendimento – POP, gerado de forma automática de acordo com os Serviços Especializados para Pessoas em Situação de Rua.
+social.94 (Status: Não implementado): Permitir a exportação de arquivo XML com informações do formulário mensal de atendimento – C.R.E.A.S.
+social.95 (Status: Não implementado): Permitir a exportação de arquivo XML com informações do formulário mensal de atendimento – C.R.A.S.
+social.96 (Status: Não implementado): Dispor de ajuda para cada um dos campos do formulário CREAS, orientando o profissional de onde a informação é contabilizada.
+social.97 (Status: Não implementado): Oferecer assistência em cada um dos campos do formulário do CRAS, orientando o profissional sobre a origem das informações contabilizadas.
+social.98 (Status: Não implementado): Gerar o formulário mensal do C.R.E.A.S. automaticamente, levando em consideração os registros dos atendimentos, acompanhamento P.A.E.F.I., vítimas de violências e violações, pessoas em situação de rua e medidas socioeducativas.
+social.99 (Status: Não implementado): Possibilitar a configuração para realizar lançament os e ajustes manuais das quantidades geradas automaticamente pelo sistema nos formulários de CRAS, CREAS e POP.
+social.100 (Status: Não implementado): Possibilitar a emissão de demonstrativo analítico dos atendimentos mensais obrigatórios do CRAS (RMA – Relatório Mensal de Atendimentos), com identificação da Unidade de Referência e os quantitativos das famílias em acompanhamento pelo PAIF e atendimentos individuais e coletivos, de acordo com os modelos de formulário do Ministério.
+social.101 (Status: Não implementado): Possibilitar que seja aplicado filtro por unidade de assistência social, mês e ano para carregamento das informações.
+social.102 (Status: Não implementado): Dispor de ajuda para cada um dos campos do formulário do centro POP, orientando o profissional sobre a informação contabilizada. Agendamento
+social.103 (Status: Parcial): A definição dos horários de atendimento para cada agendamento deverá ser realizada por dia da semana, sendo possível definir quantidade ou tempo de atendimento para cada dia da semana. Também deve ser possível replicar a configuração de um dia da semana para outro.
+social.104 (Status: Parcial): Permitir a definição dos horários de agendamento para atendimentos, sendo possível selecionar os dias da semana que farão parte da agenda, e o horário inicial e final de atendimento.
+social.105 (Status: Parcial): Deve ser possível definir uma data de início para cada cadastro de horário de agendamento, obrigatoriamente. Enquanto, a data final deve ser opcional.
+social.106 (Status: Parcial): Possibilitar excluir datas e horários específicos nos quais o profissional não estará disponível para atendimento.
+social.107 (Status: Parcial): Permitir a configuração de horários de agendamento para atendimentos, parametrizando por especialidade e/ou profissional.
+social.108 (Status: Parcial): Possibilitar a remoção de datas permitindo o fechamento da agenda em dias que o profissional não fará atendimento.
+social.109 (Status: Parcial): Possuir cadastro de feriados bloqueando agendamento para esta data. Possibilitar a visualização desse feriado de forma automática na agenda.
+social.110 (Status: Parcial): Permite o agendamento de atendimentos para os técnicos. Podendo de acordo com a necessidade, realizar agendamento apenas para uma unidade, para uma especialidade ou ainda para um profissional em específico.
+social.111 (Status: Parcial): Possibilitar através de legenda por cores a visualização de agendamentos pendentes, atendidos ou cancelados.
+social.112 (Status: Parcial): Permitir através de tela única a visualização da agenda de toda a unidade, possibilitando filtrar agendamentos só da unidade, de uma especialidade desejada, ou de um único profissional.
+social.113 (Status: Parcial): Facilitar a marcação de consultas para uma equipe de profissionais em horários pré-determinados, de acordo com as necessidades, e informar a todos os profissionais da equipe sobre o agendamento pendente.
+social.114 (Status: Implementado): Permitir a realização do cancelamento de um agendamento, informando o motivo do cancelamento.
+social.115 (Status: Parcial): Dispor de parametrização da agenda, disponibilizando as opções de visualização por mês, por semana e por dia. O profissional poderá selecionar a visualização de preferência.
+social.116 (Status: Dependência externa): Possibilitar realizar configuração de envio de SMS para notificação de data e horário de agendamentos.
+social.117 (Status: Dependência externa): Disponibilizar mensagem padrão de envio de SMS para notificação de agendamentos.
+social.118 (Status: Dependência externa): Permitir definir a mensagem de envio de SMS para notificação utilizando dados do agendamento. Possuir um gerenciador de status de mensagens enviadas e envio com erro.
+social.119 (Status: Dependência externa): Permitir o envio do SMS de forma automática, de acordo com a mensagem configurada para as pessoas com agendamentos pendentes. Formulários de Pesquisa de Opinião
+social.120 (Status: Não implementado): Permitir a criação dinâmica de formulários de pesquisa, como parte integrante do sistema, referente aos serviços ofertados.
+social.121 (Status: Não implementado): Configurar conforme necessidade a data de início e fim para resposta da pesquisa aplicada.
+social.122 (Status: Não implementado): Dispor de recurso para parametrizar se as perguntas serão obrigatórias ou não, e disponibilizando minimamente as seguintes opções de configuração: Múltipla escolha, Caixa de seleção, Data, Resposta curta, Numérico.
+social.123 (Status: Não implementado): Dispor de recurso para envio da pesquisa de forma automát ica para todos os e - mails configurados.
+social.124 (Status: Não implementado): Dispor de recurso para preencher as respostas dos formulários de pesquisa de opinião em ambiente online externo, sem limitação de acesso.
+social.125 (Status: Não implementado): Possibilitar definir e-mails aos quais irão receber a pesquisa.
+social.126 (Status: Não implementado): Permitir a apuração das respostas aos formulários de pesquisa de opinião, agrupadas por perguntas enviadas. Rede e Proteção Notificações intersetoriais:
+social.127 (Status: Parcial): Permitir configurar uma notificação intersetorial como dado sensível, permitindo a seleção de quais especialidades e unidades podem visualizar as informações registradas.
+social.128 (Status: Não implementado): Disponibilizar método de consulta via API, para que seja possível a consulta dessas informações via integração com a central da rede de proteção.
+social.129 (Status: Não implementado): Permitir o cadastro de notificações intersetoriais, informando minimamente a descrição do caso, ações realizadas antes do encaminhamento, área de origem e área de destino.
+social.130 (Status: Não implementado): Permitir a visualização do histórico de notificações intersetoriais realizadas durante o atendimento de um usuário, permitindo verificar qual foi o profissional que realizou o cadastro da notificação intersetorial.
+social.131 (Status: Não implementado): Permitir o registro mais de uma notificação intersetorial através de um me smo atendimento.
+social.132 (Status: Não implementado): Revelação espontânea.
+social.133 (Status: Não implementado): Disponibilizar de modelo de documento contendo todas as informações da revelação espontânea, para posterior encaminhamento às áreas responsáveis.
+social.134 (Status: Não implementado): Permitir informar quais foram os encaminhamentos realizados, assim como para quais áreas.
+social.135 (Status: Não implementado): Disponibilizar método de consulta via API, para que seja possível a consulta dessas informações via integração com a central da rede de proteção.
+social.136 (Status: Parcial): Permitir a configuração de quais profissionais podem visualizar o registro.
+social.137 (Status: Não implementado): Permitir o registro de revelações espontâneas aderentes a Lei n° 13,431 de 2017, informando minimamente o profissional que acompanhou o relato, unidade onde ocorreu, data e hora, vítima, se está matriculada em instituição de ensino, suposto indício de violência e vínculo com o suposto autor.
+social.138 (Status: Não implementado): Acompanhamento pela Rede de Proteção.
+social.139 (Status: Não implementado): Deve permitir a inclusão e inativação do usuário em acompanhamento pela rede de proteção.
+social.140 (Status: Não implementado): Deve ser possível visualizar através do histórico do usuário que o mesmo está em acompanhamento pela rede, assim como os dados deste acompanhamento.
+social.141 (Status: Não implementado): Deve ser visível aos profissionais durante os atendimentos ou recepções que o usuário em atendimento está em acompanhamento pela rede de proteção, assim como as informações acerca deste acompanhamento.
+social.142 (Status: Não implementado): Disponibilizar método de consulta e envio via API, para que seja possível a consulta e recebimento dessas informações via integração com a central da rede de proteção. Unificações
+social.143 (Status: Não implementado): Permitir a unificação de registros duplicados através comparação visual de detalhes dos registros selecionados.
+social.144 (Status: Não implementado): Possuir rotina de unificação de cadastros gerais que estão em duplicidade na base, contendo unificações de:
+social.145 (Status: Não implementado): · Relações de Parentesco;
+social.146 (Status: Não implementado): · Estado Civil;
+social.147 (Status: Não implementado): · Orientações Sexuais;
+social.148 (Status: Não implementado): · Escolaridades;
+social.149 (Status: Não implementado): · Regimes de Contratação;
+social.150 (Status: Não implementado): · Unidades de medidas;
+social.151 (Status: Não implementado): · Fornecedores;
+social.152 (Status: Não implementado): · Logradouros;
+social.153 (Status: Não implementado): · Cursos;
+social.154 (Status: Não implementado): · Origem do encaminhamento;
+social.155 (Status: Não implementado): · Especialidades;
+social.156 (Status: Não implementado): · Formações Superiores;
+social.157 (Status: Não implementado): · Procedimentos realizados;
+social.158 (Status: Não implementado): · Grupos de atividades coletivas;
+social.159 (Status: Não implementado): · Equipes de Atendimentos;
+social.160 (Status: Não implementado): · Deficiências;
+social.161 (Status: Não implementado): · Motivo de inativação de programa social;
+social.162 (Status: Não implementado): · Serviço, Projeto ou Programa Social;
+social.163 (Status: Não implementado): · Benefícios;
+social.164 (Status: Não implementado): · Bairro ou Localidade;
+social.165 (Status: Não implementado): · Religiões e Tradições Espirituais.
+social.166 (Status: Não implementado): Unificar cadastro de Famílias que estão em duplicidade, realizando a migração das informações e atendimentos.
+social.167 (Status: Não implementado): Pesquisar por registros duplicados através de critérios de comparação preestabelecidos deve ser uma capacidade do sistema.
+social.168 (Status: Não implementado): Possibilitar a unificação de pessoas no sistema, de modo a regularizar possíveis cadastros duplicados. Todas as relações existentes com as pessoas unificadas devem ser transferidas para a nova pessoa.
+social.169 (Status: Não implementado): Exibir o histórico das unificações de registros realizadas, mostrando o registro que foi mantido e os excluídos. Possibilitar filtrar o histórico de unificações por código do registro, período, tabela e/ou usuário do sistema. Atendimento
+social.170 (Status: Parcial): Possibilitar a realização de recepções de pessoas e famílias, informando no mínimo a unidade de assistência social, data e horário, motivos e detalhes.
+social.171 (Status: Não implementado): Permitir, durante a recepção sem a necessidade de acesso a outra tela, o registro de liberação de benefícios eventuais.
+social.172 (Status: Não implementado): Permitir através da própria tela de recepção, sem necessidade de acessar outra tela a possibilidade de realizar o agendamento do próximo atendimento, contendo no mínimo as informações, campos de unidade, data e horário do agendamento.
+social.173 (Status: Parcial): Possuir na tela de atendimento espaço para realização de encaminhamento para outras unidades / equipamentos, permitindo que possa ser feito mais que um encaminhamento no mesmo atendimento.
+social.174 (Status: Não implementado): Possibilitar encaminhar as solicitações de abordagens para unidades de atendimento ou para profissionais específicos.
+social.175 (Status: Não implementado): Possibilitar o registro de solicitações de abordagens para cidadãos em situação de rua, possibilitando registro anônimo ou com identificação do solicitante.
+social.176 (Status: Parcial): Permitir o registro dos atendimentos de pessoas e famílias por unidade social com identificação dos profissionais, estratégia, motivos, programas sociais e detalhes do atendimento.
+social.177 (Status: Não implementado): Permitir registrar parcerias, possibilitando a seleção de múltiplas parcerias.
+social.178 (Status: Parcial): Possibilitar definir a privacidade das informações cadastradas, como pública ou privada, para usuários ou grupos de acesso específicos em funcionalidades como de atendimentos, a fim de preservar o sigilo de determinadas informações registradas no sistema.
+social.179 (Status: Não implementado): Viabilizar o vínculo da pessoa ou família atendida a grupos de atendimentos coletivas.
+social.180 (Status: Parcial): Permitir definir o atendimento como sigiloso e, informando as especialidades e unidades que podem visualizá-lo.
+social.181 (Status: Parcial): Permitir o registro de atendimento social para famílias identificando quais integrantes estão sendo atendidos e qual a relação de parentesco de cada integrante em relação ao responsável familiar.
+social.182 (Status: Parcial): Possibilitar encaminhamento de atendimento realizado a pessoa entre as unidades e profissionais dentro do sistema.
+social.183 (Status: Não implementado): Permitir o registro ou acompanhamento de situações de violência e violações de direito vivenciadas pela família contendo no mínimo as seguintes opções: trabalho infantil, exploração sexual, abuso/violência sexual, violência física, violência psicológica, negligências, trajetória de rua, tráfico de pessoas e violência patrimonial, dentre outros.
+social.184 (Status: Não implementado): Permitir informar qual o m otivo da reincidência, em casos de reincidência da violência.
+social.185 (Status: Não implementado): Possibilitar o acompanhamento dos usuários nos Serviços de Convivência e Fortalecimento de Vínculos contendo no mínimo as seguintes informações: nome do grupo, faixa etária (0 a 3 anos, 3 a 6 anos, 0 a 6 anos, 6 a 9 anos, 9 a 12 anos, 12 a 15 anos, 6 a 15 anos, 15 a 17 anos, 18 a 29 anos, 30 a 59 anos e acima de 60 anos), forma de execução, unidade de realização, dias da semana em que ocorre, carga horária, número de vagas, lista de pessoa s, registro de frequência e histórico de ocorrências.
+social.186 (Status: Não implementado): O sistema deve alertar o profissional caso a pessoa já tenha realizado o curso que está sendo matriculada.
+social.187 (Status: Não implementado): Permitir o registro de atendimentos sociais, sem que haja a necessidade de informar a Pessoa ou Família que está sendo atendida.
+social.188 (Status: Parcial): Permitir, durante o atendimento sem a necessidade de acesso a outra tela, a vinculação de anexos relacionados ao atendimento.
+social.189 (Status: Não implementado): Permitir informar nas Medidas Socioeducativas se a pessoa faz uso de substâncias psicoativas, e quais são elas. Sendo possível a seleção de uma ou mais substâncias.
+social.190 (Status: Não implementado): Possibilitar o registro de indicação para o Serviço de Convivência e Fortalecimento de Vínculos no momento em que ocorre o atendimento social. Conter dados referentes a unidade, quantidade de vagas para este serviço e não permitir a inserção em unidades que não possuam vagas.
+social.191 (Status: Não implementado): Registrar a recusa do atendimento pela pessoa ou família que está sendo atendida, por meio dos atendimentos sociais.
+social.192 (Status: Não implementado): Permitir informar nas Medidas Socioeducativas as horas totais, horas mensais, horas cumpridas e horas faltantes.
+social.193 (Status: Não implementado): Permitir informar dados de origem e destino para benefícios de transporte.
+social.194 (Status: Parcial): Encaminhar para atendimento na rede interna ou externa da assistência social na mesma tela de atendimento.
+social.195 (Status: Não implementado): Possibilitar, em casos de reincidência da medida, informar o motivo e specífico dessa reincidência.
+social.196 (Status: Parcial): Registrar os benefícios eventuais concedidos.
+social.197 (Status: Não implementado): Possibilitar registrar procedimentos realizados durante o atendimento sem a necessidade de abrir outra janela.
+social.198 (Status: Não implementado): Possibilitar informar nas Medidas Socioeducativas quais foram os atos infracionais infringidos, podendo selecionar um ou mais.
+social.199 (Status: Não implementado): Possibilitar encaminhamento de atendimento realizado a pessoa para equipes de atendimento, notificando o encaminhamento para todos os profissionais da equipe.
+social.200 (Status: Não implementado): Permitir, durante o atendimento sem a necessidade de acesso a outra tela, o registro de medidas socioeducativas, com identificação do processo, situação data de ocorrência.
+social.201 (Status: Não implementado): Permitir, durante o atendimento sem a necessidade de acesso a outra tela, a realização de matrículas em cursos ou oficinas.
+social.202 (Status: Não implementado): Disponibilizar um campo para marcação de pessoas ou famílias que possuam informações de medidas socioeducativas registradas anteriormente. O sistema deve realizar a marcação automática de famílias ou pessoas reincidentes, além de permitir a marcação manual.
+social.203 (Status: Não implementado): Permitir o registro de informações de abordagem social e de pessoas em situação de rua.
+social.204 (Status: Parcial): Ao utilizar o controle de estoque, é necessário informar obrigatoriamente o local de armazenamento para validar os saldos disponíveis.
+social.205 (Status: Não implementado): Oferecer local para marcação de pessoa ou família que possuam informações de violências registradas anteriormente. O sistema deve marcar automaticamente as famílias ou pessoas reincidentes e também deve possibilitar a marcação manual.
+social.206 (Status: Não implementado): Personalizar a programação das entregas de benefícios recorrentes.
+social.207 (Status: Não implementado): Possibilitar controle de movimentação de benefícios, quando benefício configurado para entrega não automática.
+social.208 (Status: Parcial): Permitir o cadastro de benefícios informando minimamente a descrição, detalhes e tipo do auxílio. Deve ser possível ainda, inativar o registro quando o mesmo não for mais necessário.
+social.209 (Status: Parcial): O sistema deve dispor de cadastro para benefícios entregues de forma periódica ou recorrente.
+social.210 (Status: Parcial): Cadastrar benefícios, configurando se será autorizado automaticamente no atendimento ou não.
+social.211 (Status: Não implementado): Possibilitar a vinculação de participantes dos benefícios coletivos através de grupos pré-definidos.
+social.212 (Status: Não implementado): Permitir concessão de benefícios aos cidadãos de forma coletiva, possibilitando identificar cidadãos e profissionais.
+social.213 (Status: Não implementado): Apresentar aos profissionais responsáveis a geração de pendências individuais de cada entrega periódica de um benefício.
+social.214 (Status: Não implementado): Para um benefício recorrente, o sistema deve possibilitar realizar a movimentação individual de cada entrega programada.
+social.215 (Status: Não implementado): Dispor de atalho no sistema para agilizar a aceitação da indicação para o SCFV.
+social.216 (Status: Parcial): Apresentar histórico de movimentações de benefícios, dispondo de informações tais como: data de movimentação, profissional responsável e status da entrega.
+social.217 (Status: Não implementado): Realizar a programação automática das entregas de benefícios recorrentes, com base na periodicidade, data inicial e data final informada.
+social.218 (Status: Não implementado): Permitir realizar a movimentação de benefícios sociais de forma rápida, através de atalho na tela inicial do sistema.
+social.219 (Status: Não implementado): Permitir configurar a recorrência de um benefício social, fornecendo informações básicas sobre a periodicidade de entrega, a data de início e término da recorrência.
+social.220 (Status: Não implementado): Registrar atividades coletivas contendo:
+social.221 (Status: Não implementado): a) Atividade;
+social.222 (Status: Não implementado): b) Participantes;
+social.223 (Status: Não implementado): c) Detalhamento; e
+social.224 (Status: Não implementado): d) Profissionais responsáveis.
+social.225 (Status: Não implementado): Possibilitar vincular múltiplos anexos ao registro das Atividades coletivas.
+social.226 (Status: Não implementado): Permitir o registro de acolhimentos de pessoas em família acolhedora, podendo identificar qual família está realizando o acolhimento, o motivo, data de início do acolhimento.
+social.227 (Status: Não implementado): Permitir o registro de acolhimentos do tipo república referente a diferentes públicos (para idosos, para adultos em processo de saída das ruas e para jovens), podendo informar a pessoa que está sendo acolhida, o motivo do acolhimento e a instituição que realizará o acolhimento.
+social.228 (Status: Não implementado): Possibilitar usar grupos para pré-definir os participantes de atividades coletivas.
+social.229 (Status: Não implementado): Permitir o registro dos acolhimentos do tipo institucional com público mulheres vítimas de violências por unidade social, com identificação da natureza do acolhimento, agressor, dados de contato e loca l de trabalho do agressor, indicativo de uso de drogas e de álcool, boletim de ocorrência, cidadãos acolhidos juntamente com a vítima e detalhamentos.
+social.230 (Status: Não implementado): Permitir identificar se os acolhimentos realizados são reincidentes de forma automática caso a pessoa já tenha passado por um acolhimento anteriormente e também de forma manual.
+social.231 (Status: Não implementado): Permitir o registro de acolhimentos do tipo Pernoite das pessoas, com identificação do motivo, data de início, situação, instituição de acolhimento e detalhes.
+social.232 (Status: Não implementado): Permitir o registro de acolhimentos em situações de calamidades públicas e de emergências, informando quais pessoas ou famílias serão acolhidas, a data de início do acolhimento e detalhes.
+social.233 (Status: Não implementado): Permitir o registro de acolhimentos do tipo institucionais referente a diversos públicos (crianças e adolescentes, adultos e famílias, jovens e adultos com deficiência, idosos e mulheres vítimas de violência) com id entificação do motivo, instituição, situação e data de início.
+social.234 (Status: Não implementado): Permitir o registro de acolhimentos do tipo institucionais referente a diversos públicos (crianças e adolescentes, adultos e famílias, jovens e adultos com deficiência, idosos e mulhere s vítimas de violência) com identificação do motivo, instituição, situação e data de início.
+social.235 (Status: Não implementado): Possibilitar em casos de reincidência de acolhimentos, informar qual o motivo da reincidência.
+social.236 (Status: Não implementado): Permitir o controle das vagas de acolhimento por tipo (Institucional, pernoite e república), realizado notificação sobre disponibilidade das vagas no momento do acolhimento.
+social.237 (Status: Não implementado): Permitir o registro de acolhimentos encerrados com identificação do motivo de encerramento, situação, data do encerramento e detalhamento.
+social.238 (Status: Não implementado): Permitir o registro do descumprimento de condicionalidades do Auxílio Brasil, informando qual o descumprimento de cada integrante, mês e ano da repercussão, efeito, e identificação do registro no SICON.
+social.239 (Status: Não implementado): Permitir a criação de plano de acompanhamento familiar no mínimo as seguintes informações: família acompanhada, integrantes participantes, vulnerabilidades e potencialidades identificadas, compromissos assumidos e ações realizadas e o plano de ação de acor do com as orientações técnicas do MDS para elaboração do plano. 239 Permitir a criação plano individual de atendimento contendo no mínimo as seguintes informações: pessoa acompanhada, vulnerabilidades e potencialidades identificadas e o plano de ação de acordo com as orientações técnicas do MDS para elaboração do plano.
+social.240 (Status: Não implementado): Permitir a realização das matrículas dos alunos de acordo com o curso e turma desejado.
+social.241 (Status: Não implementado): Permitir vincular diversos módulos a cada turma.
+social.242 (Status: Não implementado): Possibilitar o registro das atividades internas realizadas pelos profissionais, abrangendo reuniões, capacitações, elaboração de atas, relatórios e outras tarefas relacionadas.
+social.243 (Status: Não implementado): Possibilitar a vinculação de múltiplos anexos que serão utilizados em cada turma.
+social.244 (Status: Não implementado): Permitir o registro de frequência (presença ou falta) para cada aluno em cada dia de aula da turma e módulo.
+social.245 (Status: Não implementado): Possibilitar a inclusão, edição, exclusão e inativação dos cadastros de cursos, permitindo no mínimo informar a descrição do curso. O cadastro deve possibilitar ainda informar se o curso tem vínculo com algum programa social, podendo informar um ou mais programas.
+social.246 (Status: Não implementado): Possibilitar criar várias turmas para uma atividade em grupo e permitir apurar a presença e falta dos usuários nas atividades.
+social.247 (Status: Não implementado): Busca automática das informações referentes ao usuário ou família conforme preenchidos em seu cadastro, possibilitando alterações necessárias.
+social.248 (Status: Não implementado): Permitir anexar diversos arquivos digitais que estejam relacionados ao encaminhamento. Permitindo definir prazo de resposta no processo de averiguação cadastral.
+social.249 (Status: Não implementado): Possibilitar o registro de denúncia de forma anônima ou sigilosa para processo de averiguação cadastral.
+social.250 (Status: Não implementado): Permitir o cadastro da conferência cadastral para indivíduos e famílias inscritos no Cadastro Único (CadÚnico).
+social.251 (Status: Não implementado): Viabilizar o registro de múltiplos acompanhamentos para as averiguações cadastrais em andamento.
+social.252 (Status: Não implementado): Não permitir a alteração da identificação do usuário e família caso esteja em andamento o processo de averiguação cadastral.
+social.253 (Status: Não implementado): Ao térmico da averiguação cadastral, quando está com a situação encerrada, possibilitar informar desfecho do processo.
+social.254 (Status: Não implementado): Gerenciar a averiguação cadastral a partir de privilégios, permitindo configurar se o profissional pode registrar acompanhamentos da averiguação, atualizar a identificação do usuário e também encerrar a averiguação.
+social.255 (Status: Não implementado): Realizar o controle de despachos de documentos entre unidades e profissionais da assistência social, incluindo a notificação de recebimento.
+social.256 (Status: Não implementado): Possibilitar o registro de averiguação permitindo informar a identificação inicial do usuário ou família. Deve atualizar esta identificação caso se torne necessário, e manter o histórico de atualização da identificação.
+social.257 (Status: Não implementado): Viabilizar a visualização do histórico de movimentações do processo de averiguação cadastral das famílias.
+social.258 (Status: Parcial): Permitir através do histórico da pessoa, a visualização da composição familiar da pessoa, identificando o parentesco de cada integrante em relação ao responsável familiar.
+social.259 (Status: Parcial): Permitir através do histórico a visualização sintetizada do total dos agendamentos realizados para a pessoa, além de visualizar as informações detalhadas, como data e hora, situação, profissional, especialidade. E em casos de agendamentos cancelados, motivo e data do cancelamento.
+social.260 (Status: Parcial): Possibilitar através do histórico realizar uma busca avançada por datas específicas, para localizar um atendimento da pessoa ou família selecionada.
+social.261 (Status: Não implementado): Possibilitar através do histórico, a visualização resumida das matrículas realizadas pela pessoa nos cursos, além de permitir a visualização detalhada das informações, como data da matrícula, situação, nome do curso, n ome da turma, unidade de realização e frequência.
+social.262 (Status: Parcial): Possibilitar através do histórico realizar uma busca avançada por profissional específico, para localizar um atendimento da pessoa ou família selecionada.
+social.263 (Status: Parcial): Permitir realizar uma busca avançada por uma unidade de assistência social específica no histórico, a fim de localizar um atendimento da pessoa ou família selecionada.
+social.264 (Status: Parcial): Facilitar, por meio do histórico, a visualização resumida do total de encaminhamentos realizados para a pessoa, além de possibilitar a visualização de informações detalhadas, como data e hora, objetivo do encaminhamento, situação, profissional responsável e detalhes do atendimento.
+social.265 (Status: Não implementado): Possibilitar através do histórico a visualização dos acolhimentos regi strados para a pessoa, além das informações detalhadas, contendo no mínimo, data e hora do registro, tipo do acolhimento, motivo, e profissional responsável.
+social.266 (Status: Não implementado): Permitir através do histórico a visualização sintetizada das violências e violações dos dir eitos registradas para a pessoa, além de visualizar as informações detalhadas como, data e hora do registro, tipo da violência e o estágio da violência.
+social.267 (Status: Não implementado): Possibilitar o registro do histórico de medida socioeducativa contendo no mínimo as seguintes informações: pessoa, tipo de medida, número do processo, data de início, data de fim, contatos relativos ao local de prestação dos serviços.
+social.268 (Status: Parcial): Permitir através do histórico visualizar o percentual de preenchimento do cadastro da pessoa selecionada, permitindo identificar os campos que faltam preencher as informações.
+social.269 (Status: Não implementado): Permitir através de ferramenta de histórico, acesso a todas as movimentações realizadas com o documento, contendo minimamente: data e hora do envio, situação atual e prazo de resposta.
+social.270 (Status: Parcial): Viabilizar, através do histórico, a visualização da soma total dos programas sociais registrados para a pessoa, bem como fornecer informações detalhadas que incluam, no mínimo, o tipo do programa, data da inclusão e profissional responsável.
+social.271 (Status: Parcial): Possibilitar, através do histórico, a visualização do total das recepções de atendimentos realizadas para a pessoa, além de visualizar as informações detalhadas, como data e hora da recepção, unidade, estratégia, motivo da recepção e profissional responsável.
+social.272 (Status: Parcial): Visualizar através do histórico a da soma total dos benefícios sociais concedidos para a pessoa, além das informações detalhadas, contendo no mínimo, tipo do benefício, data e hora da entrega, quantidade entregue e profissional responsável.
+social.273 (Status: Parcial): Permitir através do histórico a visualização sintetizada do total de atendimentos sociais registrados para a pessoa, além de visualizar as informações detalhadas, como data e hora do atendimento, unida de, profissional responsável, motivo do atendimento, estratégia e parecer técnico do profissional.
+social.274 (Status: Parcial): Permitir através do histórico a visualização detalhada de dados da pessoa selecionada, como data de nascimento, idade, nome social, sexo, endereço, escolaridade, trabalho e remuneração e situação cadastral, além de visualizar a data de inclusão e data da última alteração ocorrida no cadastro da pessoa.
+social.275 (Status: Parcial): Permitir através do histórico filtrar a visualização das informações cadastrais da pessoa, da sua família atual ou de todas as famílias que a pessoa já tenha estado, com a possibilidade de visualizar os respectivos dados cadastrais.
+social.276 (Status: Parcial): Visualizar linha do tempo da pessoa selecionada, junto ao histórico de pessoas e famílias.
+social.277 (Status: Não implementado): Permitir através do histórico a visualização das matrículas dos cursos realizados pela pessoa, além das informações detalhadas, contendo no mínimo, data da matrícula, nome do curso, nome da turma, e unidade de realização.
+social.278 (Status: Não implementado): Possibilitar através do his tórico o acompanhamento mensal do registro de pagamento do Auxílio Brasil.
+social.279 (Status: Parcial): Permitir o alerta e bloqueio de informações classificada como sigilosas de acordo com a especialidade do profissional através do histórico. Certificações Digitais
+social.280 (Status: Dependência externa): O sistema deve permitir a visualização do documento antes da confirmação da assinatura digital.
+social.281 (Status: Dependência externa): O sistema deve requisitar a confirmação do certificado digital a ser utilizado para a realização da assinatura digital. Durante o processo de confirm ação, é fundamental exibir as seguintes informações essenciais: número de série, tipo (A1 ou A3...), nome do titular, data de validade e o documento em questão.
+social.282 (Status: Dependência externa): Permitir configuração de quais documentos podem ser assinados.
+social.283 (Status: Dependência externa): Permitir parametrizar alerta caso não ocorra a assinatura de documentos.
+social.284 (Status: Dependência externa): O sistema deve permitir somente a utilização de certificados digitais dentro do período de validade para a realização de novas assinaturas de documentos.
+social.285 (Status: Dependência externa): O sistema deve permitir somente a utilização de certificados digitais dentro do período de validade para a realização de novas assinaturas de documentos.
+social.286 (Status: Dependência externa): Permitir assinatura digital de documentos no padrão ICP -Brasil (token, leitor de cartão, certificado digital).
+social.287 (Status: Dependência externa): Disponibilizar tela para consulta dos documentos pendentes e assinados, permitindo a visualização por períodos de datas.
+social.288 (Status: Dependência externa): Garantir a segurança e preservação das informações por meio do armazenamento das certificações digitais dos atendimentos em um banco de dados fisicamente separado.
+social.289 (Status: Dependência externa): Garantir a integridade, não repúdio e autenticidade das informações, os formatos dos documentos assinados devem ser p7s ou PDF.
+social.290 (Status: Dependência externa): Possibilitar a assinatura digital individualmente ao término do atendimento ou posteriormente através de tela de certificados pendentes de assinatura. Habitação
+social.300 (Status: Parcial): Disponibilizar processo de classificação das famílias com inscrições nos programas habitacionais conforme critério adotado pelo município. Permitir parametrizar busca de informações do cadastro da família e dos seus integrantes, além de poder considerar atividades, programas e atendimentos.
+social.301 (Status: Parcial): Possuir cadastro de programas habitacionais com no mínimo nome do programa e data de início.
+social.302 (Status: Parcial): Permitir o cadastro de critérios de classificação e priorização de famílias.
+social.303 (Status: Parcial): Permitir o cadastro de critérios de classificação e priorização de famílias.
+social.304 (Status: Parcial): Permitir a visualização das famílias inscritas nos programas habitacionais de forma simples e objetiva.
+social.305 (Status: Parcial): Possibilitar a inscrição de famílias em diversos programas habitacionais de maneira prática, bem como gerenciar o status de suas inscrições.
+social.306 (Status: Não implementado): Permitir o cadastro dos conjuntos habitacionais do município, possibilitando definir a quantidade de unidades habitacionais para cada critério de classificação.
+social.307 (Status: Não implementado): Selecionar famílias de forma automática conforme grupo de priorização, utilizando como base os critérios de classificação e a configuração do grupo de priorização, já previamente configurados.
+social.308 (Status: Não implementado): Dispor de recurso para cadastro de grupos prioritários específicos para idosos e PCDs, atendendo no que diz respeito a unidades habitacionais no Estatuto do Idoso e também a Lei Brasileira de Inclusão.
+social.309 (Status: Não implementado): Possibilitar informar o endereço do conjunto habitacional que será sorteado.
+social.310 (Status: Não implementado): Possibilitar a informação dos critérios de classificação a serem utilizados para realizar a priorização e classificação das famílias em seus grupos de priorização.
+social.311 (Status: Não implementado): Utilizar definição para grupos de priorização de famílias utilizando critérios que definam a classificação. O sistema deve possibilitar configurar a quantidade de unidades habitacionais destinadas a cada grupo.
+social.312 (Status: Não implementado): Permitir a transferência de famílias para outros grupos de priorização, contendo minimamente informações do profissional responsável, data e hora da movimentação, e justificativa.
+social.313 (Status: Não implementado): Disponibilizar histórico das classificações realizadas automaticamente, registrando os dados do profissional responsável e a data da movimentação.
+social.314 (Status: Parcial): Permitir a classificação e desclassificação manual de famílias, desde de que seja informado minimamente a data de movimentação, profissional responsável e uma justificativa.
+social.315 (Status: Parcial): Deve possuir um atalho que permita a visualização do histórico de serviços e ocorrências de uma família de forma rápida.
+social.316 (Status: Não implementado): Tornar visível os critérios que classificaram cada família.
+social.317 (Status: Não implementado): A visualização dos dados dos critérios de classificação deve estar disponível na tela de classificação de famílias de forma integrada.
+social.318 (Status: Não implementado): Possibilitar uma visualização clara e direta das famílias classificadas e desclassificadas, ordenando-as de acordo com os critérios atendidos.
+social.319 (Status: Não implementado): Permitir a visualização dos dados do conjunto habitacional através da mesma tela utilizada para a classificação das famílias.
+social.320 (Status: Parcial): O processo de movimentações realizadas para uma família deve ter auditoria, permitindo visualizar o profissional responsável, data e hora da movimentação e justificativa.
+social.321 (Status: Parcial): Emitir relatório das famílias classificadas para um conjunto habitacional.
+social.322 (Status: Parcial): Permitir a impressão do documento de inscrição habitacional, contendo no mínimo dados do cadastro habitacional. Índice de Vulnerabilidade Social
+social.323 (Status: Não implementado): Estimar o índice de vulnerabilidade social de famílias através de tecnologia inteligente a partir de dados históricos do CadÚnico, de atendimentos, benefícios e demais movimentações registradas dentro do sistema.
+social.324 (Status: Não implementado): Dispor de pontuação mínima e máxima para a caracterização de índices de vulnerabilidade, separados entre os níveis: Não vulnerável, Baixa, Média, Alta e Muito Alta.
+social.325 (Status: Não implementado): Apresentar uma lista de critérios que podem ser utilizados no cálculo, permitindo a configuração do peso a ser considerado na classificação final das vulnerabilidades. Essa lista incluirá, no mínimo, os seguintes critérios: renda per capita, participação em programas sociais, benefícios eventuais concedidos e registros de violências ou violações de direitos.
+social.326 (Status: Não implementado): Efetuar a atualização automática sem exigir intervenção do operador do sistema, conforme as atualizações e inclusões de novas informações.
+social.327 (Status: Não implementado): Possibilitar visualização do Índice gerado nas principais telas do sistema, como cadastro de Família, Atendimentos, Históricos.
+social.328 (Status: Não implementado): Permitir parametrização de quais profissionais poderão estar alterando o Índice de vulnerabilidade social.
+social.329 (Status: Não implementado): Permitir parametrização de quais profissionais poderão estar visualizando o Índice de vulnerabilidade social.
+social.330 (Status: Não implementado): Permitir alteração manual do índice, caso o profissional considerar que a família superou a vulnerabilidade informada.
+social.331 (Status: Não implementado): Registrar e monitorar as alterações manuais efetuadas, registrando a data, hora e profissional responsável pela alteração. Organizações da Sociedade Civil - OSC
+social.332 (Status: Parcial): Permitir, nas prestações de contas anuais, inserir o valor de saldo que sobrou do ano anterior, ou preencher o mesmo automaticamente de acordo com a última prestação de contas anual criada para a mesma entidade, ano e fonte de recurso.
+social.333 (Status: Parcial): Permitir realizar a comprovação das metas e atividades, informando o que foi executado das metas no período, quais as atividades foram desenvolvidas para a execução da meta e qual o percentual de execução.
+social.334 (Status: Parcial): Imprimir o documento da prestação de contas anual.
+social.335 (Status: Parcial): Permitir criar as análises técnicas de monitoramento por Organização da Sociedade Civil (OSC), por plano de trabalho e por período.
+social.336 (Status: Parcial): Permitir inserir, na análise técnica de monitoramento, a av aliação do serviço executado no período.
+social.337 (Status: Parcial): Gerar os seguintes cálculos automaticamente com base nas entradas:
+social.338 (Status: Parcial): · Repasses públicos do exercício;
+social.339 (Status: Parcial): · Receitas com aplicações financeiras dos repasses públicos;
+social.340 (Status: Parcial): · Total de recursos próprios;
+social.341 (Status: Parcial): · Total de recursos públicos.
+social.342 (Status: Parcial): Imprimir o documento da análise técnica de monitoramento.
+social.343 (Status: Não implementado): Permitir criar um portal da transparência da Organização da Sociedade Civil (OSC), onde deve ser gerado um link de acesso ao portal e deve ser possível configurar um texto de boas-vindas.
+social.344 (Status: Parcial): Calcular automaticamente a soma de todas as entradas e a soma de todas as saídas das prestações de contas mensais.
+social.345 (Status: Parcial): Permitir incluir nas prestações de contas anuais os valores que entraram para a Organização da Sociedade Civil (OSC) no ano, informando a data prevista de entrada, o valor previsto, a data que o valor foi repassado e o valor do repasse.
+social.346 (Status: Parcial): Se faz necessário o cadastro da O rganização da Sociedade Civil (OSC) para a criação do Plano de trabalho.
+social.347 (Status: Não implementado): O sistema deve gerar os formulários de acompanhamento da Proteção Social Básica para Pessoas com Deficiência, Idosas das Organizações da Sociedade Civil (OSCs).
+social.348 (Status: Parcial): Permitir anexar os contratos e os aditivos ou renovações assinadas.
+social.349 (Status: Parcial): Permitir realizar as prestações de contas anuais por Organização da sociedade Civil (OSC), por plano de trabalho, por contrato, por ano e por fonte de recursos.
+social.350 (Status: Parcial): Permitir inserir, na prestação de contas mensal, o valor de saldo que sobrou do mês anterior, ou preencher o mesmo automaticamente de acordo com a última prestação de contas mensal criada para a mesma entidade e fonte de recurso.
+social.351 (Status: Não implementado): Permitir o cadastro dos tipos de despesas, juntamente com suas subcategorias, que serão usados para os lançamentos financeiros
+social.352 (Status: Parcial): Permitir o cadastro do Plano de trabalho da Organização da Sociedade Civil (OSC) com a possibilidade de informar os seguintes dados:
+social.353 (Status: Parcial): · Dados cadastrais;
+social.354 (Status: Parcial): · Dados do serviço;
+social.355 (Status: Parcial): · Cronograma de execução;
+social.356 (Status: Parcial): · Monitoramento e avaliação;
+social.357 (Status: Parcial): · Recursos materiais;
+social.358 (Status: Parcial): · Recursos humanos;
+social.359 (Status: Parcial): · Plano de aplicação financeira.
+social.360 (Status: Não implementado): O sistema deve gerar os formulários mensais de Acolhimentos Institucionais das Organizações da Sociedade Civil (OSCs).
+social.361 (Status: Não implementado): Permitir incluir no portal de transparência os planos de trabalho, os contratos, as prestações de contas mensais, as prestações de contas anuais e as análises técnicas de monitoramento.
+social.362 (Status: Não implementado): O sistema deve gerar os formulários mensais de acompanhamento dos atendimentos de Serviço de Convivência e Fortalecimento de Vínculo das OSCs.
+social.363 (Status: Parcial): Dar a possibilidade do profissional responsável pela análise inserir um parecer para a análise da prestação de contas mensal.
+social.364 (Status: Parcial): Permitir realizar a análise financeira do período, com base no que foi lançado nas prestações de contas mensais.
+social.365 (Status: Parcial): Dar a possibilidade do profissional responsável pela análise inserir um parecer para a análise da prestação de contas mensal.
+social.366 (Status: Parcial): Deve ser controlada as análises técnicas de monitoramento com situações, para saber quando a prestação está em lançamento, quando está aguardando homologação, quando está sendo feita a homologação da mesma, quando não foi feita a homologação (quando não foi aprovada) e quando já foi homologada.
+social.367 (Status: Parcial): Imprimir o documento da prestação de contas mensal.
+social.368 (Status: Parcial): Dar a possibilidade do profissional responsável pela análise inserir um parecer para a análise das metas.
+social.369 (Status: Não implementado): Permitir o cadastro das origens financeiras que serão usados para os lançamentos financeiros.
+social.370 (Status: Parcial): Permitir realizar as prestações de contas mensais por Organização da sociedade Civil (OSC), por plano de trabalho, por mês, por ano e por fonte de recursos.
+social.371 (Status: Parcial): Permitir inserir a análise técnica das metas e atividades executadas no período.
+social.372 (Status: Não implementado): Permite a inclusão dos contratos pelo sistema, onde deve ser possível inserir os seguintes dados:
+social.373 (Status: Não implementado): · Profissional responsável;
+social.374 (Status: Não implementado): · Tipo de movimentação;
+social.375 (Status: Não implementado): · Data e hora da movimentação;
+social.376 (Status: Não implementado): · Órgão ou entidade;
+social.377 (Status: Não implementado): · Plano de trabalho;
+social.378 (Status: Não implementado): · Data inicial de vigência;
+social.379 (Status: Não implementado): · Data final de vigência;
+social.380 (Status: Não implementado): · Total de renovações;
+social.381 (Status: Não implementado): · Renovações realizadas;
+social.382 (Status: Não implementado): · Repasse mensal;
+social.383 (Status: Não implementado): · Repasse anual;
+social.384 (Status: Não implementado): · Dia do repasse mensal;
+social.385 (Status: Não implementado): · Situação do contrato;
+social.386 (Status: Não implementado): · Observações.
+social.387 (Status: Parcial): Permitir informar o destino do recurso público que não foi gasto.
+social.388 (Status: Parcial): Deve ser controlada as prestações de contas mensais com situações, para saber quando a prestação está em lançamento, quando foi registrada, quando está sendo feita a análise da mesma, quando está sendo feitos os ajustes solicitados e quando já foi finalizada.
+social.389 (Status: Parcial): Gerar os seguintes cálculos automaticamente com base nas saídas:
+social.390 (Status: Parcial): Total de despesas por mês;
+social.391 (Status: Parcial): Despesas contabilizadas neste exercício.
+social.392 (Status: Parcial): Permitir inserir, na análise técnica de monitoramento, a data e o profissional que fez as visitas técnicas no período.
+social.393 (Status: Não implementado): Deve ser controlada as comprovações com situações, para saber quando a comprovação está em lançamento, quando foi registrada, quando está sendo feita a análise da mesma e quando já foi finalizada.
+social.394 (Status: Parcial): Permitir incluir nas prestações de contas mensais os valores que as Organizações da Sociedade Civil (OSCs) tiveram de despesas, informando a data de saída, o tipo de despesa, a subcategoria da despesa a finalidade, o valor e até mesmo anexar o comprovante do valor que saiu.
+social.395 (Status: Parcial): Deve ser controlada as prestações de contas anuais com sit uações, para saber quando a prestação está em lançamento, quando foi registrada, quando está sendo feita a análise da mesma, quando está sendo feitos os ajustes solicitados e quando já foi finalizada.
+social.396 (Status: Não implementado): Permitir informar quais as prestações de contas mensais farão parte da prestação de contas anual, e com base nisso, lançar automaticamente as entradas e saídas.
+social.397 (Status: Parcial): Gerar automaticamente o valor do "Recurso público não aplicado", com base nas entradas e nas saídas.
+social.398 (Status: Não implementado): Permitir abrir o portal da transparência e acessar os arquivos dos planos de trabalho, dos contratos, das prestações de contas mensais, das prestações de contas anuais e das análises técnicas de monitoramento.
+social.399 (Status: Parcial): Permitir incluir nas prestações de contas anuais os valores que as Organizações da Sociedade Civil (OSCs) tiveram de despesas no ano, informando o tipo da despesa, o mês e o valor.
+social.400 (Status: Parcial): Permitir incluir nas prestações de contas mensais os valores que entraram para a Organização da Sociedade Civil (OSC), i nformando a data de entrada, qual a origem financeira da movimentação, o número do recibo ou documento, o valor e até mesmo anexar um documento na entrada. Importações
+social.401 (Status: Dependência externa): Realizar a importação periódica dos cadastros realizados no CADÚNICO, visualizando o progresso do processo de importação.
+social.402 (Status: Dependência externa): Permitir, verificar o resultado da importação do CADÚNICO, separando registros importados dos não importados.
+social.403 (Status: Dependência externa): Possibilitar a verificação do resultado da importação do CADÚNICO, fil trando as informações por meio dos campos de código da família no CADÚNICO, nome, CPF ou NIS do responsável familiar.
+social.404 (Status: Dependência externa): Visualizar resultado da importação do CADÚNICO. A verificação deverá ser realizada através da própria tela de importação, detalhando se a família foi ou não importada, o motivo, e linkando com o cadastro da Família no sistema, caso a importação tenha sido bem-sucedida.
+social.405 (Status: Dependência externa): Possibilitar a importação dos dados do SICON (Sistema de Gestão de Condicionalidades) do MDS e exibir estas informações no sistema.
+social.406 (Status: Dependência externa): Possibilitar que o usuário consiga visualizar os resultados da importação do SICON, tais como número de registros importados, não importados, erros ocorridos, de maneira que possa entender claramente a situação da importação por meio destes dados.
+social.407 (Status: Dependência externa): Permitir a visualização do motivo de não importação de cada registro.
+social.408 (Status: Dependência externa): Permitir a importação periódica, da folha de pagamento do Programa Auxílio Brasil exibindo as informações no sistema.
+social.409 (Status: Dependência externa): Possibilitar a observação dos detalhes do recebimento, mostrando pelo menos o critério e valor recebido, bem como a situação e o membro correspondente ao critério.
+social.410 (Status: Dependência externa): Dispor em tela a verificação do resultado da importação da folha de pagamento do Auxílio Brasil, diferenciando os registros importados dos não importados.
+social.411 (Status: Dependência externa): Possibilitar a visualização do motivo pelo qual cada registro não foi importado.
+social.412 (Status: Dependência externa): Possibilitar a importação dos dados do Sistema de Benefícios ao Cidadão (Sibec) do Programa Bolsa Família (PBF) e exibir estas informações no sistema.
+social.413 (Status: Dependência externa): Detalhar na visualização do programa o número do benefício, o seu tipo e situação do vínculo da pessoa em relação ao programa.
+social.414 (Status: Dependência externa): Permitir verificar o resultado da importação dos BPC - Benefício da Prestação Continuada, realizando a separação dos registros importados dos não importados.
+social.415 (Status: Dependência externa): Permitir a importação periódica, do CECAD exibindo as informações no sistema.
+social.416 (Status: Dependência externa): Permitir, verificar o resul tado da importação do CECAD, filtrando informações através dos campos, código da família no CECAD, nome, CPF ou NIS do responsável familiar.
+social.417 (Status: Dependência externa): Permitir, verificar o resultado da importação do CECAD, separando registros importados dos não importados.
+social.418 (Status: Dependência externa): Realizar a verificação do resultado da importação do CECAD através da própria tela de importação, fornecendo detalhes do motivo e vinculando-o ao cadastro da família no sistema, caso a importação tenha sido bem-sucedida.
+social.419 (Status: Dependência externa): Possibilitar a importação periódica dos cadastros realizados no CECAD, permitindo a visualização do progresso do processo de importação

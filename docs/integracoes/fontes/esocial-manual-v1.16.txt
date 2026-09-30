@@ -1,0 +1,2881 @@
+Sistema eSocial
+Manual de Orientação do Desenvolvedor
+Versão 1.16
+Agosto de 2026
+
+Histórico de versões
+Data Versão Descrição
+19/12/2014 1.0 Versão inicial
+26/06/2015 1.1
+- Alteração do protocolo de segurança da camada de transporte de  
+SSL para TLS.
+- Alteração da versão do SOAP de 1.2 para 1.1.
+- Exclusão da tag hash dos retornos dos WebServices.
+- Alteração do nome das tags "tpInscricao" e "nrInscricao" para  
+"tpInsc" e "nrInsc" para compatibilizar com o nome utilizado nos  
+Schemas dos eventos.
+- Alteração do nome do atributo "id" para "Id" para compatibilizar  
+com o nome utilizado nos Schemas dos eventos.
+-  Alteração  dos  namespaces  dos  Schemas dos  XMLs  de  
+comunicação.
+- Melhoria da descrição da seção 4.1. Padrão de Documento XML . 
+(Esclarecer o cenário de uso dos caracteres de escape).
+- Melhoria da descrição da seção  6.5. Estrutura do retorno de  
+processamento do evento .  (Inclusão  da  referência  ao  arquivo  
+RetornoEvento-vx_x_x.xsd.)
+2
+14/02/2017 1.2
+- Alteração do padrão de assinatura de Sha1 para Sha256.
+- Correção da Uri do algoritmo de assinatura RSA-Sha256.
+- Alteração da formação do número de protocolo, que passa a conter 
+as informações de ANO e MÊS da recepção.
+- Atualização do leiaute da mensagem de retorno do processamento  
+do lote para contemplar os eventos S-5xxx na seção 5.5.4. Leiaute 
+Mensagem de Retorno do Processamento do Lote. Esta mudança  
+implica  no  versionamento  do  schema  
+RetornoProcessamentoLote.xsd para a versão 1.2.0.
+-  Exclusão  do  prefixo  "MS"  nas  mensagens  das  seções  5.3. 
+Validação do Certificado Digital, 5.4.5. Validações aplicadas  e 
+5.5.6. Validações aplicadas.
+- Inclusão de recomendação na seção  5.6.2. Evitar o envio de  
+eventos durante o processamento do fechamento da folha.
+- Inclusão da seção 5.5.5. Retorno dos eventos totalizadores.
+21/06/2017 1.3
+- Inclusão da seção  5.6.1. Respeitar a ordem de precedência no  
+envio dos eventos em lotes.
+- Inclusão da seção 7. Orientações para utilização do ambiente de  
+Produção Restrita.
+- Exclusão da seção Ambientes de Recepção.
+- Atualização da seção 3.4.1. Indisponibilidade dos servidores
+3
+31/07/2017 1.4
+- Atualização da seção 3.3.Etapas do processo ideal.
+- Atualização do texto da seção 5.6.1. Respeitar a ordem de  
+precedência no envio dos eventos em lotes.
+- Atualização da imagem que ilustra a estrutura básica do evento na  
+seção 6.1.Estrutura do evento.
+- Inclusão da seção 7.11.Remover empregador da base de dados.
+04/09/2017 1.5
+- Atualizações na seção 6.5.Estrutura do retorno de processamento  
+do evento:
+1) Correção do texto sobre a formação do nrRecibo para refletir a  
+implementação atual na seção.
+2) Inclusão da tag contrato no retorno do processamento de alguns  
+eventos específicos. Esta tag irá conter as informações do retrato do  
+contrato de trabalho. A imagem ilustrativa da estrutura do retorno  
+de processamento do evento foi atualizada.
+- Atualização na seção 5.5.1. Dados para a chamada ao Webservice 
+para ajustar o nome do método e assinatura da consulta de resultado  
+do  processamento  do  lote  para  ficar  de  acordo  com  a  versão  
+publicada. Foi alterado de ConsultarResultadoProcessamento para  
+ConsultarLoteEventos.
+-  Inclusão  de  orientações  sobre  a  utilização  de  Procuração  
+Eletrônica na seção 7.6.Validações.
+- Atualização das seções 5.5.5.Retorno dos eventos totalizadores e 
+5.6.3.Evitar o envio de eventos durante o processamento do  
+fechamento da folha para contemplar o evento S-1295.
+4
+24/10/2017 1.5.01
+- Atualização na seção 7.2.Estratégia de disponibilização da data de 
+início da obrigatoriedade do eSocial na Produção Restrita para  
+01/01/2016.
+ 04/12/2017 1.6
+- Atualização da documentação da seção  5.5.4.Leiaute Mensagem 
+de Retorno do Processamento do Lote  em relação a tag evtDupl.  
+Trata-se somente de atualização da documentação deste manual.  
+O .xsd já possui a tag.
+- Atualização na seção 7.3.Eventos excluindo o "S-1035 - Tabela de  
+Carreiras Públicas" da listagem de eventos que compõem o escopo  
+da Produção Restrita.
+- Atualização do agrupamento dos eventos por perfil de procuração  
+eletrônica na seção 7.6.Validações.
+04/01/2018 1.6.1
+Criação da seção 5.6.7 URL dos Web Services que define as URL de 
+acesso dos Web Services do eSocial nos ambientes de Produção  
+Restrita e Produção.
+25/01/2018 1.6.2
+- Atualização da seção 5.5.4. Leiaute  Mensagem  de  Retorno  do 
+Processamento do Lote incluindo o tipo de ocorrência "Histórico de  
+validação".
+- Atualização seção 6.6. Códigos de reposta de processamento do  
+evento incluindo os códigos de status da resposta do processamento  
+407, 408, 409,410 e 411.
+5
+29/01/2018 1.6.3
+- Atualização da seção 5.5.4. Leiaute  Mensagem  de  Retorno  do 
+Processamento do Lote removendo o tipo de ocorrência "Histórico  
+de validação".
+- Atualização da seção 6.5 Estrutura do retorno de processamento  
+do evento incluindo o tipo de ocorrência "Histórico de validação".
+28/03/2018 1.6.4
+-  Atualização  da  seção  7.6.  Validações  relacionada  ao  
+comportamento da validação do CPF no ambiente de Produção  
+Restrita.
+- Atualização da seção 6.5. Estrutura do retorno de processamento  
+do evento removendo a linha observações da tabela relacionada a  
+tag ocorrências.
+- Atualização da seção 6.5. Estrutura do retorno de processamento  
+do evento incluindo a linha observações da tabela relacionada a tag  
+ocorrência.
+6
+29/08/2018 1.7
+- Criação da seção 5.6 - Webservice de Consulta aos Identificadores 
+dos Eventos.
+- Criação da seção 5.7 - Webservice de Solicitação de Download  
+dos Eventos.
+-  Exclusão  da  seção  URL  dos  Web  Services.  A  URL  dos  
+webservices está agora na seção de cada webservice.
+-  Reordenação  da  seção  Recomendações e boas práticas.  A 
+numeração desta seção passa a ser 5.8.
+- Atualização da seção 5.1 - Padrão de Mensagens dos Webservices 
+para contemplar os novos Webservices e Schemas.
+- Criação da seção 6.2.1 - Identificação dos eventos gerados pelo
+eSocial.
+-  Exclusão  da  seção  5.8.4  -  Tempo de espera para busca do  
+resultado do processamento.
+- Atualização dos valores do campo cdResposta  da tag status da  
+seção 7.6.10 - Leiaute Mensagem de Retorno do Processamento do
+Lote 
+- Exclusão da seção 6.6 - Códigos de resposta do processamento do 
+evento e inclusão dos códigos na seção 6.5 - Estrutura do retorno 
+do processamento do evento.
+04/11/2019 1.8 - Criação da seção 7.6.13 - Detalhamento do retorno 605.
+19/08/2020 1.9 - Atualização da seção 8.3 - Identificação do evento.
+- Atualização da seção 9.10 - Certificação digital.
+7
+24/02/2021 1.10 - Atualização da seção 9.11 Remover empregador da base de dados
+17/03/2022 1.11 Criação da seção Padrão de Cifras.
+06/05/2022 1.12 Atualização da seção  Padrão de Cifras .  Alteração d a versão do  
+TLS,
+23/04/2024 1.13 Atualização da seção Padrão de Cifras.
+19/06/2024 1.14 Atualização da seção 9.7 Procuração eletrônica. Inclusão do evento 
+de exame toxicológico
+8
+30/09/2024 1.15 Atualização da seção  Estrutura do retorno de processamento do  
+evento para inclusão dos elementos rubricas e cpfs.
+01/08/2026 1.16
+Adequação  da  documentação  para  contemplar  o  formato  
+alfanumérico do Cadastro Nacional da Pessoa Jurídica (CNPJ):  
+ajuste da seção 6.9 Resumo dos Padrões Técnicos (inclusão de nova  
+linha “Padrão de Validação do CNPJ)
+Ajustes  dos  itens  7.6.10  e  7.6.11,  atualizando  os  totalizadores  
+existentes.
+9
+Índice
+3 INTRODUÇÃO................................................................................................................. 12
+4 CONSIDERAÇÕES INICIAIS..........................................................................................12
+4.2 OBJETIVOS DO PROJETO...............................................................................................12
+4.3 CONCEITO DE EVENTO.................................................................................................13
+5 ARQUITETURA DE COMUNICAÇÃO..........................................................................14
+5.2 MODELO OPERACIONAL...............................................................................................14
+5.3 NÍVEIS DE VALIDAÇÃO................................................................................................15
+5.4 ETAPAS DO PROCESSO IDEAL.......................................................................................16
+5.5 PROCEDIMENTOS DE CONTINGÊNCIA...........................................................................18
+5.5.7 Indisponibilidade dos servidores...................................................................................... 18
+6 PADRÕES TÉCNICOS.....................................................................................................19
+6.2 PADRÃO DE DOCUMENTO XML...................................................................................19
+6.3 SCHEMA XML............................................................................................................. 21
+6.4 PADRÃO DE COMUNICAÇÃO.........................................................................................21
+6.5 PADRÃO DE CIFRAS......................................................................................................22
+6.6 PADRÃO DE CERTIFICADO DIGITAL..............................................................................23
+6.7 PADRÃO DE ASSINATURA DIGITAL...............................................................................24
+6.8 PROCESSO DE VALIDAÇÃO DE ASSINATURA DIGITAL.................................................. 26
+6.9 RESUMO DOS PADRÕES TÉCNICOS............................................................................... 27
+7 WEBSERVICES................................................................................................................30
+7.2 PADRÃO DE MENSAGENS DOS WEBSERVICES............................................................. 30
+7.3 VALIDAÇÃO DA ESTRUTURA DA MENSAGEM NO WEBSERVICE..................................31
+7.4 VALIDAÇÃO DO CERTIFICADO DIGITAL...................................................................... 32
+7.5 WEBSERVICE DE ENVIO DE LOTE DE EVENTOS...........................................................33
+7.5.7 Dados para a chamada ao Webservice..............................................................................33
+7.5.8 Fluxo de Envio de Lote de Eventos..................................................................................35
+7.5.9 Leiaute Mensagem de Entrada..........................................................................................36
+7.5.10 Leiaute Mensagem de Retorno do Envio do Lote.......................................................... 40
+7.5.11 Validações aplicadas.......................................................................................................47
+7.6 WEBSERVICE DE CONSULTA AO RESULTADO DO PROCESSAMENTO DE UM LOTE DE 
+EVENTOS............................................................................................................................48
+7.6.7 Dados para a chamada ao Webservice..............................................................................48
+7.6.8 Fluxo de consulta ao resultado do processamento do lote de eventos..............................49
+7.6.9 Leiaute da Mensagem de Entrada.....................................................................................50
+7.6.10 Leiaute Mensagem de Retorno do Processamento do Lote............................................52
+7.6.11 Retorno dos eventos totalizadores.................................................................................. 60
+7.6.12 Validações aplicadas.......................................................................................................61
+7.6.13 Detalhamento do retorno 605......................................................................................... 62
+7.7 WEBSERVICE DE CONSULTA AOS IDENTIFICADORES DOS EVENTOS........................... 62
+7.7.7 Dados para a chamada ao Webservice..............................................................................63
+7.7.8 Métodos do Webservice....................................................................................................64
+7.7.9 Método ConsultarIdentificadoresEventosEmpregador.....................................................64
+7.7.10 Método ConsultarIdentificadoresEventosTabela............................................................65
+7.7.11 Método ConsultarIdentificadoresEventosTrabalhador...................................................65
+7.7.12 Leiaute das mensagens do Webservice...........................................................................66
+7.7.13 Leiaute Mensagem ConsultaIdentificadoresEventosEmpregador..................................66
+10
+7.7.14 Leiaute Mensagem ConsultaIdentificadoresEventosTabela...........................................69
+7.7.15 Chaves dos eventos de tabela..........................................................................................71
+7.7.16 Leiaute Mensagem ConsultaIdentificadoresEventosTrabalhador.................................. 72
+7.7.17 Leiaute Mensagem RetornoConsultaIdentificadoresEventos.........................................75
+7.8 WEBSERVICE DE SOLICITAÇÃO DE DOWNLOAD DOS EVENTOS.................................. 80
+7.8.7 Dados para a chamada ao Webservice..............................................................................80
+7.8.8 Métodos do Webservice....................................................................................................81
+7.8.9 Método SolicitarDownloadEventosPorId.........................................................................81
+7.8.10 Método SolicitarDownloadEventosPorNrRecibo...........................................................82
+7.8.11 Leiaute das mensagens do Webservice...........................................................................82
+7.8.12 Leiaute Mensagem SolicitacaoDownloadEventosPorId.................................................82
+7.8.13 Leiaute Mensagem SolicitacaoDownloadEventosPorNrRecibo.................................... 85
+7.8.14 Leiaute Mensagem RetornoSolicitacaoDownloadEventos.............................................87
+7.9 RECOMENDAÇÕES E BOAS PRÁTICAS...........................................................................93
+7.9.7 Respeitar a ordem de precedência no envio dos eventos em lotes................................... 93
+7.9.8 Evitar o envio de eventos de outros grupos durante o envio dos eventos periódicos.......95
+7.9.9 Evitar o envio de eventos durante o processamento do fechamento da folha.................. 95
+7.9.10 Otimização na montagem do arquivo.............................................................................96
+7.9.11 Validação de Schema......................................................................................................97
+8  EVENTOS.........................................................................................................................98
+8.2 ESTRUTURA DO EVENTO..............................................................................................98
+8.3 IDENTIFICAÇÃO DO EVENTO...................................................................................... 102
+8.4 ASSINATURA DO EVENTO...........................................................................................104
+8.5 VERSIONAMENTO DOS LEIAUTES DOS EVENTOS........................................................104
+8.6 ESTRUTURA DO RETORNO DE PROCESSAMENTO DO EVENTO.....................................106
+8.6.7 Trabalhadores no fechamento de folha...........................................................................115
+9 ORIENTAÇÕES PARA UTILIZAÇÃO DO AMBIENTE DE PRODUÇÃO RESTRITA
+.............................................................................................................................................116
+9.2 SOBRE A PRODUÇÃO RESTRITA.................................................................................116
+9.3 ESTRATÉGIA DE DISPONIBILIZAÇÃO.......................................................................... 117
+9.4 EVENTOS....................................................................................................................117
+9.5 RESTRIÇÕES...............................................................................................................119
+9.6 TEMPO DE GUARDA DOS DADOS................................................................................119
+9.7 VALIDAÇÕES..............................................................................................................120
+9.8 REGRA PARA IDENTIFICAÇÃO DO AMBIENTE.............................................................125
+9.9 ATENDIMENTO...........................................................................................................125
+9.10 CERTIFICAÇÃO DIGITAL...........................................................................................125
+9.11 REMOVER EMPREGADOR DA BASE DE DADOS..........................................................126
+11
+3 Introdução
+Este documento tem por objetivo definir os critérios e especificações técnicas  
+necessários para a integração entre o Sistema dos empregadores, pessoas físicas e/ou  
+jurídicas e o Sistema eSocial.
+4 Considerações iniciais
+O projeto eSocial é uma ação conjunta entre órgãos e entidades do governo federal,  
+conforme definido no decreto nº 8.373, de 11 de dezembro de 2014.
+4.2 Objetivos do projeto
+Este  projeto  visa  a  disponibilização  de  serviços  que  possibilitem  a  recepção, 
+armazenamento  e  distribuição  aos  entes  participantes  do  eSocial  das  informações  
+trabalhistas e previdenciárias prestadas pelos empregadores ou pelos representantes legais  
+destes. 
+O eSocial traz diversas vantagens em relação à sistemática atual, tais como:
+ atendimento a diversos órgãos do governo com uma única fonte de  
+informações, para o cumprimento das diversas obrigações trabalhistas,  
+previdenciárias e tributárias atualmente existentes; 
+ integração dos sistemas informatizados das empresas com o Ambiente  
+Nacional do eSocial, possibilitando a automação na transmissão das  
+informações dos empregadores; 
+12
+4.3 Conceito de evento
+O Sistema eSocial disponibilizará serviços que receberão eventos que acarretarão na 
+manutenção do cadastro do empregador, na manutenção dos dados trabalhistas e de folha  
+de pagamento de um empregado e na manutenção das informações tabeladas que servem de 
+referência para os eventos. Também serão disponibilizados serviços de consulta para os  
+dados mantidos pelo sistema. Os eventos foram organizados em grupos pela periodicidade, 
+reuso, volatilidade e tipo. Conforme descrito no "Manual de Orientação do eSocial", foram  
+definidos os seguintes grupos: Eventos de tabelas, Eventos Não periódicos e Eventos 
+periódicos.
+13
+5 Arquitetura de comunicação
+5.2 Modelo operacional
+Para enviar informações trabalhistas e previdenciárias ao eSocial o empregador  
+deverá gerar eventos em arquivos eletrônicos, contendo as informações referentes ao  
+cadastro inicial, tabelas, eventos não periódicos e eventos periódicos. Os arquivos gerados  
+deverão  ser  assinados  digitalmente,  transformando  este  arquivo  em  um  documento  
+eletrônico nos termos da legislação brasileira, de maneira a garantir a integridade dos dados  
+e a autoria do emissor.
+Este  arquivo  eletrônico  deverá  ser  transmitido  pela  Internet  para  o  Ambiente 
+Nacional em agrupamentos denominados lote de eventos, que são arquivos eletrônicos que  
+encapsulam um conjunto de eventos. No Ambiente Nacional, os eventos serão extraídos  
+dos lotes, e submetidos a validações quanto ao conteúdo e quanto aos outros eventos  
+recebidos anteriormente, garantindo a qualidade da informação.
+O processo de solicitação de processamento de eventos será executado de forma  
+assíncrona através de dois Webservices, sendo um para o envio de lotes de eventos (item  
+7.5.  Webservice de Envio de Lote de Eventos ) e outro para consultar o resultado do  
+processamento  de  um  lote  (item  7.6.  Webservice  de  Consulta  ao  Resultado  do
+Processamento de um Lote de Eventos ). Com isto o processamento dos eventos não  
+acontecerá na mesma conexão, tornando necessária a realização de uma nova conexão para  
+a obtenção do resultado do processamento.
+O primeiro  Webservice, cujo propósito é enfileirar os lotes de eventos recebidos  
+para posteriormente serem processados, terá um Protocolo de Envio, que representa a  
+confirmação de recepção do lote. A partir do Protocolo de Envio,  os andamentos/resultados 
+dos processamentos poderão ser recuperados.  
+14
+O segundo Webservice, cujo propósito é a consulta ao resultado do processamento  
+de um lote de eventos, terá como retorno o andamento/resultado do processamento, assim  
+como os erros gerados, caso estes existam, e o recibo de entrega de cada um dos eventos  
+pertencentes ao lote.
+5.3 Níveis de Validação
+Os arquivos enviados para o eSocial serão validados em duas etapas, ou em dois  
+níveis:
+ Validação Nível 1: será executada no momento da recepção do lote de eventos.  
+Neste momento serão verificados apenas o certificado da conexão e a estrutura  
+do lote, as validações dos eventos ocorrerão apenas na validação de nível 2.  
+Caso seja detectada alguma inconsistência o lote não será recebido. 
+ Validação Nível 2:  será executada em um segundo momento, em que os  
+eventos serão extraídos do lote e serão validados individualmente.  Os eventos  
+pertencentes a um determinado lote, com erro de estrutura, serão rejeitados pelo  
+sistema  eSocial,  mas  os  outros  eventos  deste  mesmo  lote  poderão  ser  
+processados  normalmente,  desde  que  estes  não  contenham  erros  em  suas  
+estruturas. 
+Para implementar o modelo assíncrono, na validação de nível 2, o sistema eSocial  
+fará a inserção dos lotes de eventos em filas de processamento, que serão processados  
+posteriormente de forma distribuída. 
+IMPORTANTE: Como o processamento dos lotes será realizado de forma  
+distribuída, caso haja necessidade de garantia de precedência entre eventos, esta  
+deverá ser feita pelo empregador por meio da ordem dos eventos dentro de um mesmo 
+15
+lote ou através do controle da montagem de lotes feita após o recebimento do recibo  
+de entrega do processamento de um determinado evento.
+O andamento/resultado do processamento dos eventos, bem como os erros gerados  
+pela  má  formação  destes  ou  pelo  processamento  dos  mesmos,  somente  poderão  ser 
+recuperados pelo responsável pela solicitação de processamento, ou seja, aquele que enviou  
+a solicitação de processamento do lote. A recuperação destes dados deve ocorrer através de  
+uma solicitação de consulta ao resultado do processamento de um lote.
+5.4 Etapas do processo ideal
+A seguir são exibidas e descritas as etapas do processo ideal:
+16
+1) O  aplicativo  do  empregador  inicia  a  conexão  enviando  uma  mensagem  de  
+solicitação de processamento de lote de eventos para o 7.5 - Webservice de Envio
+de Lote de Eventos;
+2) O Webservice recebe a mensagem de solicitação de processamento, valida e insere a 
+solicitação no repositório de lotes;
+3) O Webservice retorna para o aplicativo do empregador o Protocolo de Envio;
+4) Os lotes são inseridos na fila de solicitações de processamento;
+5) O sistema eSocial retira e processa a solicitação de processamento da fila de  
+solicitações;
+6) O sistema eSocial valida cada um dos eventos contidos no lote. Os eventos que são  
+considerados válidos pelo eSocial são armazenados e um recibo é emitido;
+7) Uma vez concluída a validação de todos os eventos de um lote um retorno do  
+processamento do lote é gerado e armazenado no eSocial. Este retorno contém o  
+resultado do processamento de cada evento contido no lote;
+8) O aplicativo do empregador faz uma solicitação de consulta, ao 7.6 Webservice de
+Consulta ao Resultado do Processamento de um Lote de Eventos ,  passando o  
+Protocolo de Envio retornado no passo 4;
+9)  O  Webservice retorna  o  resultado  da  consulta  contendo  a  situação  do  
+processamento do lote de eventos. Caso o lote já esteja processado, o retorno  
+conterá: os Recibos de Entrega dos eventos válidos e/ou os Erros dos eventos  
+inválidos.
+17
+5.5 Procedimentos de contingência
+5.5.7 Indisponibilidade dos servidores
+O procedimento de contingência para a indisponibilidade do ambiente da empresa é  
+o Portal Web do eSocial.
+É necessário observar que, devido ao processo manual de entrada de dados no Portal 
+Web do sistema eSocial, o procedimento de contingência tratado neste item se mostrará  
+oneroso para o registro de grandes volumes de dados no sistema e por isso deve ser evitado  
+e somente utilizado quando, de fato, for necessário.
+18
+6 Padrões Técnicos
+6.2 Padrão de documento XML
+A especificação do documento XML adotada é a recomendação W3C para XML  
+1.0, disponível em http://www.w3.org/TR/REC-xml. 
+A codificação dos caracteres será em UTF-8, assim todos os documentos XML  
+serão iniciados com a seguinte declaração:
+<?xml version="1.0" encoding="UTF-8"?>
+Cada arquivo XML somente poderá ter uma única declaração <?xml version="1.0"  
+encoding="UTF-8"?>. Nas situações em que um documento XML pode conter outros  
+documentos XML, como ocorre com o documento XML de serviços que recebem lote de  
+eventos,  deve-se  tomar  cuidado  para  que  exista  uma  única  declaração  no  início  do 
+documento.
+Alguns caracteres especiais/reservados pela sintaxe XML quando forem inseridos  
+como dado de conteúdo deverão ser substituídos pelos seus respectivos caracteres de escape 
+conforme a tabela abaixo:
+Caractere Escape
+> (sinal de maior) &gt;
+< (sinal de menor) &lt;
+& (e comercial) &amp;
+19
+” (aspas duplas) &quot;
+’ (sinal de apóstrofe ou aspas simples) &apos;
+6.2.7.1 Declaração namespace
+Cada evento XML deverá ter uma única declaração de   namespace   no elemento raiz   
+do documento com o seguinte padrão:
+<eSocial xmlns="http://www.esocial.gov.br/schema/lote/eventos/envio/vx_x_x" >
+O uso de declaração namespace diferente do padrão estabelecido é vetado.
+A declaração do namespace da assinatura digital deverá ser realizada na própria tag 
+<Signature>, conforme exemplo abaixo:
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt">
+  
+  <!-- Xml do Evento -->
+  
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <.../> 
+  </Signature>
+</eSocial>
+20
+6.3 Schema XML
+A estrutura dos XML recebidos pelo eSocial são especificadas e checadas por um  
+Schema, que é uma linguagem que define a estrutura do documento XML, descrevendo os  
+seus elementos e a sua organização, além de estabelecer regras de preenchimento de  
+conteúdo e de obrigatoriedade de cada elemento ou grupo de informação. Este  Schema 
+XML é representado, fisicamente, por um arquivo de extensão XSD.
+A validação da estrutura XML da mensagem é realizada por um analisador sintático  
+(parser) que verifica se a mensagem atende as definições e regras de seu Schema XML. 
+Qualquer divergência da estrutura XML da mensagem em relação ao seu Schema XML 
+provoca um erro de validação.
+6.4 Padrão de comunicação
+A  comunicação  será  baseada  em  Webservices,  disponibilizados pelo  sistema  
+eSocial.
+O meio físico de comunicação utilizado será a Internet, com o uso do protocolo  
+HTTPS (TLS), com autenticação mútua, que além de garantir um duto de comunicação  
+seguro na Internet, permite a identificação do servidor e do cliente através de certificados  
+digitais.
+O modelo de comunicação segue o padrão de Webservices definido pelo WS-I Basic 
+Profile.
+A troca de mensagens entre os Webservices do ambiente do sistema eSocial e os  
+aplicativos dos contribuintes será realizada no padrão SOAP versão 1.1, com troca de  
+mensagens XML no padrão Style/Enconding: Document/Literal. 
+21
+Exemplo de uma mensagem SOAP:
+  <?xml version="1.0" encoding="utf-8"?>
+  <soap:Envelope 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header></soap:Header>
+    <soap:Body>CORPO DA MENSAGEM SOAP</soap:Body>
+  </soap:Envelope>
+6.5 Padrão de cifras
+As cifras são algoritmos usados para criptografar dados. Antes de uma conexão  
+segura ser estabelecida, o protocolo e a cifra são negociados entre o servidor do eSocial e o  
+servidor que enviará dados ao eSocial, com base na disponibilidade de cifras em ambos os  
+lados. Para isso, basta que a aplicação dos clientes tenha pelo menos uma cifra compatível  
+com as cifras dos servidores do eSocial.
+A partir de 24/06/2024, os servidores do eSocial estarão configurados para trabalhar  
+apenas com as seguintes cifras na versão TLSv1.2:
+ TLS_RSA_WITH_AES_128_GCM_SHA256
+ TLS_RSA_WITH_AES_256_GCM_SHA384
+ TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+Caso as aplicações dos clientes não possuam cifras compatíveis com as aceitas pelos 
+servidores do eSocial, as sessões não serão estabelecidas.
+Recomenda-se seguir sempre a última atualização do protocolo e cifras mais novas  
+seguindo  o  padrão  de  mercado,  assim  como  fazem  OpenSSL,  Microsoft  e  demais  
+navegadores, para determinar as cifras a serem suportadas.
+22
+Em caso de dúvidas, é recomendado consultar a documentação oficial doTLS1.2,  
+localizada no sítio https://www.ietf.org/rfc/rfc5246.txt     .
+6.6 Padrão de certificado digital
+O certificado digital utilizado no sistema eSocial deverá ser emitido por Autoridade  
+Certificadora credenciada pela Infraestrutura de Chaves Públicas Brasileira – ICP-Brasil.
+Este deverá pertencer à série A.  Existem duas séries as quais os certificados podem  
+pertencer, a série A e a S. A série A reúne os certificados de assinatura digital utilizados na  
+confirmação de identidade na  Web, em e-mails, em redes privadas virtuais ( VPN) e em  
+documentos eletrônicos com verificação da integridade de suas informações. A  série S  
+reúne os certificados de sigilo que são utilizados na codificação de documentos, de bases de 
+dados, de mensagens e de outras informações eletrônicas sigilosas.
+O certificado digital deverá ser do tipo A1 ou A3. Certificados digitais de tipo A1  
+ficam armazenados no próprio computador a partir do qual ele será utilizado. Certificados 
+digitais do tipo A3 são armazenados em dispositivo portátil inviolável do tipo smart card 
+ou token, que possuem um chip com capacidade de realizar a assinatura digital. Este tipo de  
+dispositivo é bastante seguro, pois toda operação é realizada pelo chip existente no  
+dispositivo, sem qualquer acesso externo à chave privada do certificado digital.
+Para que um certificado seja aceito na função de transmissor de solicitações este  
+deverá ser do tipo e-CPF (e-PF) ou e-CNPJ (e-PJ).
+Os certificados digitais serão exigidos em dois momentos distintos:
+1. Transmissão: antes de ser iniciada a transmissão de solicitações ao sistema eSocial, 
+o certificado digital do solicitante é utilizado para reconhecer o transmissor e  
+garantir a segurança do tráfego das informações na INTERNET. 
+23
+2. Assinatura de documentos : para garantir o não repúdio e a integridade das  
+informações os documentos eletrônicos enviados para o eSocial são assinados  
+digitalmente seguindo a especificação descrita em 6.7 - Padrão de assinatura digital 
+e as orientações estabelecidas no "Manual de Orientação do eSocial". 
+6.7 Padrão de assinatura digital
+O sistema eSocial utiliza um subconjunto do padrão de assinatura XML definido  
+pelo http://www.w3.org/TR/xmldsig-core/.
+1. Padrão de assinatura: XML Digital Signature, utilizando o formato Enveloped 
+(http://www.w3.org/TR/xmldsig-core/)
+2. Certificado digital: emitido por AC credenciada no ICP-Brasil 
+(http://www.w3.org/2000/09/xmldsig#X509Data)
+3. Cadeia de certificação: EndCertOnly (Incluir na assinatura apenas o certificado do 
+usuário final)
+3.1. Tipo do certificado: A1 ou A3
+4. Tamanho da chave criptográfica: compatível com os certificados A1 e A3 (2048 
+bits)
+5. Função criptográfica assimétrica: RSA (http://www.w3.org/2001/04/xmldsig-
+more#rsa-sha256)
+6. Função de message digest: SHA-256.  
+(http://www.w3.org/2001/04/xmlenc#sha256)
+24
+7. Codificação: Base64 (http://www.w3.org/2000/09/xmldsig#base64)
+8. Transformações exigidas: útil para realizar a canonicalização do XML enviado 
+para realizar a validação correta da assinatura digital. São elas:
+8.1. Enveloped (http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+8.2. C14N (http://www.w3.org/TR/2001/REC-xml-c14n-20010315)
+As informações necessárias à identificação do assinante estão presentes dentro do  
+certificado digital, tornando desnecessária a sua representação individualizada no arquivo  
+XML. Portanto, o arquivo XML assinado deve conter apenas a tag X509Certificate nas  
+informações que dizem respeito ao certificado.
+Abaixo temos um exemplo de um evento assinado digitalmente:
+<?xml version="1.0" encoding="utf-8"?>
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/">
+  <!-- Xml do Evento -->
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-
+c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-
+sha256" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-
+signature" />
+          <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" 
+/>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+        <DigestValue>CFJEIy1dUko99nNUW/ICvG9ZNoij0o9IOhdP6Nt1j1k=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>...</SignatureValue>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>...</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+25
+  </Signature>
+</eSocial>
+6.8 Processo de validação de assinatura digital
+O Procedimento de validação da assinatura digital adotado pelo sistema eSocial é:
+1) extrair a chave pública do certificado;
+2) verificar o prazo de validade do certificado utilizado;
+3) montar e validar a cadeia de confiança dos certificados validando também a LCR  
+(Lista de Certificados Revogados) de cada certificado da cadeia;
+4) validar o uso da chave utilizada (assinatura digital) de forma a aceitar certificados  
+somente do tipo A (não serão aceitos certificados do tipo S);
+5) garantir que o certificado utilizado é de um usuário final e não de uma autoridade  
+certificadora;
+6) adotar as regras definidas pelo RFC 3280 para as LCR e cadeia de confiança;
+7) validar a integridade de todas as LCR utilizadas pelo sistema;
+8) prazo de validade de cada LCR utilizada (verificar data inicial e final). 
+26
+6.9 Resumo dos padrões técnicos
+A tabela a seguir resume os principais padrões de tecnologia utilizados:
+Característica Descrição
+Webservices
+Padrão definido pelo WS-I Basic Profile 1.1 
+(http://www.ws-i.org/Profiles/BasicProfile-1.1-2004-08-24.html)
+Meio lógico de 
+comunicação
+Webservice (s) disponibilizado (s) pelo sistema eSocial
+Meio físico de 
+comunicação
+INTERNET
+Protocolo Internet
+HTTPS (TLS), com  autenticação mútua  através  de  certificados  
+digitais
+Padrão de troca de 
+mensagens
+SOAP versão 1.1
+Padrão da mensagem XML no padrão Style/Encoding: Document/Literal
+Padrão de certificado 
+digital
+X.509 versão 3, emitido por Autoridade Certificadora credenciada  
+pela Infraestrutura de Chaves Públicas Brasileira – ICP-Brasil, do  
+tipo A1 ou A3, devendo ser um e-CPF (e-PF) ou e-CNPJ (e-PJ).
+27
+Para transmissão, utilizar o certificado digital do responsável pela 
+transmissão.
+Padrão de assinatura 
+digital
+XML Digital Signature, Enveloped, com certificado digital X.509  
+versão 3, com chave privada de tamanho variável, conforme o  
+padrão da ICP-Brasil (1024, 2048, ou mais bits), com padrões de  
+criptografia assimétrica RSA, algoritmo message digest SHA-256 e 
+utilização das transformações Enveloped e C14N.
+Validação de assinatura 
+digital
+Será validada além da integridade e autoria, a cadeia de confiança 
+com a validação das LCR.
+Padrões de 
+preenchimento XML
+Campos não obrigatórios do  Schema que não possuam conteúdo  
+terão suas tags suprimidas no arquivo XML
+Nos  campos  numéricos  inteiros,  não  incluir  vírgula  ou  ponto  
+decimal.
+Nos  campos  numéricos  com  casas  decimais,  utilizar  o  ponto  
+decimal na separação da parte inteira.
+ Padrão de Validação do 
+CNPJ
+Os campos de número de inscrição (nrInsc) que sejam do tipo CNPJ 
+(tpInsc = 1), a partir de julho de 2026, poderão ser emitidos em  
+formato  alfanumérico,  conforme  estabelecido  pela  Instrução  
+Normativa RFB nº 2.119, de 6 de dezembro de 2022.
+O CNPJ em formato alfanumérico será considerado case sensitive,  
+ou seja, haverá distinção entre caracteres maiúsculos e minúsculos.  
+28
+Para fins de envio ao eSocial, somente serão aceitos caracteres  
+alfanuméricos em letras maiúsculas.
+Assim, valores como “AB12CD34EF56GH” e “ab12cd34ef56gh”  
+serão considerados diferentes para fins de validação, sendo que a  
+presença  de  qualquer  caractere  alfabético  em  letra  minúscula  
+invalidará o CNPJ e ocasionará a rejeição do evento.
+A validação dos dígitos verificadores (DV) do CNPJ alfanumérico  
+seguirá as regras definidas pela Receita Federal do Brasil, conforme  
+manual técnico oficial disponível em:
+https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/
+publicacoes/documentos-tecnicos/cnpj/manual-dv-cnpj.pdf/view
+Os CNPJs emitidos anteriormente a julho de 2026 permanecem  
+válidos em seu formato exclusivamente numérico, não sofrendo  
+qualquer alteração ou conversão.
+Empregadores que operam exclusivamente com CNPJ numérico  
+podem continuar utilizando o Pacote de Comunicação eSocial v1.6.  
+Empregadores cujas aplicações necessitem operar tanto com CNPJ  
+numérico quanto com CNPJ alfanumérico poderão adotar o Pacote  
+de Comunicação eSocial v1.6-Alfa, quando aplicável, para facilitar  
+a integração com os serviços do eSocial.
+29
+7 Webservices
+7.2 Padrão de Mensagens dos Webservices
+Os métodos de solicitação de processamento e de consultas dos  Webservices do  
+sistema  eSocial  foram  projetados  para  receberem  mensagens  no  padrão  XML  como 
+parâmetro de entrada dos métodos, assim como retornar mensagens no padrão XML. 
+Os  Schemas que  definem  os  XML  recebidos  pelo  sistema  eSocial  serão  
+disponibilizados no sítio https://portal.esocial.gov.br, e serão liberados após autorização da  
+Coordenação Técnica do Sistema.
+Haverá dois pacotes de Schemas:
+ Comunicação: contém os  Schemas envolvidos no processo de comunicação  
+com o eSocial (Schema do Lote de Eventos, Schema do Retorno de Envio de  
+Lote, Schema do Retorno de Processamento de Lotes, Schemas da Consulta aos  
+Identificadores dos Eventos, Schemas de Solicitação de Download de Eventos).  
+Os Schemas deste pacote estão descritos nas seções 7.5. Webservice de Envio
+de  Lote  de  Eventos ,  7.6. Webservice  de  Consulta  ao  Resultado  do
+Processamento  de  um  Lote  de  Eventos,  7.7.  Webservice de Consulta aos
+Identificadores dos Eventos e 7.8. Webservice de Solicitação de Download dos
+Eventos.
+ Eventos: contém os Schemas dos eventos de negócio previstos para o eSocial  
+(Schema do Evento de remuneração, de férias, de admissão, etc..). Os Schemas  
+deste pacote estão descritos na seção 8 -  Eventos. 
+30
+7.3 Validação da Estrutura da Mensagem no Webservice
+Os Webservices disponibilizados pelo sistema eSocial, possuem como entrada de  
+dados mensagens utilizando a linguagem de marcação XML, as quais são validadas com os  
+Schemas que as define, e rejeitadas caso seja encontrada alguma inconsistência. 
+Assim,  os  aplicativos  que  fazem  solicitações  ao  sistema  eSocial  devem  estar 
+preparados para gerar lotes de eventos no formato definido pelo XSD em vigor.
+As alterações da estrutura de dados XML realizadas nas mensagens são controladas  
+através da versão definida no namespace do  Schema. A identificação da versão dos  
+Schemas será realizada com o acréscimo do número da versão como sufixo no namespace  
+do XML e no nome do arquivo, conforme o exemplo abaixo:
+Namespace:
+ http://www.esocial.gov.br/schema/lote/eventos/envio/vx_x_x
+Nome arquivo:
+ loteEventos-vx_x_x.xsd (Schema XML para o lote de eventos)
+Onde x_x_x corresponde a versão mais recente publicada.
+As modificações de leiaute das mensagens do Webservice podem ser causadas por  
+necessidades técnicas ou em razão da modificação de alguma legislação. As modificações  
+decorrentes de alteração da legislação deverão ser implementadas nos prazos previstos no  
+ato  normativo  que  introduziu  a  alteração.  As  modificações  de  ordem  técnica  serão  
+divulgadas pela Coordenação Técnica do Sistema e poderão ocorrer sempre que se fizerem  
+necessárias.
+31
+7.4 Validação do Certificado Digital
+Os certificados digitais podem ser utilizados tanto nas conexões TLS de transmissão 
+dos lotes de eventos para o eSocial, quanto para a assinatura dos eventos. Neste caso, os  
+efeitos da validação podem se dar para todo o lote (no caso de o erro ser gerado a partir do  
+certificado de transmissão) como para um evento específico (no caso do erro ser gerado a  
+partir de uma assinatura de um documento XML, enviado ao eSocial, que representa o  
+evento).
+Os Certificados Digitais utilizados no acesso aos serviços disponibilizados pelo  
+sistema eSocial e na assinatura dos arquivos XML enviados a este deverão atender aos  
+seguintes critérios:
+Critério Mensagem Efeito
+A formação da cadeia de certificação até sua raiz deve 
+ser confiável.
+148
+Rejeição do lote 
+ou do evento
+A raiz da cadeia deverá pertencer a Autoridade 
+Certificadora Raiz Brasileira (ICP-Brasil).
+149
+Rejeição do lote 
+ou do evento
+O certificado não poderá estar revogado. 150
+Rejeição do lote 
+ou do evento
+O certificado não poderá estar expirado na data da 
+verificação.
+151
+Rejeição do lote 
+ou do evento
+O certificado deverá ser do tipo e-CNPJ, ou e-PJ, se o 
+certificado for de Pessoa Jurídica.
+152
+Rejeição do lote 
+ou do evento
+O certificado deverá ser do tipo e-CPF, ou e-PF, se o 
+certificado for de Pessoa Física.
+153
+Rejeição do lote 
+ou do evento
+O certificado não foi encontrado. 4 Rejeição do lote 
+ou do evento
+32
+Falha ao acessar a lista de certificados revogados. 11
+Rejeição do lote 
+ou do evento
+7.5 Webservice de Envio de Lote de Eventos
+A função deste  Webservice é receber um lote de eventos, validá-lo e retornar o  
+Protocolo de Envio, que deverá ser armazenado pelo empregador para, em outro momento,  
+consultar o resultado do processamento do lote.
+Neste Webservice serão as executadas as validações de nível 1, conforme descrito  
+na seção 5.3. Níveis de Validação.
+Cada evento enviado, através do lote de eventos, deve ser assinado individualmente  
+dentro do lote. Além disso, o lote somente poderá conter eventos de um único empregador  
+e do mesmo grupo. Caso existam eventos pertencentes a um grupo diferente do informado  
+no lote, o sistema eSocial irá considera-los rejeitados e não irá processa-los. Os grupos dos  
+eventos, e os eventos que compõem estes, estão listados no " Manual de Orientação do  
+eSocial".
+7.5.7 Dados para a chamada ao Webservice
+Nome do método EnviarLoteEventos
+Assinatura xsd:any  EnviarLoteEventos(xsd:any loteEventos)
+Requer Certificado de Cliente?
+Sim. 
+Observação:  Não  é  necessário  qualquer  tipo  de  
+vínculo formal (ex: procuração) entre o transmissor e o  
+empregador.
+33
+Schema Parâmetro loteEventos EnvioLoteEventos-vx_x_x.xsd
+Schema Retorno RetornoEnvioLoteEventos-vx_x_x.xsd
+URL Produção https://webservices.envio.esocial.gov.br/servicos/empregador/
+enviarloteeventos/WsEnviarLoteEventos.svc
+URL Produção Restrita https://webservices.producaorestrita.esocial.gov.br/servicos/
+empregador/enviarloteeventos/WsEnviarLoteEventos.svc
+34
+7.5.8 Fluxo de Envio de Lote de Eventos
+Abaixo é descrito detalhadamente o processo de envio de lote de eventos:
+35
+7.5.9 Leiaute Mensagem de Entrada
+A mensagem de entrada é definida pelo  Schema EnvioLoteEventos-vx_x_x.xsd,  
+cuja estrutura é apresentada abaixo:
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/ Namespace do XSD do  
+envio de lote de eventos.
+36
+schema/lote/
+eventos/envio/vx_x_x
+grupo obrigatório 1 1 - Eventos de Tabelas
+2 - Eventos Não Periódicos
+3 - Eventos Periódicos
+Define  o  grupo  dos  
+eventos contidos no lote. 
+Durante  o  
+processamento  é  
+verificado  se  o  evento 
+pertence  ao  grupo  
+informado  no  lote,  e  
+caso não seja, o evento é 
+rejeitado. lk12\j
+tag: envioLoteEventos
+descrição: Contém as informações necessárias ao envio de um lote de eventos
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+descrição: Contém a identificação do empregador responsável pelos eventos  
+contidos no lote.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ; Contém o tipo de inscrição do  
+empregador.
+37
+2 – CPF
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+Observações:
+As informações do empregador contidas nesta tag são comparadas à identificação do  
+empregador contida nos eventos. Caso as identificações não coincidam o evento é rejeitado.
+tag: ideTransmissor
+descrição: Contém a identificação da pessoa física ou jurídica que transmitiu o lote 
+de eventos.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ;
+2 – CPF
+Contém o tipo de inscrição do  
+transmissor.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do transmissor.
+Observações:
+As informações do transmissor contidas nesta tag são comparadas ao tipo e número de  
+inscrição contidos no certificado digital utilizado na conexão TLS. Caso as identificações  
+não coincidam o lote é rejeitado.
+38
+tag: eventos
+descrição: Contém os eventos que serão processados pelo eSocial.
+obrigatório? Sim
+ocorrência Única
+tag: evento
+descrição: Contém cada evento que será processado pelo eSocial.
+obrigatório? Sim
+ocorrência 1 .. 50
+campo obrigatoriedade ocorrência valores válidos descrição
+Id obrigatório 1 - Contém  chave  de  acesso  do  
+evento.  O valor  deste  campo  
+deve coincidir com o atributo  
+Id do evento contido no campo  
+abaixo.
+Importante:  É  através  deste  
+campo  que  o  empregador  
+realizará a correlação entre o  
+evento enviado e o resultado  
+retornado pelo eSocial.
+<any> obrigatório 1 - Contém o XML do evento.
+Observações:
+39
+O conteúdo do campo evento, deve ser o XML do evento a ser enviado para processamento  
+no sistema eSocial. Este campo pode ser repetido até 50 vezes, isto quer dizer que o lote de  
+eventos pode ser composto, no máximo, por 50 eventos.
+Existem diferentes estruturas XML, leiautes, para a representação dos eventos recebidos  
+pelo sistema eSocial. Mais informações a respeito podem ser obtidas na seção 8 -  Eventos.
+7.5.10Leiaute Mensagem de Retorno do Envio do Lote
+A  mensagem  de  retorno  é  definida  pelo  Schema RetornoEnvioLoteEventos-
+vx_x_x.xsd, cuja estrutura é apresentada abaixo:
+40
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/lote/
+eventos/envio/
+retornoEnvio/vx_x_x
+Namespace do XSD do  
+retorno do envio de lote  
+de eventos.
+tag: retornoEnvioLoteEventos
+descrição: Contém o resultado da operação de recepção de um lote de eventos
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+descrição: Contém a identificação do empregador responsável pelos eventos  
+contidos no lote.
+obrigatório? Não
+ocorrência Única
+41
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ;
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+Observações:
+Esta tag será preenchida somente quando o lote não apresentar erros de Schema.
+tag: ideTransmissor
+descrição: Contém a identificação da pessoa física ou jurídica que transmitiu o lote 
+de eventos.
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ;
+2 – CPF
+Contém o tipo de inscrição do  
+transmissor.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do transmissor.
+Observações:
+Esta tag será preenchida somente quando o lote não apresentar erros de Schema.
+42
+tag: status
+descrição: Contém o resultado do processo de recepção. É nesta tag que haverá a  
+informação se o lote foi recebido com sucesso ou não, e qual a causa da  
+não recepção.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+cdResposta obrigatório 1 201 - Lote recebido com 
+sucesso.
+202 - Lote recebido com 
+advertências.
+203 - Lote recebido já foi 
+recebido anteriormente e 
+ainda está na fila de 
+processamento.
+301 - Erro servidor 
+eSocial.
+401 - Lote incorreto - Erro 
+preenchimento.
+402 - Lote incorreto - 
+Schema inválido.
+403 - Lote incorreto - 
+Versão do schema não 
+permitida.
+404 - Lote incorreto - Erro 
+Contém  o  código  de 
+resposta  do  processo 
+de  recepção.  Caso  o 
+código seja de erro ou  
+advertência,  os  
+detalhes  do  mesmo  
+estarão  na  tag  
+ocorrencias. 
+43
+certificado.
+405 - Lote incorreto - Lote 
+nulo ou vazio.
+406 - Lote rejeitado - 
+Totalização em 
+andamento.
+407 - Lote rejeitado - 
+Empregador não 
+autorizado a enviar.
+descResposta obrigatório 1 - Contém  a  descrição  
+correspondente  ao  
+código de resposta.
+tag: ocorrencias
+descrição: Contém as ocorrências encontradas no lote quando o código de resposta 
+contido na tag status for diferente de sucesso (código: 201).
+obrigatório? Não
+ocorrência Única
+tag: ocorrencia
+descrição: Contém cada uma das ocorrências encontradas no lote quando o código  
+de resposta contido na tag status for diferente de sucesso (código: 201).
+obrigatório? Sim, caso exista a tag ocorrencias
+ocorrência 1..*
+44
+campo obrigatoriedade ocorrência valores válidos descrição
+codigo obrigatório 1 - Contém o código da ocorrência 
+detectada  em  alguma  das  
+regras  previstas  na  seção  
+7.5.11. Validações aplicadas.
+descricao obrigatório 1 - Contém  a  descrição  da  
+ocorrência  detectada  em  
+alguma das regras previstas na  
+seção  7.5.11.  Validações
+aplicadas.
+tipo obrigatório 1 1 - Erro
+2 - Advertência
+Contém o código do tipo de  
+ocorrência.
+localizacao facultativo 1 - Contém o caminho da tag ou  
+atributo em que ocorreu o erro.
+tag: dadosRecepcaoLote
+descrição: Contém os dados relativos a um lote recebido com sucesso. É nesta tag  
+que está localizado o Protocolo de Envio.
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+dhRecepcao obrigatório 1 - Contém  a  data/hora  de  
+recepção  do  lote  de  eventos. 
+Para os eventos para os quais  
+for emitido o recibo de entrega  
+esta  data  será  considerada  a  
+data da entrega do evento ao  
+45
+eSocial.
+versaoAplicativo
+Recepcao
+obrigatório 1 - Contém a versão do aplicativo  
+de recepção.
+protocoloEnvio obrigatório 1 - Número  sequencial  único  
+produzido  no  instante  de  
+recepção do lote de eventos e  
+que  será  utilizado  como  
+parâmetro pelo empregador no  
+WebService  de  Consulta  ao  
+Resultado  de  Processamento  
+do Lote.
+Abaixo é descrita a regra de  
+formação deste Protocolo:
+A.B.YYYYMM.NNN....N
+A = Agente de recepção: 
+Serpro=1 ou Caixa=2 
+B = Ambiente de recepção: 
+1=Produção;
+2=Pré-produção - dados reais; 
+3=Pré-produção - dados 
+fictícios; 
+6=Homologação; 7=Validação; 
+8=Testes; 
+9=Desenvolvimento;
+YYYYMM = Ano e mês da 
+recepção.
+  
+N = Número sequencial (19 
+posições)
+Observações:
+Esta tag será preenchida somente quando o lote for recebido com sucesso.
+46
+7.5.11 Validações aplicadas
+Critério Mensagem Efeito
+Foi identificado um erro na estrutura do lote 613 Rejeição do lote
+Não foi possível verificar a revogação do certificado 11 Rejeição do lote
+A solicitação ultrapassou o tamanho limite.
+Observação: O tamanho limite da mensagem SOAP é 
+750 kbytes.
+612 Rejeição do lote
+A versão do lote deverá ser a mais recente 608 Rejeição do lote
+CNPJ do empregador/transmissor inválido 380 Rejeição do lote
+CPF do empregador/transmissor inválido 381 Rejeição do lote
+O número de inscrição do empregador deverá ter o 
+tamanho de 8(CNPJ base), 11(CPF) ou 14 (CNPJ)
+658 Rejeição do lote
+O número de inscrição do transmissor deverá ser igual 
+ao CNPJ/CPF do certificado utilizado para o envio do 
+lote 
+607 Rejeição do lote
+A quantidade máxima de eventos por lote é de 50 611 Rejeição do lote
+O id do evento não atendeu a regra de formação 
+definida
+609 Rejeição do lote
+47
+7.6 Webservice de Consulta ao Resultado do Processamento de um Lote  
+de Eventos
+A função deste  Webservice é receber solicitações de consulta ao resultado do  
+processamento de um lote de eventos, valida-los e retornar os objetos da consulta de acordo  
+com os parâmetros enviados ao serviço. 
+O Protocolo de Envio do lote deverá ser passado como parâmetro de entrada do  
+método de consulta ao resultado do processamento.
+7.6.7 Dados para a chamada ao Webservice
+Nome do método ConsultarLoteEventos
+Assinatura xsd:any ConsultarLoteEventos(xsd:any consulta)
+Requer Certificado de 
+Cliente?
+Sim. 
+Observação:  Somente  quem  transmitiu  a  solicitação  de  
+processamento  tem  acesso  ao  resultado  do  processamento.  
+Portanto, é necessário utilizar o mesmo certificado (certificado  
+com o mesmo número de inscrição) da transmissão para acessar o  
+resultado do processamento do lote.
+Schema Parâmetro "consulta" ConsultaLoteEventos-vx_x_x.xsd
+Schema Retorno RetornoProcessamentoLote-vx_x_x.xsd
+URL Produção https://webservices.consulta.esocial.gov.br/servicos/empregador/
+consultarloteeventos/WsConsultarLoteEventos.svc
+48
+URL Produção Restrita https://webservices.producaorestrita.esocial.gov.br/servicos/empregador/
+consultarloteeventos/WsConsultarLoteEventos.svc
+7.6.8 Fluxo de consulta ao resultado do processamento do lote de eventos
+Abaixo  é  descrito  detalhadamente  o  processo  de  consulta  ao  resultado  do  
+processamento do lote de eventos:
+49
+7.6.9 Leiaute da Mensagem de Entrada
+A mensagem de entrada é definida pelo Schema ConsultaLoteEventos-vx_x_x.xsd, 
+cuja estrutura é apresentada abaixo:
+50
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/lote/
+eventos/envio/consulta/
+retornoProcessamento/vx_x_x
+Namespace  do  XSD  
+de  consulta  ao  
+resultado  do  
+processamento de lote 
+de eventos.
+tag: consultaLoteEventos
+descrição: Contém os parâmetros da consulta ao lote de eventos.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+protocoloEnvio obrigatório 1 - Número  sequencial  único  
+retornado  pelo  eSocial  no  
+instante de recepção do lote de  
+eventos.
+51
+7.6.10Leiaute Mensagem de Retorno do Processamento do Lote
+A  mensagem  de  entrada  é  definida  pelo  Schema RetornoProcessamentoLote-
+vx_x_x.xsd, cuja estrutura é apresentada abaixo:
+52
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/lote/eventos/envio/
+retornoProcessamento/
+vx_x_x
+Namespace  do  XSD  
+de  retorno  do  
+resultado  do  
+processamento de lote 
+de eventos.
+tag: retornoProcessamentoLoteEventos
+descrição: Contém o resultado da operação de processamento de um lote de eventos
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+descrição: Contém a identificação do empregador responsável pelos eventos  
+contidos no lote.
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+53
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+Observações:
+Esta tag somente não será preenchida quando houver um erro no servidor que impossibilite  
+a obtenção do lote sob consulta.
+tag: ideTransmissor
+descrição: Contém a identificação da pessoa física ou jurídica que transmitiu o lote 
+de eventos.
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ
+2 – CPF
+Contém o tipo de inscrição do  
+transmissor.
+nrInsc obrigatório 1 - Contém o número de inscrição 
+do transmissor.
+Observações:
+Esta tag somente não será preenchida quando houver um erro no servidor que impossibilite  
+a obtenção do lote sob consulta.
+tag: status
+descrição: Contém o resultado do processamento do lote. É nesta tag que haverá a  
+informação se o lote já foi processado e qual o resultado do  
+processamento do lote.
+54
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+cdResposta obrigatório 1 ver tabela abaixo Contém o código de 
+resposta do processamento 
+do lote. Caso o código seja 
+de erro ou advertência, os 
+detalhes do mesmo estarão 
+na tag ocorrencias. 
+descResposta obrigatório 1 ver tabela abaixo Contém a descrição 
+correspondente ao código 
+de resposta.
+tempoEstimado
+Conclusao
+opcional 1 - Contém o tempo estimado, 
+em segundos, para 
+conclusão do 
+processamento do lote de 
+eventos. É importante que 
+este tempo seja 
+considerado no 
+desenvolvimento da 
+consulta ao Webservice 
+para não ser considerado 
+um uso indevido.
+cdResposta descResposta
+101 Lote Aguardando Processamento.
+201 Lote Processado com Sucesso.
+202 Lote Processado com Advertências.
+301 Erro Servidor eSocial
+401 Lote Incorreto - Erro preenchimento.
+402 Lote Incorreto - Schema Inválido.
+403 Lote Incorreto - Versão do Schema não permitida.
+404 Lote Incorreto - Erro Certificado.
+405 Lote Incorreto - Lote nulo ou vazio.
+55
+501 Solicitação de Consulta Incorreta - Erro Preenchimento.
+502 Solicitação de Consulta Incorreta - Schema Inválido.
+503 Solicitação de Consulta Incorreta - Versão do Schema Não Permitida.
+504 Solicitação de Consulta Incorreta - Erro Certificado.
+505 Solicitação de Consulta Incorreta - Consulta nula ou vazia.
+tag: ocorrencias
+descrição: Contém as ocorrências encontradas no lote quando o código de resposta 
+contido  na  tag  status indicar que  foram  encontrados  erros  ou  
+advertências no lote.
+obrigatório? Não
+ocorrência Única
+tag: ocorrencia
+descrição: Contém cada uma das ocorrências encontradas no lote quando o código  
+de resposta contido na tag status indicar que foram encontrados erros  
+ou advertências no lote.
+obrigatório? Sim, caso exista a tag ocorrencias
+ocorrência 1..*
+campo obrigatoriedade ocorrência valores válidos descrição
+codigo obrigatório 1 - Contém o código da ocorrência 
+detectada em alguma das 
+regras previstas na seção 
+7.5.11. Validações aplicadas.
+56
+descricao obrigatório 1 - Contém a descrição da 
+ocorrência detectada em 
+alguma das regras previstas na 
+seção 7.5.11. Validações 
+aplicadas.
+tipo obrigatório 1 1 - Erro
+2 - Advertência
+Contém o código do tipo de 
+ocorrência.
+localizacao facultativo 1 - Contém o caminho da tag ou 
+atributo em que ocorreu o erro.
+tag: dadosRecepcaoLote
+descrição: Contém os dados relativos a recepção de um lote.
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+dhRecepcao obrigatório 1 - Contém a data/hora de 
+recepção do lote de eventos.
+versaoAplicativo
+Recepcao
+obrigatório 1 - Contém a versão do 
+aplicativo de recepção.
+protocoloEnvio obrigatório 1 - Número sequencial único 
+produzido no instante de 
+recepção do lote de eventos.
+Observações:
+Esta tag será preenchida somente quando a consulta ao lote for realizada com sucesso.
+tag: dadosProcessamentoLote
+descrição: Contém os dados relativos ao processamento de um lote.
+57
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+versaoAplicativo
+Processamento
+Lote
+obrigatório 1 - Contém a versão do 
+aplicativo de processamento 
+do lote.
+Observações:
+Esta tag será preenchida somente quando a consulta ao lote for realizada com sucesso.
+tag: retornoEventos
+descrição: Contém o retorno com o resultado do processamento de cada um dos  
+eventos contido no lote.
+obrigatório? Não
+ocorrência Única
+Observações:
+Esta tag somente será preenchida quando o campo <cdResposta> contido na tag <status>  
+contiver o valor maior que 200 e menor que 300.
+tag: evento
+descrição: Contém o resultado do processamento de cada evento contido no lote e o  
+resultado do respectivo totalizador, caso o evento retorne algum dos  
+totalizadores.
+58
+obrigatório? Não
+ocorrência 1 .. 50
+campo obrigatoriedade ocorrência valores válidos descrição
+Id obrigatório 1 - Contém a chave de acesso do 
+evento ao qual o retorno de 
+processamento se refere.
+Importante: É através deste 
+campo que o empregador 
+realizará a correlação entre o 
+evento enviado e o resultado 
+retornado pelo eSocial.
+evtDupl facultativo 1 verdadeiro (true/1) 
+ou falso (false/0)
+Este atributo indica se o recibo 
+que está sendo retornado é de um 
+evento que já foi recebido 
+anteriormente ou não.
+Ele somente será preenchido no 
+caso de ser verdadeiro/true.
+tag: retornoEvento
+descrição: Contém o resultado do processamento de um evento contido no lote.
+obrigatório? Sim
+ocorrência 1
+campo obrigatoriedade ocorrência valores válidos descrição
+<any> obrigatório 1 - Contém o XML de retorno do 
+evento. O Schema que define este 
+retorno está descrito na seção 8.6. 
+Estrutura do retorno de 
+processamento do evento.
+tag: tot
+descrição: Contém o resultado do processamento do totalizador de um evento  
+contido no lote.
+59
+obrigatório? Não
+ocorrência 0 .. *
+campo obrigatoriedade ocorrência valores válidos descrição
+tipo obrigatório 1 S-5001
+S-5002
+S-5003
+S-5011
+S-5012
+S-5013
+S-5501
+S-5503
+Deve ser preenchido com os 
+valores válidos para este campo.
+<any> obrigatório 1 - Contém o XML do totalizador. 
+Observações:
+As orientações sobre o preenchimento da tag tot está da seção 5.5.5. Retorno dos eventos  
+totalizadores.
+7.6.11Retorno dos eventos totalizadores
+Os eventos totalizadores serão obtidos através do retorno dos eventos S-1200,  
+S-1202  (em  algumas  situações),  S-1210,  S-1295,  S-1299,  S-2299,  S-2399,  S-2500  e 
+S-2501, S-3000 com tpEvento igual a S-1200, S-1202, S-1210, S-2299 ou S-2399, e  
+S-3500.
+Sempre que os eventos S-1200, S-2299 e S-2399 forem processados pelo eSocial,  
+serão retornados o seu recibo (na tag retornoEvento) e os totalizadores S-5001 e S-5003 (na 
+tag tot com o atributo tipo preenchido com o valor S-5001 ou S-5003).
+Sempre que o evento S-1210 for processado pelo eSocial, serão retornados o seu  
+recibo (na tag  retornoEvento) e o totalizador S-5002 (na tag  tot com o atributo  tipo 
+preenchido com o valor S-5002). 
+60
+Sempre que os eventos S-1295 e S-1299 forem processados pelo eSocial, serão  
+retornados o seu recibo na tag retornoEvento e os totalizadores S-5011, S-5012 e S-5013.  
+Neste caso, serão retornadas 3 tags tot, uma com o atributo tipo preenchido com o valor  
+S-5011, a outra com o atributo tipo preenchido com o valor S-5012 e a outra com o atributo 
+tipo preenchido com o valor S-5013.
+Quando o evento S-1202 for processado pelo eSocial, serão retornados o seu recibo  
+(na tag retornoEvento) e se existir informação de infoPisPasep, o totalizador S-5001 (na tag 
+tot com o atributo tipo preenchido com o valor S-5001).
+Sempre que o evento S-2500 for processado pelo eSocial, serão retornados o seu  
+recibo (na tag  retornoEvento) e o totalizador S-5503 (na tag  tot com o atributo  tipo 
+preenchido com o valor S-5503).
+Sempre que o evento S-2501 for processado pelo eSocial, serão retornados o seu  
+recibo (na tag  retornoEvento) e o totalizador S-5501 (na tag  tot com o atributo  tipo 
+preenchido com o valor S-5501).
+Sempre que os eventos de exclusão S-3000 (quando tpEvento igual a S-1200,  
+S-1202,  S-1210,  S-2299  ou  S-2399),  e  S-3500  for  processado  pelo  eSocial,  serão  
+retornados o seu recibo (na tag retornoEvento) e os respectivos totalizadores do evento de  
+origem .
+7.6.12 Validações aplicadas
+Critério Mensagem Efeito
+O retorno do processamento do lote somente é acessível 
+a quem enviou o lote 604 Rejeição da 
+consulta
+O lote não foi localizado ou já não está mais disponível 
+no sistema. 605 Rejeição da 
+consulta
+Foi identificado um erro na estrutura da solicitação. 606 Rejeição da 
+consulta
+O lote não foi localizado ou ainda não foi entregue ao 662 Rejeição da 
+61
+Ambiente Nacional pelo agente de recepção. consulta
+7.6.13 Detalhamento do retorno 605
+O lote de resultado do processamento fica disponível para ser consultado pelo  
+respectivo transmissor do lote de eventos por trinta (30) dias após a data do processamento  
+pelo Sistema.
+Como obter o resultado do processamento após os 30 dias?
+É importante ressaltar que o resultado do processamento é referente ao evento. O  
+lote de resultado tem a função de agrupar os recibos.
+Dessa forma, caso o usuário tenha a necessidade de obter o recibo (resultado do  
+processamento) de um evento após os 30 dias, deve ser realizada nova transmissão do  
+evento original. O Sistema identificará que se trata de um evento já existente e retornará o  
+seu recibo original.
+Além disso, existe a possibilidade de obtenção do recibo através da(s) solução(ões)  
+de download disponibilizada(s) pelo eSocial.
+7.7 Webservice de Consulta aos Identificadores dos Eventos
+A função deste  Webservice é possibilitar ao sistema do empregador consultar os  
+identificadores  dos  eventos  para  os  quais  o  eSocial  emitiu  recibo.  De  posse  destes  
+identificadores, o empregador poderá solicitar os eventos/recibos através do Webservice 7.8 
+Webservice de Solicitação de Download dos Eventos.
+62
+7.7.7 Dados para a chamada ao Webservice
+O Webservice de consulta aos identificadores dos eventos é composto de 3 métodos  
+conforme  diagrama  abaixo.  Os  detalhes  de  cada  método  serão  expostos  nas  seções  
+seguintes.
+Requer Certificado de 
+Cliente?
+Sim.
+Observação: Não é necessário qualquer tipo de vínculo formal 
+(ex: procuração) entre o transmissor e o empregador.
+Restrições
+- As consultas não poderão ser realizadas entre os dias 1 a 7 de 
+cada mês.
+- Cada empregador só poderá realizar uma consulta por vez, ou 
+seja, não será permitido paralelismo neste Webservice.
+- Cada empregador poderá realizar no máximo 10 acessos por 
+dia aos Webservices descritos nas seções 7.7 - Webservice de 
+Consulta aos Identificadores dos Eventos e 7.8 - Webservice 
+de Solicitação de Download dos Eventos, ou seja, a soma dos 
+acessos aos Webservices mencionados acima não deverá ser 
+superior a 10 por dia.
+- A consulta deverá ser realizada com data limite até uma hora 
+a menos que a data atual.
+- Os retornos das consultas conterão os eventos recebidos até 
+63
+uma hora a menos que a data atual.
+URL Produção https://webservices.download.esocial.gov.br/
+servicos/empregador/dwlcirurgico/WsConsultarIdentificadoresEventos.svc
+URL Produção Restrita https://webservices.producaorestrita.esocial.gov.br/
+servicos/empregador/dwlcirurgico/WsConsultarIdentificadoresEventos.svc
+7.7.8 Métodos do Webservice
+7.7.9 Método ConsultarIdentificadoresEventosEmpregador  
+O  método  consultarIdentificadoresEventosEmpregador  permite  a  consulta  aos  
+identificadores dos eventos do empregador que não se enquadram nas categorias de eventos 
+de tabela ou eventos periódicos e não periódicos do trabalhador.
+Nome do método ConsultarIdentificadoresEventosEmpregador
+Assinatura xsd:any ConsultarIdentificadoresEventosEmpregador (xsd:any 
+consulta)
+Schema Parâmetro consulta ConsultaIdentificadoresEventosEmpregador-vx_x_x.xsd
+Descrição na seção 7.7.13.
+Schema Retorno RetornoConsultaIdentificadoresEventos-vx_x_x.xsd
+Descrição na seção 7.7.17.
+64
+7.7.10 Método ConsultarIdentificadoresEventosTabela  
+O  método  de  consultarIdentificadoresEventosTabela  permite  a  consulta  aos  
+identificadores de eventos de tabela do empregador.
+Nome do método ConsultarIdentificadoresEventosTabela
+Assinatura xsd:any ConsultarIdentificadoresEventosTabela (xsd:any 
+consulta)
+Schema Parâmetro "consulta" ConsultaIdentificadoresEventosTabela-vx_x_x.xsd
+Descrição na seção 7.7.14.
+Schema Retorno RetornoConsultaIdentificadoresEventos-vx_x_x.xsd
+Descrição na seção 7.7.17.
+7.7.11 Método ConsultarIdentificadoresEventosTrabalhador  
+O  método  consultarIdentificadoresEventosTrabalhador  permite  a  consulta  aos  
+eventos periódicos e não periódicos do trabalhador vinculado ao empregador.
+Nome do método ConsultarIdentificadoresEventosTrabalhador
+Assinatura xsd:any ConsultarIdentificadoresEventosTrabalhador (xsd:any 
+consulta)
+Schema Parâmetro "consulta" ConsultaIdentificadoresEventosTrabalhador-vx_x_x.xsd
+Descrição na seção 7.7.16.
+Schema Retorno RetornoConsultaIdentificadoresEventos-vx_x_x.xsd
+65
+Descrição na seção 7.7.17.
+7.7.12 Leiaute das mensagens do Webservice
+7.7.13 Leiaute Mensagem ConsultaIdentificadoresEventosEmpregador  
+A  mensagem  de  entrada  para  consulta  aos  identificadores  dos  eventos  do  
+empregador  é  definida  pelo  Schema ConsultaIdentificadoresEventosEmpregador-
+vx_x_x.xsd, cuja estrutura é apresentada abaixo:
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+66
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/consulta/
+identificadores-eventos/
+empregador/vx_x_x
+Namespace.
+tag: consultaIdentificadoresEvts
+descrição: Contém os parâmetros da consulta aos identificadores dos eventos.
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+descrição: Contém a identificação do empregador para o qual a consulta será  
+realizada.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+tag: consultaEvtsEmpregador
+67
+descrição:
+Contém o filtro para consulta aos eventos do empregador que não se  
+enquadram nas categorias de eventos de tabela ou eventos periódicos e  
+não periódicos do trabalhador.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpEvt obrigatório 1 Tipo  do  evento  no 
+formato:  
+"S-XXXX"
+Contém o tipo do evento que  
+será consultado.
+perApur obrigatório 1 AAAA-MM  ou  
+AAAA
+Contém o período de apuração  
+que será consultado.
+tag: Signature
+descrição: Contém a assinatura da mensagem.
+obrigatório? Obrigatório
+ocorrência Única
+Observações:
+O padrão de assinatura da mensagem está descrito em "Assinatura do evento".
+68
+7.7.14 Leiaute Mensagem ConsultaIdentificadoresEventosTabela  
+A mensagem de entrada para consulta aos identificadores dos eventos de tabela é  
+definida pelo Schema ConsultaIdentificadoresEventosTabela-vx_x_x.xsd, cuja estrutura é  
+apresentada abaixo:
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/consulta/
+identificadores-eventos/
+tabela/vx_x_x
+Namespace.
+69
+tag: consultaIdentificadoresEvts
+descrição: Contém os parâmetros da consulta aos identificadores dos eventos.
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+descrição: Contém a identificação do empregador para o qual a consulta será  
+realizada.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+tag: consultaEvtsTabela
+descrição: Contém o filtro para consulta aos eventos de tabela.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+70
+tpEvt obrigatório 1 Tipo  do  evento  no  
+formato:  
+"S-XXXX"
+Contém o tipo do evento que  
+será consultado.
+chEvt facultativo
+ 
+1 Formato  par  chave-
+valor:
+nomeTag=Valor;nome
+Tag=Valor;
+Contém a chave do evento  
+que será consultado. As tags  
+que  compõem  a  chave  de  
+cada  tipo  de  evento  estão  
+descritas  na  seção  7.7.15 -  
+Chaves  dos  eventos  de  
+tabela.
+dtIni facultativo 1 - Contém a data/hora de início  
+do  período  que  será  
+consultado.  
+Obs: A data/hora consultada  
+é a de recepção do evento.
+dtFim facultativo 1 - Contém a data/hora de fim  
+do  período  que  será  
+consultado.  A data fim deve  
+ser preenchida com uma data 
+limite até uma hora a menos  
+que  a  data  atual
+Obs: A data/hora consultada  
+é a de recepção do evento.
+tag: Signature
+descrição: Contém a assinatura da mensagem.
+obrigatório? Obrigatório
+ocorrência Única
+Observações:
+O padrão de assinatura da mensagem está descrito em "Assinatura do evento".
+7.7.15 Chaves dos eventos de tabela
+Tipo do evento Chave(s) do evento Exemplo
+S-1000 - vazio
+S-1005 tpInsc e nrInsc tpInsc=1;nrInsc=11223344556677...
+S-1010 codRubr e ideTabRubr codRubr=1;ideTabRubr=1
+71
+S-1020 codLotacao codLotacao=001
+S-1030 codCargo codCargo=001
+S-1035 CodCarreira CodCarreira=001
+S-1040 codFuncao codFuncao=001
+S-1050 codHorContrat codHorContrat=001
+S-1060 codAmb codAmb=001
+S-1065 codEP codEP=001
+S-1070 tpProc e nrProc tpProc=1;nrProc=12345678...
+S-1080 cnpjOpPortuario cnpjOpPortuario=111222333...
+7.7.16 Leiaute Mensagem ConsultaIdentificadoresEventosTrabalhador  
+A  mensagem  de  entrada  para  consulta  aos  identificadores  dos  eventos  de  
+trabalhador  é  definida  pelo  Schema ConsultaIdentificadoresEventosTrabalhador-
+vx_x_x.xsd, cuja estrutura é apresentada abaixo:
+tag: eSocial
+descrição: Tag raiz do documento
+72
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/consulta/
+identificadores-eventos/
+trabalhador/vx_x_x
+Namespace.
+tag: consultaIdentificadoresEvts
+descrição: Contém os parâmetros da consulta aos identificadores dos eventos.
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+descrição: Contém a identificação do empregador para o qual a consulta será  
+realizada.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+73
+tag: consultaEvtsTrabalhador
+descrição: Contém o filtro para consulta aos eventos de trabalhador.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+cpfTrab obrigatório 1 - Cpf do trabalhador que será  
+consultado.
+dtIni obrigatório 1 - Contém a data/hora de início  
+do  período  que  será  
+consultado.
+Obs: A data/hora consultada  
+é a de recepção do evento.
+dtFim obrigatório 1 - Contém a data/hora de fim  
+do  período  que  será  
+consultado. A data fim deve  
+ser preenchida com uma data 
+limite até uma hora a menos  
+que  a  data  atual.
+Obs: A data/hora consultada  
+é a de recepção do evento.
+tag: Signature
+descrição: Contém a assinatura da mensagem.
+obrigatório? Obrigatório
+ocorrência Única
+Observações:
+O padrão de assinatura da mensagem está descrito em "Assinatura do evento".
+74
+7.7.17 Leiaute Mensagem RetornoConsultaIdentificadoresEventos  
+A mensagem de retorno para consulta aos identificadores dos eventos é definida  
+pelo  Schema RetornoConsultaIdentificadoresEventos-vx_x_x.xsd,  cuja  estrutura  é  
+apresentada abaixo:
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/consulta/
+identificadores-eventos/
+retorno/vx_x_x
+Namespace.
+75
+tag: retornoConsultaIdentificadoresEvts
+descrição: Contém o retorno da consulta aos identificadores dos eventos.
+obrigatório? Sim
+ocorrência Única
+tag: status
+descrição: Contém o resultado do processamento da consulta.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+cdResposta obrigatório 1 ver tabela abaixo Contém o código de resposta  
+do processo de consulta. 
+descResposta obrigatório 1 ver tabela abaixo Contém  a  descrição  
+correspondente  ao  código  de  
+resposta.
+cdResposta descResposta
+201 Consulta realizada com sucesso.
+203 Quantidade total de eventos encontrados de acordo com o filtro informado: xxx. Data de  
+envio do último evento retornado: xxx.
+301 Erro de sistema.
+307 Erro ao validar solicitante da informação. Não foi possível estabelecer conexão com o  
+Sistema do CNPJ / CPF. A falha pode ser temporária, tente novamente mais tarde.
+76
+308 Erro ao processar solicitação. Tente novamente mais tarde.
+309 Erro ao validar solicitante da informação. Não foi possível estabelecer conexão com o  
+Sistema de Procuração Eletrônica RFB. A falha pode ser temporária, tente novamente mais  
+tarde.
+310 Erro ao validar solicitante da informação. Não foi possível estabelecer conexão com o  
+Sistema de Procuração Eletrônica Caixa. A falha pode ser temporária, tente novamente mais 
+tarde.
+402 Solicitação inválida. Redefina sua consulta.
+403 Não é possível enviar solicitação de download entre os dias xxx e xxx do mês.
+404 Já existe uma solicitação de download para este empregador. Aguarde o resultado da  
+anterior.
+405 É  possível  enviar  somente  X  solicitações  por  dia.  Seu  limite  está  esgotado.  Tente  
+novamente amanhã.
+406 Não foram encontrados registros conforme os filtros informados.
+407 Solicitante não possui perfil de procuração eletrônica para consultar este tipo de evento ou  
+não consta como representante legal da empresa.
+409 A data fim deve ser preenchida com data limite até uma hora a menos que a data atual.
+410 Intervalo máximo permitido de 31 dias.
+411 A solicitação de informações ao Ambiente Nacional da eSocial somente poderá ser feita  
+com a utilização de certificado digital do tipo e-CNPJ ou e-PJ cujo CNPJ base seja o  
+mesmo  do  empregador/contribuinte  responsável  pela  informação,  ou  no  caso  de  ser  
+utilizado um certificado de pessoa física, esse deverá pertencer ao representante legal do  
+empregador/contribuinte  ou  a  um  procurador  devidamente  habilitado  no  sistema  de  
+Procuração Eletrônica da RFB ou CEF.
+417 Erro na estrutura da solicitação. xxx.
+77
+tag: retornoIdentificadoresEvts
+descrição: Contém o retorno da consulta aos identificadores dos eventos.
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores 
+válidos
+descrição
+qtdeTotEvtsConsulta obrigatório 1 - Contém a quantidade total de  
+eventos  encontrados  de  
+acordo  com  o  filtro  
+informado. 
+Somente  os  50  primeiros  
+serão  retornados  na  tag  
+identificadoresEvts.
+dhUltimoEvtRetornado obrigatório 1 - Contém a data/hora do último 
+evento retornado. Este valor  
+deve ser utilizado na tag dtIni 
+do filtro da próxima pesquisa  
+no  caso  em  que  o  valor  
+retornado  na  tag  
+qtdeTotEvtsConsulta for  
+maior que 50, para ter acesso  
+aos  próximos  eventos  que  
+atendam ao filtro informado.
+tag: identificadoresEvts
+descrição: Contém o retorno da consulta aos identificadores dos eventos.
+78
+obrigatório? Não
+ocorrência Única
+tag: identificadorEvt
+descrição: Contém os identificadores dos eventos que atendam ao filtro informado  
+na consulta.
+Observação:
+Serão retornados somente os 50 primeiros eventos que atendam ao filtro  
+informado.  Para  ter  acesso  aos  outros  eventos  deve-se  utilizar  como  
+referencial a data/hora retornada na tag dhUltimoEvtRetornado como parâmetro  
+da tag dtIni da próxima pesquisa. 
+obrigatório? Sim
+ocorrência 1..50
+campo obrigatoriedade ocorrência valores válidos descrição
+id obrigatório 1 - Contém a identificação única do  
+evento. Atributo Id que fica na  
+tag evtXXXX de cada evento. A 
+regra  de  formação  do  Id  do  
+evento está descrito na seção 8.3 
+- Identificação do evento.
+nrRec obrigatório 1 - Contém o número do recibo do  
+evento. A regra de formação do  
+número do recibo está descrito  
+na tag  nrRecibo da seção  8.6 - 
+Estrutura  do  retorno  de
+processamento do evento.
+79
+7.8 Webservice de Solicitação de Download dos Eventos
+A função deste  Webservice é possibilitar ao sistema do empregador obter os  
+arquivos de eventos e recibos que estão armazenados no eSocial.
+7.8.7 Dados para a chamada ao Webservice
+O  Webservice de solicitação de download de eventos é composto de 2 métodos  
+conforme  diagrama  abaixo.  Os  detalhes  de  cada  método  serão  expostos  nas  seções  
+seguintes.
+Requer Certificado de 
+Cliente?
+Sim.
+Observação: Não é necessário qualquer tipo de vínculo  
+formal  (ex:  procuração)  entre  o  transmissor  e  o  
+empregador.
+Restrições
+- As solicitações não poderão ser realizadas entre os dias 
+1 a 7 de cada mês.
+- Cada empregador só poderá realizar uma solicitação por 
+vez, ou seja, não será permitido paralelismo neste 
+Webservice.
+- Cada empregador poderá realizar no máximo 10 acessos 
+aos Webservices descritos nas seções 7.7 - Webservice de 
+Consulta aos Identificadores dos Eventos e 7.8 - 
+80
+Webservice de Solicitação de Download dos Eventos, ou 
+seja, a soma dos acessos aos Webservices mencionados 
+acima não deverá ser superior a 10 por dia.
+- Os retornos das consultas conterão somente os eventos 
+que foram recebidos no eSocial uma hora antes que a data 
+atual.
+URL Produção https://webservices.download.esocial.gov.br/
+servicos/empregador/dwlcirurgico/WsSolicitarDownloadEventos.svc
+URL Produção Restrita https://webservices.producaorestrita.esocial.gov.br/
+servicos/empregador/dwlcirurgico/WsSolicitarDownloadEventos.svc
+7.8.8 Métodos do Webservice
+7.8.9 Método SolicitarDownloadEventosPorId  
+O  método  solicitarDownloadEventosPorId  permite  o  download  de  eventos  e  
+respectivos recibos a partir do identificador único do evento, atributo Id que fica na tag  
+evtXXXX de cada evento.
+Nome do método SolicitarDownloadEventosPorId
+Assinatura xsd:any SolicitarDownloadEventosPorId (xsd:any consulta)
+Schema Parâmetro consulta SolicitacaoDownloadEventosPorId-vx_x_x.xsd
+Descrição na seção 7.8.12.
+Schema Retorno RetornoSolicitacaoDownloadEventos-vx_x_x.xsd
+81
+Descrição na seção 7.8.14.
+7.8.10 Método SolicitarDownloadEventosPorNrRecibo  
+O método solicitarDownloadEventosPorNrRecibo permite o download de eventos e  
+respectivos recibos a partir número do recibo do evento.
+Nome do método SolicitarDownloadEventosPorNrRecibo
+Assinatura xsd:any SolicitarDownloadEventosPorNrRecibo (xsd:any 
+consulta)
+Schema Parâmetro consulta SolicitacaoDownloadEventosPorNrRecibo-vx_x_x.xsd
+Descrição na seção 7.8.12. 
+Schema Retorno RetornoSolicitacaoDownloadEventos-vx_x_x.xsd
+Descrição na seção 7.8.14.
+7.8.11 Leiaute das mensagens do Webservice
+7.8.12 Leiaute Mensagem SolicitacaoDownloadEventosPorId  
+A mensagem de entrada para solicitação de download de eventos por Id é definida  
+pelo Schema SolicitacaoDownloadEventosPorId-vx_x_x.xsd, cuja estrutura é apresentada  
+abaixo:
+82
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/download/solicitacao 
+/id/vx_x_x
+Namespace.
+tag: download
+descrição: Contém as informações relativas ao download.
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+83
+descrição: Contém a identificação do empregador para o qual a consulta será  
+realizada.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+tag: solicDownloadEvtsPorId
+descrição: Contém os identificadores dos eventos que serão solicitados.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+id obrigatório 1..50 - Contém o identificador único  
+do evento, atributo Id que fica  
+na  tag  evtXXXX  de  cada  
+evento. A regra de formação do 
+Id do evento está descrito na  
+seção  8.3 -  Identificação  do
+evento.
+tag: Signature
+descrição: Contém a assinatura da mensagem.
+obrigatório? Obrigatório
+84
+ocorrência Única
+Observações:
+O padrão de assinatura da mensagem está descrito em "Assinatura do evento".
+7.8.13 Leiaute Mensagem SolicitacaoDownloadEventosPorNrRecibo  
+A mensagem de entrada para solicitação de download de eventos por número de  
+recibo é definida pelo Schema SolicitacaoDownloadEventosPorNrRecibo-vx_x_x.xsd, cuja 
+estrutura é apresentada abaixo:
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+85
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/download/solicitacao 
+/nrRecibo/vx_x_x
+Namespace.
+tag: download
+descrição: Contém as informações relativas ao download.
+obrigatório? Sim
+ocorrência Única
+tag: ideEmpregador
+descrição: Contém a identificação do empregador para o qual a consulta será  
+realizada.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+nrInsc obrigatório 1 - Contém o número de inscrição  
+do empregador.
+tag: solicDownloadEvtsPorNrRecibo
+descrição: Contém os números de recibo dos eventos que serão solicitados.
+86
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+nrRec obrigatório 1..50 - Contém o número de recibo do  
+evento que será solicitado. A  
+regra de formação do número  
+do recibo está descrito na tag  
+nrRecibo da  seção  8.6 -  
+Estrutura  do  retorno  de
+processamento do evento.
+tag: Signature
+descrição: Contém a assinatura da mensagem.
+obrigatório? Obrigatório
+ocorrência Única
+Observações:
+O padrão de assinatura da mensagem está descrito em "Assinatura do evento".
+7.8.14 Leiaute Mensagem RetornoSolicitacaoDownloadEventos  
+A mensagem de retorno para solicitação de download dos eventos é definida pelo  
+Schema RetornoSolicitacaoDownloadEventos-vx_x_x.xsd,  cuja  estrutura  é  apresentada  
+abaixo:
+87
+tag: eSocial
+descrição: Tag raiz do documento
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/download/
+solicitacao/retorno/vx_x_x
+Namespace.
+tag: download
+descrição: Contém o retorno da solicitação de download dos eventos.
+obrigatório? Sim
+88
+ocorrência Única
+tag: status
+descrição: Contém o resultado do processamento da solicitação.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+cdResposta obrigatório 1 ver tabela abaixo Contém o código de resposta  
+do processo de solicitação. 
+descResposta obrigatório 1 ver tabela abaixo Contém  a  descrição  
+correspondente  ao  código  de  
+resposta.
+cdResposta descResposta
+201 Consulta realizada com sucesso.
+301 Erro de sistema.
+307 Erro ao validar solicitante da informação. Não foi possível estabelecer conexão com o  
+Sistema do CNPJ / CPF. A falha pode ser temporária, tente novamente mais tarde.
+308 Erro ao processar solicitação. Tente novamente mais tarde.
+309 Erro ao validar solicitante da informação. Não foi possível estabelecer conexão com o  
+Sistema de Procuração Eletrônica RFB. A falha pode ser temporária, tente novamente mais  
+tarde.
+89
+310 Erro ao validar solicitante da informação. Não foi possível estabelecer conexão com o  
+Sistema de Procuração Eletrônica Caixa. A falha pode ser temporária, tente novamente mais 
+tarde.
+402 Solicitação inválida. Redefina sua consulta.
+403 Não é possível enviar solicitação de download entre os dias xxx e xxx do mês.
+404 Já existe uma solicitação de download para este empregador. Aguarde o resultado da  
+anterior.
+405 É  possível  enviar  somente  X  solicitações  por  dia.  Seu  limite  está  esgotado.  Tente  
+novamente amanhã.
+408 Não é possível enviar solicitação de download com mais de xxx números de arquivos.
+411 A solicitação de informações ao Ambiente Nacional da eSocial somente poderá ser feita  
+com a utilização de certificado digital do tipo e-CNPJ ou e-PJ cujo CNPJ base seja o  
+mesmo  do  empregador/contribuinte  responsável  pela  informação,  ou  no  caso  de  ser  
+utilizado um certificado de pessoa física, esse deverá pertencer ao representante legal do  
+empregador/contribuinte  ou  a  um  procurador  devidamente  habilitado  no  sistema  de  
+Procuração Eletrônica da RFB ou CEF.
+417 Erro na estrutura da solicitação.
+tag: retornoSolicDownloadEvts
+descrição: Contém o retorno da solicitação de download dos eventos.
+obrigatório? Não
+ocorrência Única
+90
+tag: arquivos
+descrição: Contém os arquivos de eventos solicitados e respectivos recibos .
+obrigatório? Sim
+ocorrência Única
+tag: arquivo
+descrição: Contém um arquivo de evento e respectivo recibo.
+obrigatório? Sim
+ocorrência 1..50
+tag: status
+descrição: Contém o status da solicitação do arquivo.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+cdResposta obrigatório 1 ver tabela abaixo Contém o código de resposta  
+do processo de solicitação. 
+descResposta obrigatório 1 ver tabela abaixo Contém  a  descrição  
+correspondente  ao  código  de  
+resposta.
+cdResposta descResposta
+91
+201 Evento encontrado.
+202 Evento não encontrado ou não processado ou sem perfil para acesso.
+401 Número de xxx do evento inválido.
+tag: evt
+descrição: Contém o arquivo XML do evento solicitado.
+obrigatório? Não
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+Id obrigatório 1 - Contém o identificador único do  
+evento, atributo Id que fica na tag 
+evtXXXX  de  cada  evento.  A  
+regra  de  formação  do  Id  do  
+evento está descrito na seção 8.3 - 
+Identificação do evento.
+<any> obrigatório 1 - Contém o XML do evento.
+Observações:
+Esta tag não será preenchida quando a tag status contiver o valor 202.
+tag: rec
+descrição: Contém o arquivo XML do recibo do evento solicitado.
+obrigatório? Não.
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+92
+nrRec obrigatório 1 - Contém o número do recibo do  
+evento. A regra de formação do  
+número do recibo está descrito na 
+tag  nrRecibo da  seção  8.6 -  
+Estrutura  do  retorno  de
+processamento do evento.
+<any> obrigatório 1 - Contém o XML do recibo do 
+evento.
+Observações:
+Esta tag não será preenchida para os eventos S-5001, S-5002, S-5011 e S-5012 ou quando a  
+tag status contiver o valor 202.
+7.9 Recomendações e boas práticas
+O objetivo desta seção é orientar os usuários dos Webservices a utilizarem o eSocial 
+seguindo boas práticas, facilitando a integração com o sistema.
+7.9.7 Respeitar a ordem de precedência no envio dos eventos em lotes
+O eSocial controla a precedência do recebimento dos eventos por empregador e por  
+empregado, de acordo com as regras estabelecidas pelo leiaute, com o objetivo de garantir a 
+integridade dos dados da empresa e do trabalhador.
+O primeiro evento a ser enviado deve sempre ser o S-1000 (Informações do  
+Empregador/Contribuinte/Órgão Público) e, em seguida, devem ser enviados os eventos de  
+tabelas. Quanto a estes há uma especificidade: quando houver necessidade do envio de mais 
+de um lote deste tipo de evento, eles não serão processados simultaneamente. O usuário  
+deve  aguardar  a  mensagem  de  sucesso  do  processamento  do  primeiro  lote  para,  na 
+sequência, enviar o próximo e, assim, sucessivamente.
+Além disso, para todos os tipos de evento, deve sempre ser observada a ordem  
+lógica para o seu envio, conforme regras estabelecidas no leiaute. 
+93
+Quanto à transmissão dos eventos de tabelas, ela deve ocorrer lote a lote, de forma 
+sequencial, por empregador.
+O envio dos eventos não periódicos deve ocorrer lote a lote, de forma sequencial,  
+por empregado, respeitando a precedência definida pelo leiaute do eSocial. Dessa forma, é  
+uma  boa  prática  agrupar  os  eventos  de  um  trabalhador  em  um  único  lote.  Caso  o 
+trabalhador possua uma quantidade de eventos maior que a quantidade permitida no lote, o  
+próximo  lote  somente  deve  ser  transmitido  após  a  empresa  receber  o  resultado  do  
+processamento referente a última transmissão.
+Segue abaixo um exemplo de transmissão de eventos não periódicos.
+Situação: O empregado foi admitido e em seguida afastado. Existem duas formas  
+corretas de envio:
+1. Enviar a admissão em um lote. Aguardar o resultado do processamento. Em caso 
+de sucesso, enviar o afastamento em outro lote.
+1. Enviar a admissão seguida do afastamento em um único lote. Caso o eSocial  
+receba o afastamento antes da admissão, o afastamento será rejeitado.
+O envio dos  eventos periódicos pode e deve ser paralelizado. Porém, deve-se  
+atentar para a precedência definida pelo leiaute do eSocial. Por exemplo, o S-1200 de um  
+trabalhador deve ser enviado antes do S-1210.
+Recomendamos as seguintes alternativas para envio dos eventos periódicos:
+1. Enviar lotes dos S-1200 de todos os empregados de forma paralela; em seguida,  
+enviar lotes de todos os S-1210, também de forma paralela; para em seguida  
+enviar o S-1299.
+94
+2. Enviar pares de eventos S-1200 e S-1210 em um mesmo lote, de forma paralela,  
+para em seguida enviar o S-1299. Caso as regras de precedência não forem  
+seguidas, o eSocial rejeitará o evento.
+7.9.8 Evitar o envio de eventos de outros grupos durante o envio dos  
+eventos periódicos
+O fluxo de processamento dos eventos periódicos se inicia com o processamento do  
+primeiro evento do período e termina com o processamento do evento de fechamento. 
+Enquanto o envio de eventos periódicos está em aberto, pode-se enviar eventos de  
+outros agrupamentos (eventos iniciais, de tabelas e não periódicos) para o sistema eSocial,  
+mas alguns destes eventos podem gerar impacto nos eventos periódicos já enviados,  
+fazendo com que seja necessário retificá-los. Com isto, o envio de eventos de outros  
+agrupamentos enquanto o envio de eventos periódicos está em aberto é desencorajado.  
+Caso  seja  estritamente  necessário  pede-se  muita  atenção  para  evitar  transtornos  no  
+fechamento do envio de eventos periódicos.
+7.9.9 Evitar o envio de eventos durante o processamento do fechamento  
+da folha
+Durante o processamento dos eventos S-1295 e S-1299 o eSocial não irá internalizar 
+nenhum evento, com o objetivo de garantir a integridade dos dados do Empregador no  
+Sistema.
+Caso algum evento seja enviado durante o processamento dos eventos citados acima 
+ele será rejeitado. O retorno do processamento do lote informará que o(s) evento(s)  
+enviado(s) foi(ram) rejeitado(s) pelo motivo da folha estar em processamento. Nesta  
+situação, o Empregador deve aguardar o término do fechamento através da recepção do  
+recibo dos eventos S-1295 e S-1299 e retransmitir o(s) evento(s). 
+95
+7.9.10Otimização na montagem do arquivo
+Não deverá ser incluída a  tag de campo com conteúdo zero (para campos tipo  
+numérico) ou vazio (para campos tipo caractere) na geração do arquivo XML para servir de  
+insumo e de resposta para os serviços disponibilizados pelo eSocial. Exceto para os campos  
+identificados como obrigatórios no modelo, neste caso, deverá constar a tag com o valor  
+correspondente (mesmo que este seja zero ou vazio) e, para os demais campos, deverão ser  
+eliminadas as tags.
+Para reduzir o tamanho final do arquivo XML a ser transportado alguns cuidados de  
+programação deverão ser assumidos:
+ não incluir "zeros não significativos" para campos numéricos, exceto quando o  
+campo possuir um universo definido de valores válidos;
+ não incluir "espaços" no início ou no final de campos numéricos e alfanuméricos;
+ não incluir comentários no arquivo XML;
+ não incluir anotação e documentação no arquivo XML ( tag  annotation e  tag 
+documentation);
+ não incluir caracteres de formatação.
+7.9.11Validação de Schema
+Para garantir minimamente a integridade das informações prestadas e a correta  
+formação dos arquivos XML, o consumidor dos serviços deverá submeter as mensagens  
+XML  para  validação  pelo  Schema do  XML  (XSD  –  XML  Schema Definition), 
+disponibilizado no sítio HTTPS://PORTAL.ESOCIAL.GOV.BR antes do seu envio.
+96
+8  Eventos
+As informações relativas a elaboração dos documentos XML contendo o Evento e o  
+Retorno do processamento estão detalhados abaixo:
+8.2 Estrutura do evento
+Cada evento tem sua própria estrutura, obedecendo ao leiaute estabelecido no  
+"Manual de Orientação do eSocial". A verificação da estrutura dos eventos, conforme os  
+seus respectivos leiautes, será realizada através de XSD (Xml Schema Definition).
+Cada XSD que representa um leiaute tem o seu próprio Namespace. 
+Ex. http://www.esocial.gov.br/schema/evt/evtInfoEmpregador/vx_x_x
+http://www.esocial.gov.br/schema/evt Estabelece que o XSD é de um evento do eSocial.
+evtInfoEmpregador Identificação do tipo do evento.
+vx_x_x Identificação da versão do XSD e do Leiaute. 
+Conforme "Versionamento dos leiautes dos 
+eventos"
+A imagem abaixo ilustra a estrutura básica de um evento:
+97
+ tag: eSocial
+descrição: Tag raiz do documento do eSocial
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 Namespace Namespace do Xsd que 
+representa o leiaute do 
+tipo do evento.
+98
+tag: evtXXX
+descrição: Tag que identifica o tipo do evento (O nome dessa tag está presente também 
+no namespace do Xsd da estrutura do evento).
+Em cada tipo de evento essa tag tem um nome específico.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+Id obrigatório 1 - Identificação  única  do  
+evento.  Conforme  
+definido  em  
+"Identificação do evento"
+tag: ideEvento
+descrição: Contém informações gerais do evento.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpAmb obrigatório 1 1=Produção;
+2=Pré-produção - 
+dados reais; 
+3=Pré-produção - 
+dados fictícios; 
+6=Homologação; 
+7=Validação; 
+8=Testes; 
+9=Desenvolvimento;
+Identificação do 
+ambiente para o qual o 
+evento está sendo 
+transmitido
+99
+procEmi obrigatório 1 1 - Aplicativo do 
+Empregador;
+2 - Aplicativo Web 
+do ESocial
+Origem do 
+documento.
+verProc obrigatório 1 - Versão do aplicativo 
+emissor do evento
+tag: ideEmpregador
+descrição: Contém a identificação do empregador.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ;
+2 – CPF
+Contém o tipo de 
+inscrição do empregador.
+nrInsc obrigatório 1 - Contém o número de 
+inscrição do empregador.
+tag: infoXXX
+descrição: Tag que comporta as informações específicas de cada evento, conforme o 
+leiaute definido no "Manual de Orientação do eSocial".
+Em cada tipo de evento essa "tag" tem um nome especifico.
+obrigatório? Sim
+ocorrência Única
+tag: Signature
+descrição: Contém a assinatura do evento.
+100
+obrigatório? Obrigatório
+ocorrência Única
+Observações:
+O padrão de assinatura do evento está descrito em "Assinatura do evento".
+8.3 Identificação do evento
+Cada evento do eSocial possui uma identificação única, gerada pelo empregador, 
+conforme o padrão abaixo:
+Campo 
+Fixo
+Tipo 
+inscrição
+Nr Inscrição Data e hora de geração Sequencial
+ID 1 - CNPJ 
+ou 
+2 - CPF
+CPF, CNPJ, ou CNPJ 
+Base. 
+Preencher com zeros a 
+direita até completar as 
+14 posições.
+Formato: 
+YYYYMMDDhhmmss
+YYYY- ano;
+MM - mês;
+DD - dia;
+hh - hora;
+mm - minuto;
+ss - segundo.
+Número sequencial de 
+livre preenchimento do 
+empregador.
+2 (pos) 1 (pos) 14 (pos) 14 (pos) 5 (pos)
+Exemplo: ID2333901700001892014020213424700001 (36 posições).
+OBS.: O número de inscrição deve ser informado com CNPJ completo quando a  
+natureza jurídica do empregador for igual a  1015, 1040, 1074 e 1163,  para as demais  
+naturezas jurídicas deve ser informado o CNPJ base (8 primeiras posições do CNPJ).
+8.3.1 Identificação dos eventos gerados pelo eSocial
+O identificador dos eventos gerados pelo eSocial segue uma regra de formação diferente  
+dos eventos gerados pelo empregador para que não haja colisão de mesmos identificadores.
+101
+Campo Fixo Tipo do Evento Sequencial
+ID 001 - S-5001
+002 - S-5002
+003 - S-5003
+011 - S-5011
+012 - S-5012
+013 - S-5013
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+Fonte: número do recibo do evento gerador do totalizador
+2 (pos) 3 (pos) 31 (pos)
+O identificador dos eventos gerados até o dia 11/11/2019 seguia outra regra de formação, a  
+saber:
+Eventos S-5001, S-5002 e S-5003
+Campo 
+Fixo
+Nr Inscrição Campo Fixo Tipo do 
+Evento
+Sequencial
+ID2 CPF 
+Preencher com zeros a 
+direita até completar 
+as 11 posições.
+000 01 - S-5001
+02 - S-5002
+03 - S-5003
+Formato: 
+YYYYMMDDhhmmssfff
+YYYY- ano;
+MM - mês;
+DD - dia;
+hh - hora;
+mm - minuto;
+ss - segundo.
+fff - fração do segundo.
+3 (pos) 11 (pos) 3 (pos) 2 (pos) 17 (pos)
+Eventos S-5011, S-5012 e S-5013
+Campo 
+Fixo
+Nr Inscrição Tipo do Evento Sequencial
+ID2 CPF, CNPJ, ou CNPJ Base. 
+Preencher com zeros a direita até 
+completar as 14 posições.
+11 - S-5011
+12 - S-5012
+13 - S-5013
+Formato: 
+YYYYMMDDhhmmssfff
+YYYY- ano;
+MM - mês;
+DD - dia;
+hh - hora;
+mm - minuto;
+ss - segundo.
+fff - fração do segundo.
+102
+3 (pos) 14 (pos) 2 (pos) 17 (pos)
+8.4 Assinatura do evento
+O documento Xml do Evento deverá ser assinado com um certificado digital do tipo  
+e-CPF (e-PF) ou e-CNPJ (e-PJ)., conforme a especificação definida em 6.7 - Padrão de
+assinatura digital e os critérios estabelecidos no "Manual de Orientação do eSocial".
+A assinatura do evento deverá ser realizada sobre todo documento Xml e inserida no 
+local  estabelecido no Schema  (XSD) de  cada  tipo  de  evento,  ou  seja,  no  elemento  
+"Signature".
+8.5 Versionamento dos leiautes dos eventos
+O versionamento dos leiautes dos eventos será por tipo de evento. Assim, a  
+alteração do leiaute de um determinado tipo de evento não afeta a versão dos demais tipos  
+de eventos.
+Os leiautes válidos em um determinado período serão empacotados e distribuídos  
+através dos "Pacotes de liberação". Cada pacote de liberação tem os leiautes dos tipos de  
+eventos suportados pelo eSocial com as suas respectivas versões.
+Segue abaixo os princípios que serão considerados no versionamento dos leiautes:
+ O leiaute do tipo de evento compreende apenas a sua estrutura. Assim um  
+mesmo leiaute pode ter diferente conjunto de regras e valores válidos durante o  
+seu período de vigência. A alteração dos valores válidos ou do conjunto de  
+regras de um leiaute, sem alteração de sua estrutura, será realizada através da  
+atualização do "Manual de Orientação do eSocial", ou seja, não haverá alteração  
+da versão do leiaute.
+103
+ Para cada tipo de evento haverá apenas uma versão de leiaute vigente em um  
+determinado período. 
+ Cada XSD é identificado por um único Namespace e cada XSD representa  
+apenas um leiaute.
+ O eSocial identificará a versão do leiaute do evento através do namespace do  
+Xml do evento.
+ Identificação da versão de Leiaute (X.Y) e Schema XML - XSD (X_Y_Z)
+Onde:
+X -> utilizado para representar mudanças muito significativas (Reestruturação do  
+evento)
+Y -> utilizado para representar mudanças estruturais comuns (Inclusão/exclusão de  
+campos, dente outras).
+Z ->  utilizados  para  corrigir  erros  em  XSD  publicados  e,  possivelmente,  já  
+utilizados. Neste caso haverá uma substituição do "Pacote de liberação" do referido  
+período.
+OBS.: A necessidade de alteração da versão do leiaute de um determinado tipo de  
+evento, sem a alteração da sua estrutura, o que representa uma exceção, implicará a  
+criação de um novo XSD. Assim, não haverá qualquer modificação estrutural no XSD,  
+apenas o namespace será modificado para acompanhar a nova versão do leiaute. 
+104
+8.6 Estrutura do retorno de processamento do evento
+Para  cada  evento  enviado,  o  Sistema  eSocial  gera  um  documento  Xml  com  
+informações referentes ao processamento do evento. Se o Sistema eSocial não identificar  
+nenhum erro no evento durante o seu processamento, o evento será aceito e um número de  
+recibo de entrega será gerado. O documento de retorno de processamento somente será  
+assinado digitalmente se o evento for validado sem erros e aceito pelo eSocial.
+A imagem abaixo ilustra a estrutura do retorno de processamento do evento que está 
+especificado no Schema RetornoEvento-vx_x_x.xsd:
+105
+106
+tag: eSocial
+descrição: Tag raiz do documento do eSocial. 
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+xmlns obrigatório 1 http://www.esocial.gov.br/
+schema/evt/retornoEvento/
+vx_x_x
+Namespace do 
+Xsd do retorno 
+de 
+processamento 
+do evento.
+tag: retornoEvento
+descrição: Tag principal do retorno de processamento de evento.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+Id obrigatório 1 Identificação única do evento. 
+Conforme definido em 
+"Identificação do evento"
+tag: ideEmpregador
+descrição: Contém a identificação do empregador.
+obrigatório? Sim
+107
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpInsc obrigatório 1 1 – CNPJ;
+2 – CPF
+Contém o tipo de inscrição do  
+empregador.
+nrInsc obrigatório 1 - Contém o número de inscrição 
+do empregador.
+tag: recepcao
+descrição: Contém os dados de recepção do evento.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+tpAmb obrigatório 1 1=Produção;
+2=Pré-produção - 
+dados reais; 
+3=Pré-produção - 
+dados fictícios; 
+6=Homologação; 
+7=Validação; 
+8=Testes; 
+9=Desenvolvimento;
+Identificação do ambiente de 
+recepção do evento.
+dhRecepcao obrigatório 1 - Data e horário da recepção do 
+evento.
+versaoApp
+Recepcao
+obrigatório 1 - Versão do aplicativo de 
+recepção do evento.
+protocoloEnvio
+Lote
+facultativo 1 - Número sequencial único 
+produzido no instante de 
+recepção do lote de eventos.
+tag: processamento
+108
+descrição: Contém os dados de processamento do evento.
+obrigatório? Sim
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+cdResposta obrigatório 1 ver tabela abaixo Código de resposta do 
+processamento do evento 
+conforme tabela abaixo. Os 
+códigos de resposta do 
+processamento também 
+podem ser encontrados no 
+portal do eSocial, na seção 
+de "Documentação Técnica", 
+no item "Mensagens do 
+Sistema".
+descResposta obrigatório 1 ver tabela abaixo Descrição da mensagem de 
+retorno.
+versaoApp
+Processamento
+obrigatório 1 Versão do Aplicativo de 
+processamento do evento.
+dhProcessamento obrigatório 1 - Data e horário do 
+processamento do evento.
+cdResposta descResposta
+201 Sucesso.
+202 Sucesso com advertência.
+301 Erro servidor.
+401 Erro no conteúdo do evento.
+402 Schema inválido.
+403 Leiaute inválido.
+109
+404 Erro do certificado digital da assinatura do evento.
+405 Erro na assinatura evento
+406 Evento não pertence ao grupo especificado no lote de eventos
+407 A regra de precedência na transmissão de eventos não foi seguida. Eventos desse tipo não  
+devem ser enviados para processamento em paralelo. Ver seção 5.6.1 do Manual de  
+Orientação do Desenvolvedor.
+408 Erro na integração com o sistema CNPJ / CPF.
+409 Erro na integração com o sistema Procuração Eletrônica RFB.
+410 Erro na integração com o sistema Procuração Eletrônica Caixa.
+411 Assinante inválido. Assinante não possui perfil de procuração eletrônica para enviar este  
+tipo de evento ou assinante não consta como representante legal da empresa.
+tag: ocorrencias
+descrição: Contém as ocorrências encontradas no evento.
+obrigatório? não
+ocorrência única
+tag: ocorrencia
+descrição: Contém cada uma das ocorrências encontradas no evento.
+obrigatório? sim, caso exista a tag ocorrencias
+ocorrência 1..*
+campo obrigatoriedade ocorrência valores válidos descrição
+110
+tipo obrigatório 1 1 - Erro
+2 - Advertência
+3 - Histórico de 
+validação
+Contém o tipo de 
+ocorrência.
+Os Tipos 
+"Advertência" e 
+"Histórico de 
+validação" informam 
+sobre situações de 
+validação e não 
+interferem na 
+recepção com sucesso 
+do evento.
+codigo obrigatório 1 - Contém o código da 
+ocorrência.
+descricao obrigatório 1 - Contém a descrição da 
+ocorrência.
+localizacao facultativo 1 - Contém a localização 
+da ocorrência no 
+documento do evento.
+Observações:
+Somente poderá existir o tipo de ocorrência = 1 (Erro) se o campo cdResposta da Tag status contiver um 
+código de erro do cliente (4xx).
+tag: recibo
+descrição: Contém os dados do recibo de entrega do evento
+obrigatório? Facultativo
+ocorrência Única
+campo obrigatoriedade ocorrência valores válidos descrição
+nrRecibo obrigatório 1 - Número de recibo do evento.
+Abaixo é descrita a regra de 
+formação deste código:
+A.B.NNNNNNNN....N
+A = Agente de processamento: 
+Serpro=1
+111
+B = Ambiente de recepção: 
+1=Produção;
+2=Pré-produção - dados reais; 
+3=Pré-produção - dados 
+fictícios; 
+6=Homologação; 7=Validação; 
+8=Testes; 
+9=Desenvolvimento;
+  
+N = Número sequencial (19 
+posições)
+hash obrigatório 1 - Hash do evento. Será 
+considerado o hash utilizado na 
+assinatura do conteúdo evento. 
+Elemento DigestValue do 
+documento Xml assinado.
+contrato opcional 0-1 - Contém o XML do retrato do 
+contrato de trabalho. As 
+informações são retornadas 
+juntamente com o recibo dos 
+seguintes eventos:
+ S-2200
+ S-2206
+ S-2300
+ S-2306
+As informações que irão 
+compor o retrato do contrato de 
+trabalho estão descritas no 
+Schema RetornoEvento-
+vx_x_x.xsd.
+rubricas opcional 0-1 Ver definição do 
+elemento rubrica 
+abaixo.
+Relação de rubricas utilizadas 
+em um evento remuneratório 
+(S-1200, S-1210, S-1207, 
+S-1210, S-2299 e S-2399).
+cpfs opcional 0-1 Ver 8.6.7. Relação de trabalhadores 
+considerados em um 
+fechamento de folha.
+Observações:
+A tag recibo somente será preenchida se o evento estiver válido para o Sistema eSocial.
+tag: rubrica
+descrição: Dados de cada rubrica utilizada em um evento remuneratório.
+obrigatório? Sim
+112
+ocorrência Múltipla
+campo obrigatoriedade ocorr valores válidos descrição
+nrR obrigatório 1 Número do recibo do evento.
+idE obrigatório 1 Identificação única do evento.
+prA obrigatório 1 Período de apuração.
+prR opcional 0-1 Período de referência.
+Obs.: Se a mesma rubrica for 
+usada em mais de um período 
+de referência, eles aparecerão 
+separados por ponto e vírgula 
+(;).
+idT obrigatório 1 Identificador da tabela de 
+rubricas.
+cdR obrigatório 1 Código da rubrica.
+ntR obrigatório 1 Ver leiaute do eSocial Natureza da rubrica.
+tpR obrigatório 1 1, 2, 3, 4 Tipo da rubrica.
+inCP opcional 0-1 Ver leiaute do eSocial Incidência tributária da rubrica 
+para a Previdência Social.
+inIR opcional 0-1 Ver leiaute do eSocial Incidência tributária da rubrica 
+para o IRRF.
+inFGTS opcional 0-1 Ver leiaute do eSocial Incidência da rubrica para o 
+FGTS.
+inCPRP opcional 0-1 Ver leiaute do eSocial Incidência da rubrica para as 
+contribuições do RPPS ou do 
+SPSMFA.
+inPIS opcional 0-1 Ver leiaute do eSocial Incidência da rubrica para o 
+PIS/PASEP.
+Observações:
+tag: Signature
+113
+descrição: Contém a assinatura do documento.
+obrigatório? Facultativo
+ocorrência Única
+Observações:
+O retorno do evento somente será assinado caso o Evento esteja válido para o Sistema eSocial. O padrão de 
+assinatura do documento de retorno está descrito em "Padrão de Assinatura Digital".
+8.6.7 Trabalhadores no fechamento de folha
+A lista de trabalhadores tem formato textual. Cada linha conterá o (1) CPF do trabalhador,  
+os recibos dos eventos de (2) remuneração, (3) pagamento, (4) desligamento e (5) término  
+de TSV. Esses dados serão separados por uma barra (|). Quando houver mais de um evento  
+do mesmo tipo, os recibos serão separados por ponto e vírgula (;). Para reduzir o tamanho  
+do retorno, os recibos serão informados sem o trecho inicial “1.1.” e sem zeros à esquerda.
+Exemplo
+Trabalhador  com  CPF  11111111111,  remuneração  1.1.0000000000000000001  e  
+pagamento  1.1.0000000000000000002.  Trabalhador  com  CPF  22222222222,  
+desligamentos  1.1.0000000000000000003  e  1.1.0000000000000000004  e  pagamento  
+1.1.0000000000000000005.
+Resultado
+<cpfs>11111111111|1|2||
+22222222222||5|3;4|</cpfs>
+114
+9 Orientações para utilização do ambiente de Produção Restrita
+9.2 Sobre a Produção Restrita
+O ambiente de Produção Restrita do eSocial tem o objetivo de disponibilizar uma  
+infraestrutura para as empresas realizarem os testes funcionais de suas aplicações.
+A Produção Restrita terá a mesma versão do eSocial que será disponibilizada em  
+ambiente  de  produção.  Toda  evolução  do  eSocial  será  implantada  primeiramente  no 
+ambiente de Produção Restrita, onde ficará disponíveis para os testes das empresas por um  
+determinado tempo a ser definido de acordo a característica/tamanho da mudança. Em  
+seguida, será implantada no ambiente de Produção.
+Com isso, as Empresas farão uso do ambiente de produção, somente após as suas  
+aplicações estarem amadurecidas e estabilizadas diante dos testes realizados na Produção  
+Restrita.
+É muito importante ressaltar que a Produção Restrita não é um ambiente para as  
+Empresas realizarem testes de carga ou para simularem suas folhas de pagamento antes de  
+transmitirem para a Produção.
+Seguem abaixo as características dos ambientes:
+Ambiente de Produção Restrita Ambiente de Produção
+Menor capacidade de processamento Grande capacidade de processamento
+Disponibilidade 24 x 7 (com maior 
+flexibilidade para realização de janelas de 
+manutenção)
+Disponibilidade 24 x7
+Tempo limitado de guarda dos dados. Tempo de guarda dos dados conforme 
+115
+(ver seção "Tempo de guarda dos dados" 
+deste documento)
+legislação
+Este ambiente não dá validade jurídica às 
+informações recebidas. Dessa forma, os 
+dados transmitidos pelas empresas podem 
+ser reais ou fictícios.
+As informações recebidas possuem validade 
+jurídica.
+Testes funcionais -
+9.3 Estratégia de disponibilização
+O ambiente de Produção Restrita será disponibilizado em duas etapas:
+ Primeira etapa: de 26/06/2017 a 31/07/2017 (restrita às empresas de Tecnologia  
+da Informação);
+ Segunda etapa: de 01/08/2017 em diante (acessível a qualquer empresa).
+Para a Produção Restrita, a data de 01/01/2016 deve ser adotada como início de  
+obrigatoriedade do eSocial.
+9.4 Eventos
+Inicialmente, o ambiente de Produção Restrita será disponibilizado contendo os  
+eventos abaixo que foram implementados de acordo com a versão 2.2.02 do leiaute e  
+schemas XML:
+1. S-1000 - Informações do Empregador/Contribuinte 
+2. S-1005 - Tabela de Estabelecimentos, Obras ou Unidades de Órgãos Públicos 
+3. S-1010 - Tabela de Rubricas 
+4. S-1020 - Tabela de Lotações Tributárias 
+5.   S-1030 - Tabela de Cargos/Empregos Públicos
+6.   S-1040 - Tabela de Funções/Cargos em Comissão
+7.   S-1050 - Tabela de Horários/Turnos de Trabalho
+8. S-1070 - Tabela de Processos Administrativos/Judiciais 
+9.   S-1080 - Tabela de Operadores Portuários
+116
+10. S-1200 - Remuneração de trabalhador vinculado ao Regime Geral de Previd.  
+Social 
+11. S-1202  -  Remuneração de Servidor vinculado ao Regime Próprio de Previd.  
+Social 
+12. S-1207 - Benefícios – Entes públicos
+13. S-1210 - Pagamentos de Rendimentos do Trabalho
+14. S-1250 - Aquisição de Produção Rural 
+15. S-1260 - Comercialização da Produção Rural Pessoa Física 
+16. S-1270 - Contratação de Trabalhadores Avulsos Não Portuários 
+17. S-1280 - Informações Complementares aos Eventos Periódicos 
+18. S-1298 - Reabertura dos Eventos Periódicos 
+19. S-1299 - Fechamento dos Eventos Periódicos 
+20. S-1300 - Contribuição Sindical Patronal 
+21. S-2100 - Cadastramento Inicial do Vínculo 
+22. S-2190 - Admissão de Trabalhador - Registro Preliminar 
+23. S-2200 - Admissão de Trabalhador 
+24. S-2205 - Alteração de Dados Cadastrais do Trabalhador 
+25. S-2206 - Alteração de Contrato de Trabalho 
+26. S-2210 - Comunicação de Acidente de Trabalho 
+27. S-2220 - Monitoramento da saúde do trabalhador
+28. S-2221 - Exame Toxicológico do Motorista Profissional
+29. S-2230 - Afastamento Temporário 
+30. S-2231 - Cessão/Exercício em Outro Órgão
+31. S-2240 - Condições Ambientais do Trabalho – Fatores de Risco
+32. S-2250 - Aviso Prévio 
+33. S-2298 - Reintegração 
+34. S-2299 - Desligamento 
+35. S-2300 - Trabalhador Sem Vínculo de Emprego/Estatutário - Início 
+36. S-2306  -  Trabalhador  Sem  Vínculo  de  Emprego/Estatutário  -  Alteração  
+Contratual 
+37. S-2399 - Trabalhador Sem Vínculo de Emprego/Estatutário - Término 
+38. S-2400 - Cadastro de Beneficiário - Entes Públicos - Início 
+39. S-2405 - Cadastro de Beneficiário - Entes Públicos - Alteração 
+40. S-2410 - Cadastro de Benefício - Entes Públicos - Início 
+41. S-2416 - Cadastro de Benefício - Entes Públicos - Alteração 
+42. S-2418 - Reativação de Benefício - Entes Públicos 
+43. S-2420 - Cadastro de Benefício - Entes Públicos - Término 
+44. S-3000 - Exclusão de eventos
+45. S-8200 - Anotação Judicial do Vínculo
+46. S-8299 - Baixa Judicial do Vínculo
+47. S-5001 - Informações das contribuições sociais por trabalhador
+48. S-5002 - Imposto de Renda Retido na Fonte
+49. S-5003 - Informações do FGTS por Trabalhador
+50. S-5011 - Informações das contribuições sociais consolidadas por contribuinte
+51. S-5012 - Informações do IRRF consolidadas por contribuinte
+52. S-5013 - Informações do FGTS consolidadas por contribuinte
+53. S-2500 - Processo Trabalhista 
+117
+54. S-2501 - Informações de Tributos Decorrentes de Processo Trabalhista 
+55. S-3500 - Exclusão de Processo Trabalhista 
+56. S-5501  -  Informações Consolidadas de  Tributos  Decorrentes  de  Processo  
+Trabalhista 
+57. S-5503 - Informações do FGTS por Trabalhador em Processo Trabalhista 
+As datas para disponibilização de versões futuras do eSocial nos ambientes de  
+Produção Restrita e Produção serão divulgadas quando da publicação dos respectivos  
+leiautes.
+9.5 Restrições
+A Produção Restrita limitará a utilização de 1.000 (mil) vínculos por empregador.  
+Dessa forma, cada empresa poderá realizar testes funcionais considerando uma folha de  
+pagamento com até 1.000 (mil) empregados ativos.
+Caso a empresa utilize os 1.000 (mil) vínculos e queira incluir um novo empregado,  
+um empregado que esteja ativo deve ser desligado.
+9.6 Tempo de guarda dos dados
+Considerando que a Produção Restrita é um ambiente para realização de testes  
+funcionais para os empregadores testarem suas aplicações e que os dados recebidos não  
+possuem validade jurídica, não existe a necessidade de armazenamento da mesma forma  
+que é previsto para o ambiente de produção.
+Nesse sentido, todos os eventos enviados ao ambiente de Produção Restrita serão  
+completamente excluídos periodicamente ou quando houver a necessidade de manutenção  
+que gere impacto significativo para o sistema, com comunicação prévia.
+118
+9.7 Validações
+Segue abaixo o comportamento do eSocial, no ambiente de Produção Restrita, em  
+relação às validações com outros Sistemas:
+CNPJ - Cadastro Nacional de Pessoa Jurídica
+Descrição  simplificada:  O  CNPJ  compreende  as  informações  cadastrais  das  
+entidades de interesse das administrações tributárias da União, dos Estados, do Distrito  
+Federal e dos Municípios.
+Orientação de uso: Os CNPJ informados nos eventos do eSocial Produção Restrita,  
+serão validados contra o ambiente de produção do Sistema CNPJ. Dessa forma, os eventos  
+devem ser preenchidos com CNPJ válidos e em situação regular junto a RFB - Receita  
+Federal do Brasil.
+CPF - Cadastro Pessoa Física
+Descrição simplificada: O CPF compreende as informações cadastrais das pessoas  
+físicas.
+Orientação de uso: Os CPF informados nos eventos do eSocial não serão validados  
+contra o ambiente de produção do Sistema CPF. Será validado somente o DV. Dessa forma, 
+os eventos podem ser preenchidos com qualquer CPF, desde que o DV seja válido.
+Tabela de Municípios
+Descrição simplificada: Contém os códigos de municípios conforme tabela de  
+municípios do IBGE.
+119
+Orientação de uso: As informações relacionadas a municípios informados nos  
+eventos do eSocial serão validadas contra o ambiente de produção do Sistema que detém os  
+dados de municípios. Dessa forma, os eventos devem ser preenchidos com códigos de  
+municípios válidos.
+CNO - Cadastro Nacional de Obras
+Descrição simplificada: Refere-se ao registro, perante a RFB, das informações  
+específicas de obras de construção civil, seja para pessoas físicas ou para pessoas jurídicas.
+Orientação de uso: Inicialmente o ambiente de Produção Restrita validará somente o 
+dígito verificador (DV) do CNO. Dessa forma, os eventos podem ser preenchidos com  
+qualquer CNO, desde que o DV seja válido. Todas as outras regras relacionadas ao CNO  
+não serão aplicadas.
+CNIS - Cadastro Nacional de Informações Sociais
+Descrição simplificada: Base de dados nacional que contém informações cadastrais  
+dos trabalhadores.
+Orientação de uso: Inicialmente o ambiente de Produção Restrita validará somente o 
+dígito verificador (DV) do NIS. Dessa forma, os eventos podem ser preenchidos com  
+qualquer NIS, desde que o DV seja válido.
+FAP - Fator Acidentário de Prevenção
+Descrição simplificada: É um índice aplicado sobre a Contribuição do Grau de  
+Incidência de Incapacidade Laborativa decorrente dos Riscos Ambientais do Trabalho -  
+GIL-RAT  (devida  pelos  empregadores),  que  tanto  pode  resultar  em  aumento  como  
+diminuição da respectiva contribuição. O FAP consiste num multiplicador variável num  
+120
+intervalo contínuo de cinquenta centésimos (0,50) a dois inteiros (2,00), desprezando-se as  
+demais casas decimais, a ser aplicado à respectiva alíquota.
+Orientação de uso: Inicialmente o ambiente de Produção Restrita aceitará o FAP  
+informado pela empresa dentro do intervalo contínuo de cinquenta centésimos (0,50) a dois  
+inteiros (2,00).
+Procuração Eletrônica
+Descrição  simplificada:  É  um  documento  eletrônico  de  procuração  assinado  
+digitalmente por um Certificado Digital válido.
+Orientação de uso: O ambiente de Produção Restrita aceitará o uso de Procuração  
+Eletrônica a partir da versão 2.3 do leiaute do eSocial.
+Segue abaixo as orientações sobre os eventos agrupados por perfil:
+Grupo Preliminar (Perfil nº 1)
+S-2190 Admissão de Trabalhador – Registro Preliminar
+Grupo Rotinas (Perfil nº 2)
+S-1010            Tabela de Rubricas
+S-1020            Tabela de Lotações Tributárias                      
+S-1030            Tabela de Cargos/Empregos Públicos                       
+S-1035            Tabela de Carreiras Públicas              
+S-1040            Tabela de Funções/Cargos em Comissão                  
+S-1050            Tabela de Horários/Turnos de Trabalho                    
+S-1060            Tabela de Ambientes de Trabalho                 
+S-1070            Tabela de Processos Administrativos/Judiciais                     
+S-1080            Tabela de Operadores Portuários                  
+S-1200            Remuneração do Trabalhador vinculado a RGPS                
+121
+S-1202            Remuneração do Trabalhador vinculado a RPPS                 
+S-1207            Benefícios Previdenciários - RPPS               
+S-1210            Pagamentos de Rendimentos do Trabalho                
+S-1250            Aquisição de Produção Rural                        
+S-1260            Comercialização da Produção Rural Pessoa Física               
+S-1270            Contratação de Trabalhadores Avulsos Não Portuários                   
+S-1280            Informações Complementares aos Eventos Periódicos                    
+S-1300            Contribuição Sindical Patronal                      
+S-2190            Admissão de Trabalhador - Registro Preliminar                   
+S-2200            Admissão de Trabalhador                  
+S-2205            Alteração de Dados Cadastrais do Trabalhador                   
+S-2206            Alteração de Contrato de Trabalho               
+S-2230            Afastamento Temporário 
+S-2231            Cessão/Exercício em outros órgãos
+S-2250            Aviso Prévio               
+S-2260            Convocação para Trabalho Intermitente                   
+S-2298            Reintegração              
+S-2300            Trabalhador Sem Vínculo de Emprego/Estatutário - Início             
+S-2306            Trabalhador Sem Vínculo de Emprego/Estatutário - Alteração 
+Contratual 
+S-2400            Cadastro de Benefícios Previdenciários - RPPS     
+Grupo SST (Perfil nº 3)  
+S-1060             Tabela de Ambientes de Trabalho                 
+S-2210            Comunicação de Acidente de Trabalho 
+S-2220            Monitoramento da saúde do trabalhador 
+S-2230            Afastamento Temporário 
+S-2240            Condições Ambientais do Trabalho - Fatores de Risco 
+S-2241            Insalubridade/Periculosidade/Aposentadoria Especial 
+ 
+Grupo Desligamento (Perfil nº 4) 
+122
+S-2250            Aviso Prévio
+S-2299            Desligamento 
+S-2399           Trabalhador Sem Vínculo de Emprego/Estatutário - Término 
+Grupo Especial (Perfil nº 5)
+S-1295            Solicitação de Totalização para Pagamento em Contingência 
+S-1298            Reabertura dos Eventos Periódicos 
+S-1299            Fechamento dos Eventos Periódicos 
+S-1000            Informações do Empregador/Contribuinte e Órgão Público 
+S-1005            Tabela de Estab., Obras de Cons. Civil ou Unidades de Órgãos 
+Públicos 
+S-5011            Informações das contribuições sociais consolidadas por contribuinte 
+S-5013            Informações do FGTS consolidadas por contribuinte 
+ 
+Grupo WEB (Perfil nº 7)
+Todos os eventos - Via acesso Web
+Grupo Reclamatória  (Perfil nº 8)
+S-2500           Processo Trabalhista
+S-2501           Informações de Contribuições Decorrentes de Processo Trabalhista
+S-3500           Exclusão de Processo Trabalhista
+S-5501           Informações de Tributos Decorrentes de Processo Trabalhista
+Grupo Toxicológico  (Perfil nº 9)
+S-2221          Exame Toxicológico do Motorista Profissional
+Cada perfil, que o outorgado possuir, permitirá a inclusão, alteração e exclusão. 
+Sendo assim, para o evento S-3000 (exclusão), o sistema deverá verificar qual o tipo de 
+evento que se pretende excluir e identificará o perfil para este evento. 
+123
+9.8 Regra para identificação do ambiente
+Todos os eventos gerados para o ambiente de Produção Restrita deverão ter a  
+informação de identificação do ambiente, conforme abaixo:
+A tag “tpAmb” deve ser preenchida com o valor 2 – Produção Restrita. 
+9.9 Atendimento
+Será criado no Portal do eSocial ( https://portal.esocial.gov.br) um canal exclusivo  
+para atendimento das demandas provenientes da utilização do ambiente de Produção  
+Restrita, por meio de formulário próprio. As respostas serão de acesso público.
+Não serão atendidas por esse canal dúvidas que tratem exclusivamente de direito  
+material.
+9.10 Certificação digital
+O usuário que desejar utilizar os Webservices do eSocial deverá instalar em seus  
+servidores a cadeia de certificação do eSocial, que é composta pelos seguintes itens:
+Raiz
+http://acraiz.icpbrasil.gov.br/credenciadas/RAIZ/ICP-Brasilv2.crt
+AC - Primeiro Nível
+http://acraiz.icpbrasil.gov.br/credenciadas/RFB/v2/p/AC_Secretaria_da_Receita_Federal_d
+o_Brasil_v3.crt
+AC - Segundo Nível
+124
+http://acraiz.icpbrasil.gov.br/credenciadas/RFB/v2/Autoridade_Certificadora_do_SERPRO
+_RFB_SSL.crt
+Para que a conexão HTTPS (TLS) seja feita com sucesso estes certificados devem  
+estar instalados como certificados confiáveis na máquina que será cliente dos Webservices.
+9.11 Remover empregador da base de dados
+As empresas poderão remover todos os eventos enviados ao ambiente de Produção  
+Restrita, inclusive o evento S-1000. Esta funcionalidade viabiliza flexibilidade para os  
+testes neste ambiente. 
+Para tanto, a empresa deverá transmitir um evento S-1000 preenchido conforme  
+abaixo:
+Tag classTrib = 00
+tag tpAmb = 2 – Produção Restrita.
+Será retornada a mensagem "1012 - Empregador {0} removido com sucesso da base 
+de dados da Producao Restrita do eSocial", onde {0} é o identificador do empregador.
+Vale ressaltar que esta é uma funcionalidade exclusiva do ambiente de produção  
+restrita. Esta funcionalidade não será disponibilizada no ambiente de produção.
+125
+126

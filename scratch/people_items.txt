@@ -1,0 +1,351 @@
+=== people.1 (item 1) [Não implementado] ===
+Permitir a replicação das informações cadastrais de uma Entidade, incluindo, de maneira mínima e necessária, os dados referentes a Cargos, Servidores, Lotações e Verbas, com o objetivo de viabilizar a execução de simulações de cálculos e a geração de relatórios, preservando a integridade da base de dados principal.
+
+=== people.2 (item 2) [Parcial] ===
+Permitir a gestão de múltiplas Entidades, assegurando a independência e a segregação das informações de cada uma delas. Disponibilizar, a critério do Usuário, a opção de cadastramento das Matrículas dos Servidores em sequência numérica única, independentemente da Entidade à qual estejam vinculados.
+
+=== people.3 (item 3) [Parcial] ===
+Permitir a identificação, dentro de uma mesma Lotação (Local de Trabalh o), de mais de um Centro de Custo, possibilitando a contabilização e a geração de relatórios individualizados por Centro de Custo.
+
+=== people.4 (item 4) [Não implementado] ===
+Permitir a identificação do Servidor em seu Local de Trabalho de origem, bem como do Local de Trabalho de destino, nos c asos de movimentação do Servidor dentro da estrutura organizacional da Entidade. Deverá disponibilizar histórico de informações contendo todos os Locais de Trabalho aos quais o Servidor já tenha sido alocado. Da mesma forma, deverá permitir a emissão de re latórios gerenciais, com opção de seleção pelo Local de Trabalho de origem ou pelo Local de Trabalho de destino.
+
+=== people.5 (item 5) [Parcial] ===
+Permitir o cálculo dos valores previdenciários do Fundo de Previdência (RPPS) da Entidade, compreendendo as contribuições patronais, os valores retidos dos Servidores e, quando aplicável, as contribuições patronais suplementares, caso a Entidade opte por esta forma de complementação. Deverá permitir o cálculo para mais de um Fundo de Previdência, bem como para mais de uma con tribuição suplementar, quando existente, além da emissão da respectiva Guia de Recolhimento por Fundo de Previdência.
+
+=== people.6 (item 6) [Parcial] ===
+Permitir o cálculo dos valores previdenciários do Fundo de Previdência (RPPS) da Entidade, compreendendo as contribuições patronais, os valores retidos dos Servidores e, quando aplicável, as contribuições patronais suplementares, caso a Entidade opte por esta forma de complementação. Deverá permitir o cálculo para mais de um Fundo de Previdência, quando existente, bem como a emissão da respectiva Guia de Recolhimento por Fundo de Previdência.
+
+=== people.7 (item 7) [Parcial] ===
+Permitir o controle dos Descontos Consignados na Folha de Pagamento dos Servidores, de forma que o valor total dos descontos não ultrapasse a Margem Legal de Consignação, a ser definida pela Entidade. Deverá disponibilizar opção que possibilite a realização dos descontos consignados dentro da respectiva margem legal, bem como a definição de critérios de priorização dos descontos a serem efetuados, vedando a aplicação daqueles que excedam a Margem Legal de Consignação.
+
+=== people.8 (item 8) [Não implementado] ===
+Permitir a importação de arquivos referentes a Empréstimos Consignados do Crédito do Trabalhador (eConsignado), nos formatos CSV, XLS e JSON, possibilitando a visualização e a conferência prévia dos dados importados. Deverá destacar os casos em que a Margem Consignável tenha sido excedida, disponibilizar filtros para identificação de divergências e gerar relatórios de inconsistências contendo os registros que não serão importados. Permitir, ainda, a emissão de relatório de conferência, bem como o controle sobre a importação de Servidores desligados, com a opção de incluí -los ou não no processo. Além disso, deverá registrar automaticamente, após o cálculo da Folha de Pagamento, os Descontos Consignados na Ficha Financeira do Servidor, bem como as respectivas informações nos Eventos Periódicos do eSocial.
+
+=== people.9 (item 9) [Parcial] ===
+Manter o controle do Quadro de Vagas, por Cargo e Lotação, permitindo ao Administrador definir a forma de restrição a ser aplicada quando houver extrapolação do limite de vagas orçadas para o Cargo. As formas de restrição deverão contemplar, no mínimo: Bloqueio, Advertência e Sem Restrição. Deverá gerar relatório gerencial referente ao Quadro de Vagas, demonstrando as informações de vagas Previstas, Realizadas e o Saldo de Vagas por Cargo.
+
+=== people.10 (item 10) [Implementado] ===
+Manter histórico por Usuário do Sistema referente aos registros de inclusão, alteração e exclusão do cadastro de Servidor e de seus Dependentes, bem como dos Lançamentos Variáveis, Lançamentos Fixos, Afastamentos, Faltas e da Programação de Férias. Deverá gerar relatório dos registros por Usuário do Sistema e por Período, contendo, no mínimo, as informações de Nome do Usuário, Data, Horário e a identificação do conteúdo incluído, alterado ou excluído.
+
+=== people.11 (item 11) [Parcial] ===
+Deverá permitir o cadastro de Servidores que possuam mais de um Vínculo Empregatício com a Entidade, vinculando cada Contrato de Trabalho ao respectivo Regime de Previdência (RPPS ou RGPS). Deverá, ainda, para os Servidores que possuam mais de um Contrato de Trabalho com a Entidade, realizar o Acúmulo das Bases de Encargos para a Previdência (RPPS ou RGPS) e para o IRRF, bem como o cálculo dos Encargos de Retenção do Servidor e dos Encargos Patronais da Entidade.
+
+=== people.12 (item 12) [Não implementado] ===
+Disponibilizar mecanismo para realização da Cópia do Registro de Funcionário de Servidor Ativo ou Servidor Demitido, duplicando integralmente os dados do Contrato de Trabalho anterior em um Novo Contrato. Deverá permitir que, a partir da cópia realizada, sejam efetuadas as alterações n ecessárias nos dados copiados, com a efetivação do novo Registro de Funcionário de Trabalho do Servidor.
+
+=== people.13 (item 13) [Não implementado] ===
+Ofertar o registro de Funcionário Suplementar para Servidor Ativo que atuará como Substituto de outro Servidor, em caráter temporário. Deverá gerar um Novo Registro de Funcionário, contendo Nova Matrícula para o Servidor Substituto, a Data de Início e a Data de Fim do período de substituição, bem como a identificação do Servidor Substituído. O cálculo da Folha Mensal deverá ocorrer para o Contrato de Substituição até a Data de Fim do período definido, procedendo ao encerramento automático do respectivo contrato ao seu término.
+
+=== people.14 (item 14) [Não implementado] ===
+Deverá dispor de mecanismo para realização da Reintegração de Servidores anteriormente demitidos. No registro de Reint egração do Servidor, deverão constar as informações exigidas pelo eSocial, contemplando, no mínimo, o Tipo de Reintegração, o Número do Processo Judicial, a Lei de Anistia, quando aplicável, e o Indicador de Remunerações Pagas em Juízo. Após a efetivação do registro de Reintegração, o Servidor deverá passar a constar no sistema de Folha de Pagamento, para fins de processamento do Cálculo Mensal.
+
+=== people.15 (item 15) [Não implementado] ===
+Possuir cadastro de Beneficiários de Pensão Judicial, junto ao Registro do Funcionário, a ser utilizado nos processos da Folha Mensal, de Férias e de 13º Salário. Deverá cessar automaticamente a concessão da Pensão Judicial ao atingir o Limite de Idade, sendo este parâmetro configurável pelo Usuário.
+
+=== people.16 (item 16) [Não implementado] ===
+Disponibilizar o cadastro de Operadoras de Plano de Saúde, permitindo a parametrização das regras de cálculo da Mensalidade, contemplando, no mínimo, as modalidades por Valor Fixo, por Faixa Etária, por Percentual sobre o Salário Base, bem como o Percentual de Participação da Entidade e do Cônjuge . Os valores descontados referentes ao Plano de Saúde do Servidor deverão ser encaminhados de forma automática para a DIRF e para o Comprovante de Rendimentos.
+
+=== people.17 (item 17) [Não implementado] ===
+Dispor de rotina de Cálculo do Benefício de Vale -Transporte, disponibilizando o cadastro de Empresas de Vale -Transporte, Linhas, Tarifas específicas por Linha de Transporte e Servidores com direito ao benefício. Deverá emitir Relatório de Conferência, contendo informações relativas à Quantidade de Vale-Transporte a ser adquirida mensalmente pela Entidade, bem como o Valor da Parcela de Responsabilidade da Entidade e o Valor do Desconto de responsabilidade do Servidor.
+
+=== people.18 (item 18) [Não implementado] ===
+Emitir Relatório de Movimentação de Pessoal, por Período, listando, no mínimo, os seguintes tipos de movimentação: Admissão, Demissão, Alteração de Cargo, Alteração Salarial, Cedência, Afastamentos, Faltas, Movimentos Fixos e Movimentos Variáveis. O relatório deverá conter, no mínimo, as informações de Matrícula, Nome do Servidor, Período da Movimentação e Tipo de Movimentação.
+
+=== people.19 (item 19) [Parcial] ===
+Deverá controlar os valores de Descontos na Folha de Pagamento dos Servidores, permitindo ao Usuário Administrador parametrizar quais Verbas de Desconto deverão ser objeto de controle, de forma a impedir a geração de Saldo Negativo na Folha Mensal dos Servidores. Os valores dos Descontos rejeitados, em decorrência de insuficiência de saldo, deverão ser apresentados em Relatório, contendo, no mínimo, o Código da Verba, a Descrição da Verba, a Matrícula, o Nome do Servidor e o Valor Rejeitado.
+
+=== people.20 (item 20) [Parcial] ===
+Dispor de rotina de lançamento de Movimentos Fixos e Movimentos Variáveis, disponibilizando ao Usuário as formas de lançamento por Matrícula, Verba, Grupo de Servidores e por Tipo de Cálculo, contemplando Folha Mensal, Férias, Rescisão e 13º Salário. Deverá ofertar opções para Alteração e Substituição dos valores de Movimentos Fixos e Movimentos Variáveis já informados. Deverá disponibilizar Relatórios de Conferência dos Movimentos Fixos e Movimentos Variáveis, permitindo a clas sificação e a totalização por Verba / Servidor e Servidor / Verba, listando, no mínimo, Matrícula, Nome do Servidor, Código da Verba, Descrição da Verba, Valor da Verba, Data de Início e Data de Fim do movimento informado.
+
+=== people.21 (item 21) [Não implementado] ===
+Manter o registro e o contr ole de Servidores Cedidos e Servidores Recebidos de outros Órgãos ou Entidades, bem como do Período de Duração da Cedência, identificando o Tipo de Cessão (Cedido ou Recebido) e a Forma de Pagamento, se com Ônus para a Entidade Cedente ou para a Entidade C essionária. Deverá realizar a Baixa Automática do movimento de Cessão ao término do período previamente determinado.
+
+=== people.22 (item 22) [Não implementado] ===
+Ofertar o registro e o controle de Servidores Efetivos nomeados para o exercício de Cargos Comissionados, permitindo a informação do Período de Duração, do Cargo e da Faixa Salarial correspondente ao Cargo Comissionado. O cálculo da Folha Mensal do Servidor em Cargo Comissionado deverá ter como referência a Faixa Salarial do cargo ocupado, bem como as demais Verbas de Proventos e Vantag ens que tenham como base o Salário do Servidor. Deverá cessar de forma Automática o cálculo dos valores referentes ao Cargo Comissionado ao término do período previamente definido, com o retorno do Servidor ao Cargo de Origem.
+
+=== people.23 (item 23) [Não implementado] ===
+Dispor de rotinas que permitam a realização de Reajuste Salarial por Verba e por Faixa Salarial, possibilitando a aplicação do reajuste por Percentual ou por Valor previamente informado. Deverá disponibilizar opção para execução do reajuste em Modo Simulado, com a finalidade de permitir a conferência dos valores reajustados, bem como opção para a realização do reajuste de forma Efetiva. Deverá, ainda, ofertar Relatório de Conferência, listando, no mínimo, os Servidores Impactados, o Valor Anterior, o Valor Reajustado e o Percentual Aplicado.
+
+=== people.24 (item 24) [Não implementado] ===
+Ofertar o registro de Servidores que possuam Vínculo Empregatício em outras Empresas, permitindo informar o CNPJ da Empresa, o Valor da Base de Contribuição, a Categoria de Trabalhador para fins de eSocial e o Período de Vigência do vínculo empregatício externo. Deverá realizar o Cálculo Mensal do Servidor que possua Múltiplos Vínculos, efetuando o Acúmulo das Bases de Contribuição de todos os vínculos, respeitando o Limite Máximo de Desconto do INSS, conforme a Tabela Oficial do INSS.
+
+=== people.25 (item 25) [Não implementado] ===
+Dispor de funcionalidade de Consulta dos Valores Calculados da Contribuição do Empregado (INSS), por meio de Memória de Cálculo, exibindo, no mínimo, a Tabela Progressiva do INSS, atualizada conforme a Competência de Cálculo, a Base de Contribuição, o Valor Calculado em cada Faixa de Contribuição e o respectivo Percentual Aplicado. Deverá, ainda, nos casos em que o Servidor possua mais de um Contrato de Trabalho (Múltiplo Vínculo), demonstrar os Valores das Bases de Contribuição Acumuladas de todos os vínculos, bem como o Valor Calculado em cada Faixa de Contribuição e o respectivo Percentual Aplicado.
+
+=== people.26 (item 26) [Não implementado] ===
+Dispor de rotina de Importação de Arquivo Texto para Movimentos Fixos, Movimentos Variáveis, Faltas e Afastamentos. Permitir a defin ição dos Campos das Tabelas, por Tipo de Movimento, a serem importados. Deverá emitir Relatório de Importação, contendo, no mínimo, a Matrícula, o Nome do Servidor, o Valor Importado ou Rejeitado, bem como a Totalização dos Valores Importados e Rejeitados.
+
+=== people.27 (item 27) [Não implementado] ===
+Dispor de rotina para a Programação e o Cálculo do Décimo Terceiro Salário, nas modalidades de Adiantamento, Anual e Final, bem como de opção para programar e calcular os Valores Variáveis (Médias) incidentes sobre o Décimo Terceiro Salário, de form a Geral, por Grupo de Servidores ou de maneira Individual. Deverá, ainda, dispor de rotina para apuração dos Avos de Direito do Décimo Terceiro Salário, bem como de opção para Abonar Avos Perdidos.
+
+=== people.28 (item 28) [Não implementado] ===
+Dispor de Relatório de Conferência dos Avos Perdidos em razão de Ausências (Faltas e Afastamentos), por Servidor, para fins de apuração dos períodos de Férias, Décimo Terceiro Salário e Benefícios por Tempo de Serviço. O relatório deverá listar a Quantidade de Faltas e de Afasta mentos ocorridos em cada Período de Apuração de Férias, Décimo Terceiro Salário e Benefícios por Tempo de Serviço.
+
+=== people.29 (item 29) [Não implementado] ===
+Dispor de rotina para a Programação e o Cálculo de Férias, contemplando Períodos Aquisitivos Fechados e Abertos, inclusive para mais de um Período Aquisitivo, bem como de opção para programar e calcular os Valores Variáveis (Médias) incidentes sobre as Férias, de forma Geral, por Grupo de Servidores ou de maneira Individual. Deverá, ainda, dispor de rotina para apuração dos Avos de Direit o de Férias, por Tipo de Férias, disponibilizando Opções Parametrizáveis para definição da Quantidade de Meses Trabalhados para fins de Aquisição, Concessão e Prescrição, bem como dos Tipos de Faltas e Afastamentos a serem considerados para Perda e Suspensão de Avos de Férias.
+
+=== people.30 (item 30) [Não implementado] ===
+Permitir o registro e o controle de Férias Concedidas que venham a serem interrompidas em decorrência da concessão de Afastamento de Maternidade. A interrupção das Férias deverá ocorrer de forma Automática quando houver o lançamento do Afastamento de Maternidade para a Servidora em gozo de férias. Da mesma forma, o retorno ao gozo do Saldo de Dias de Férias deverá ocorrer automaticamente após o encerramento do período de direito do Afastamento de Maternidade. Deverá disponibilizar Relatório de Férias Interrompidas, contendo, no mínimo, as informações de Matrícula, Nome da Servidora, Período Aquisitivo de Férias, Período de Férias Concedido, Data de Início e Data de Fim da Interrupção, bem como a Nova Data de Retorno ao gozo das Férias Interrompidas.
+
+=== people.31 (item 31) [Não implementado] ===
+Dispor de rotina para a Programação e o Cálculo de Rescisões, de forma Individual e Coletiva. Deverá, ainda, disponibilizar opção para o Registro e o Cancelamento do Aviso Prévio, bem como permitir a Emissão do Aviso Prévio e a Emissão do Termo de Rescisão, no padrão do HomologNet.
+
+=== people.32 (item 32) [Parcial] ===
+Permitir o registro e a manutenção das Informações Pessoais e Funcionais de Pessoal Ativo, Inativo e Pensionista, bem como o Cadastro e o Controle de Dependentes e o Cadastro de Beneficiários de Pensão Judicial. Deverá possibilitar a Finalização da Relação de Dependência e a Baixa Automática do Dependente ao atingir a Data Limite configurada pelo Usuário, assegurando o Controle da Evolução Histórica de todos os registros e das alterações realizadas. Deverá, ainda, disponibilizar Links de Acesso para outras funcionalidades, contemplando, no mínimo, Movimentos Fixos e Variáveis, Tempo de Serviço, Plano de Saúde, Afastamentos, Programação de Férias e Ficha Financeira.
+
+=== people.33 (item 33) [Não implementado] ===
+Permitir a Liberação de Funcionalidades por Usuário, com Controle de Acesso restrito por Lotação, possibilitando o acesso exclusivo às informações conforme a Lotação de Acesso, de forma a viabilizar a Descentralização das Atividades.
+
+=== people.34 (item 34) [Parcial] ===
+Garantir a Disponibilidade e a Segurança das Informações Históricas das Verbas e dos Valores relativos a todos os Pagamentos e Descontos realizados por Competência.
+
+=== people.35 (item 35) [Parcial] ===
+Deverá dispor de funcionalidade de Consulta de Informações Financeiras (Cálculos), permitindo a visualização de todos os Cálculos existentes para cada Servidor, contendo, no mínimo, as seguintes informações: Verba, Descrição da Verba, C ategoria, Retificação, Complemento, Base de Cálculo, Valor Integral, Valor Mensal, Quantidade Integral, Quantidade Mensal, Horas Integral, Horas Mensal, Situação, Valor Lançado e Valor Médio. Deverá, ainda, disponibilizar, no mínimo, as Informações do Empr egado, tais como CPF, Data de Admissão, Data de Rescisão, Vínculo na Entidade, Matrícula no eSocial, Lotação, Cargo, Nível Salarial e Salário. A funcionalidade deverá contar com Atalhos de Navegação para outras funcionalidades relacionadas, tais como Afast amentos, Movimentações Fixas e Variáveis, Programação de Férias, Registro de Funcionário, Rescisão, Tempo de Serviço, Plano de Saúde e eSocial.
+
+=== people.36 (item 36) [Não implementado] ===
+Ofertar o cadastramento de Currículos de Candidatos e de Servidores.
+
+=== people.37 (item 37) [Não implementado] ===
+Permitir o registro de Atos de Elogio, Advertência e Punição.
+
+=== people.38 (item 38) [Não implementado] ===
+Permitir a criação de Tabelas e Campos para o registro de Informações Cadastrais Complementares. Deverá, ainda, disponibilizar as Tabelas e os Campos criados para a Formatação de Arquivos e a Geração de Relatórios.
+
+=== people.39 (item 39) [Não implementado] ===
+Permitir o Controle das Funções de Confiança exercidas e Averbadas pelo Servidor, desempenhadas dentro ou fora do Órgão, para fins de Pagamento de Quintos ou Décimos, em conformidade com a Legislação Aplicável.
+
+=== people.40 (item 40) [Não implementado] ===
+Permitir o Controle d o Tempo de Serviço Efetivo, a Emissão de Certidões de Tempo de Serviço e a disponibilização de Informações necessárias ao Cálculo e à Concessão de Aposentadoria.
+
+=== people.41 (item 41) [Não implementado] ===
+Permitir o registro e o controle da Promoção e da Progressão de Cargos e Salários dos Servidores.
+
+=== people.42 (item 42) [Não implementado] ===
+Ofertar rotina que permita o Controle dos Limites de Piso e de Teto Salarial, conforme os Limites Parametrizados pelo Usuário. Deverá gerar Relatório de Críticas no momento da execução do Cálculo da Folha Mensal, sempre que ocorrer Extrapolação do Limite Salarial, listando, no mínimo, a Matrícula, o Nome do Servidor e o Valor do Salário que originou o limite excedido.
+
+=== people.43 (item 43) [Não implementado] ===
+Dispor de rotina para Apuração de Benefícios por Tempo de Serviço, contemplando Anuênio, Triênio, Quinqu ênio, Licença -Prêmio, com Período Fechado e Período Aberto, bem como Progressões Salariais. Deverá, ainda, realizar o Controle dos Períodos de Apuração relacionados à Prorrogação, Suspensão e Perda do Benefício, de acordo com os Tipos de Faltas e Afastamentos parametrizados pelo Usuário.
+
+=== people.44 (item 44) [Não implementado] ===
+Ofertar o Controle dos Tomadores de Serviço, contemplando Pagamentos por RPA e Nota Fiscal, com Integração Automática dessas informações para a Geração dos Arquivos do eSocial.
+
+=== people.45 (item 45) [Não implementado] ===
+Dispor de rotina para Cálculos Simulados, permitindo a realização de Simulações de Reajuste Salarial, bem como o Cálculo Parcial e Total da Folha de Pagamento. Deverá disponibilizar Relatório contendo os Valores Simulados apurados.
+
+=== people.46 (item 46) [Não implementado] ===
+Permitir o Cálculo de Folha Complementar e de Folha Retroativa, contemplando os respectivos Encargos (IRRF e Previdência), com o Reprocessamento de todos os Servidores que apresentarem Diferença Salarial a ser paga. Deverá, ainda, para os Servidores vinculados ao Regime Geral de Previdência Social (RGPS), permitir a Geração da SEFIP R etificadora referente à Competência Devida, bem como envio das informações de pagamento complementar ao eSocial.
+
+=== people.47 (item 47) [Não implementado] ===
+Dispor de rotina de Cálculo Retroativo que permita a apuração de valores referentes a períodos em que as Referências Salariais não tenham sido atualizadas na época devida, bem como das Verbas de Movimentos Fixos devidas e não pagas. Deverá permitir a realização do cálculo de forma Individual, por Servidor, considerando os Períodos Retroativos correspondentes a cada vínculo, bem como disponi bilizar opção para Pagamento das Diferenças apuradas de forma Integral, em Parcela Única, ou de forma Parcelada, com Controle Automático do Saldo a Pagar.
+
+=== people.48 (item 48) [Parcial] ===
+Dispor de forma de Cálculo dos Valores de Retenção e de Desconto do Servidor, referentes ao Fun do de Previdência (RPPS), utilizando Regra de Cálculo por Tabela Progressiva. Deverá, ainda, exibir na Ficha Financeira do Servidor a respectiva Memória de Cálculo, demonstrando o Valor Calculado em cada Parcela e o Percentual Aplicado.
+
+=== people.49 (item 49) [Parcial] ===
+Permitir o Cálculo de Pagamento do Pessoal Ativo, Inativo e Pensionista, tratando adequadamente os diversos Regimes Jurídicos, Adiantamentos, Pensões e Benefícios, bem como permitindo a realização de Recálculos de forma Geral, Parcial ou Individual.
+
+=== people.50 (item 50) [Não implementado] ===
+Permitir o controle, no Cálculo da Folha Mensal, dos Servidores com Término de Contrato no respectivo mês, cujo contrato não tenha sido rescindido. Ao final do processamento do cálculo, deverá emitir Mensagem de Advertência, listando, no mínimo, a Matrícul a, o Nome do Servidor e a Data de Término do Contrato.
+
+=== people.51 (item 51) [Parcial] ===
+Dispor de rotina de Bloqueio do Cálculo Mensal, impedindo que Usuários do Sistema realizem movimentações que afetem o resultado do cálculo já fechado. Deverá permitir o Desbloqueio do Cálculo exclusivamente para Usuário previamente Autorizado pelo Administrador.
+
+=== people.52 (item 52) [Não implementado] ===
+Ofertar rotina para Parametrização e Cálculo da Provisão de Férias, Décimo Terceiro Salário e Licença -Prêmio, bem como para a Emissão de Relatórios Analítico e Sintético d os valores provisionados. Os relatórios deverão listar, no mínimo, o Valor do Saldo Anterior, o Valor Provisionado no Mês, as Baixas Realizadas e o Saldo Total Provisionado.
+
+=== people.53 (item 53) [Não implementado] ===
+Permitir a parametrização das Contas Contábeis de Despesas e Receitas com Pessoal, bem como a Emissão do Demonstrativo de Integração Contábil da Folha Mensal, da Provisão de Férias e da Provisão do Décimo Terceiro Salário.
+
+=== people.54 (item 54) [Dependência externa] ===
+Permitir a Geração de Informações Mensais destinadas ao Tribunal de Contas do Estado (TCE), ao Fundo de Previdência Municipal, à Previdência Social, à Caixa e ao Ministério do Trabalho, por meio do eSocial.
+
+=== people.55 (item 55) [Dependência externa] ===
+Permitir a Geração de Informações Mensais de Imposto de Renda para o eSocial, bem como a Geração do Comprovante de Rendimentos Anual.
+
+=== people.56 (item 56) [Dependência externa] ===
+Permitir a formatação de Modelos de Contracheque, Cheques de Pagamento e Etiquetas, bem como a Emissão dos Formulários parametrizados pelo Usuário.
+
+=== people.57 (item 57) [Dependência externa] ===
+Permitir a Formatação e a Geração de Arquivos para Crédito Bancário.
+
+=== people.58 (item 58) [Não implementado] ===
+Permitir a utilização de Logotipos, Figuras e Formatos PCL como Imagem de Fundo nos Relatórios.
+
+=== people.59 (item 59) [Não implementado] ===
+Permitir a parametrização de Documentos Legais e Admissionais, com utilização de Editor de Texto para elaboração e formatação do conteúdo.
+
+=== people.60 (item 60) [Não implementado] ===
+Permitir a parametrização de Múltiplos Organogramas para fins de emissão de Relatórios.
+
+=== people.61 (item 61) [Não implementado] ===
+Permitir a Leitura e a Importação de Arquivo do Tipo Texto (TXT) disponibilizado pelo Sistema Nacional de Controle de Óbitos, para posterior Averiguação junto aos CPFs existentes na Base de Dados da Entidade, identificando os Servidores que possuam Contrato de Trabalho Ativo (sem Data de Desligamento) e que constem no referido arquivo de Controle de Óbitos. Após a importação do arquivo e a realização da averiguação com a Base de Dados, deverá listar os CPFs identificados. O Relatório deverá conter, no mínimo, as seguintes informações: Nome da Entidade, Matrícula, Nome do Servidor, CPF, Data de Admissão e Data de Óbito.
+
+=== people.62 (item 62) [Não implementado] ===
+Disponibilizar Mecanismo de Gerenciamento de Funcionalidades em Uso, que permita concentrar e visualizar todas as Funcionalidades Abertas no sistema. O mecanismo deverá exibir as Funcionalidades em Uso em formato de Lista, possibilitando a Alternância entre as funcionalidades abertas por meio do próprio mecanismo. Deverá, ainda, disponibilizar opção para Fechar, Minimizar e Restaurar todas as Funcionalidades Abertas, de forma simultânea, por meio de Comando Único.
+
+=== people.63 (item 63) [Parcial] ===
+Dispor de Filtro de Consulta que permita ao Usuário localizar qualquer Funcionalidade por meio da digitação de Palavra -Chave, retornando como resultado da busca todas as Funcionalidades existentes compatíveis com o critério informado. As Funcionalidades localizadas deverão ser exibidas em tela, em Ordem Alfabética, apresentando o Caminho Completo da Funcionalidade, bem como permitindo o Acesso e a Abertura da Funcionalidade mediante seleção do item desejado.
+
+=== people.64 (item 64) [Dependência externa] ===
+Dispor de funcionalidade para consulta da Tabela Progressiva do Regime Geral de Previdência Social (RGPS), com atualização automática.
+
+=== people.65 (item 65) [Dependência externa] ===
+Dispor de rotina para importação da Tabela de CBO, mantendo o cadastro de CBO atualizado em conformidade com as publicações do Ministério do Trabalho e Emprego (MTE).
+
+=== people.66 (item 66) [Dependência externa] ===
+Dispor de funcionalidade para consulta da Tabela Progressiva do Imposto de Renda, com atualização automática.
+
+=== people.67 (item 67) [Dependência externa] ===
+Dispor de funcionalidade para consulta do valor do Salário Mínimo, com atualização automática.
+
+=== people.68 (item 68) [Dependência externa] ===
+Dispor de funcionalidade de Busca e Consulta de CEP em base de dados dos Correios, possibilitando o preenchimento automático das informações de Endereço nos cadastros de Banco, Responsável do Sistema, Sindicato, Beneficiário de Pensão Judicial, Registro de Funcionário, Entidade Externa, Filial, Empresa de Transporte e na Parametrização do CAGED.
+
+=== people.69 (item 69) [Não implementado] ===
+Dispor de Menu de Favoritos parametrizável por Usuário, respeitando as Permissões estabelecidas para cada Usuário.
+
+=== people.70 (item 70) [Não implementado] ===
+Portal Servidor - Atualização Cadastral - Contra Cheque
+
+=== people.71 (item 71) [Não implementado] ===
+Permitir o acesso ao Portal do Servidor mediante Login e Senha, utilizando o CPF como padrão de Login.
+
+=== people.72 (item 72) [Não implementado] ===
+Permitir a solicitação de Nova Senha em caso de esquecimento, mediante envio de Link para definição de nova senha ao E-mail previamente cadastrado.
+
+=== people.73 (item 73) [Não implementado] ===
+Permitir a parametrização dos Campos e das Informações do Contracheque, de acordo com a definição do Usuário / Administrador.
+
+=== people.74 (item 74) [Não implementado] ===
+Permitir a inclusão de Logotipo e Marca d’Água da Empre sa (Órgão) no Contracheque.
+
+=== people.75 (item 75) [Não implementado] ===
+Permitir a formatação do Layout do Formulário do modelo de Contracheque Web.
+
+=== people.76 (item 76) [Não implementado] ===
+Permitir a Consulta e a Emissão do Contracheque, bem como a Consulta e a Emissão do Informe de Rendimentos, no Layout da Receita Federal do Brasil (RFB), mediante identificação por Login e Senha, por Servidor.
+
+=== people.77 (item 77) [Não implementado] ===
+Permitir a validação do Contracheque impresso via web pelo Servidor, por meio de mecanismo de autenticação utilizando QR Code, para fins de comprovação de autenticidade.
+
+=== people.78 (item 78) [Não implementado] ===
+Permitir a parametrização dos Dados Cadastrais aos quais o Servidor terá acesso para Conferência e Atualização, possibilitando, ainda, que o RH defina quais Campos deverão exigir Comprovante para validação das atualizações realizadas.
+
+=== people.79 (item 79) [Não implementado] ===
+Permitir ao Usuário do RH conferir as informações enviadas por meio do Portal do Servidor, possibilitando a Validação ou Rejeição das mesmas, com Anexação de Documentos quando necessário, bem como a atualização das informações no cadastro do Servidor.
+
+=== people.80 (item 80) [Não implementado] ===
+Permitir a listagem de informações relativas aos Servidores que possuem ou não acesso ao Portal do Servidor, contemplando, no mínimo, a identificação de Logins Divergentes e Logins Disponíveis.
+
+=== people.81 (item 81) [Não implementado] ===
+Permitir ao Servidor consultar e atualizar seus Dados Pessoais no Portal do Servidor, mediante utilização de Login e Senha.
+
+=== people.82 (item 82) [Não implementado] ===
+Dispor de funci onalidade de Busca e Consulta de CEP em base de dados dos Correios, possibilitando o preenchimento automático das informações de Endereço no cadastro de Atualização Cadastral do Portal do Servidor. Gestão de Recursos Humanos - Atos Legais 82 Permitir o registro dos documentos de Atos Legais, tais como Portarias, Decretos e Requisições.
+
+=== people.83 (item 83) [Não implementado] ===
+Permitir a manutenção do Movimento de Ato Legal por Servidor, de forma independente das Alterações Cadastrais, dos Afastamentos e dos Benefícios Fixos.
+
+=== people.84 (item 84) [Não implementado] ===
+Permitir a integração das Alterações Cadastrais, dos Afastamentos e dos Benefícios Fixos do Servidor com o respectivo Ato Legal que autoriza a movimentação.
+
+=== people.85 (item 85) [Não implementado] ===
+Permitir o controle dos Atos a serem considerados para fins de Efetividade, conforme Tipo de Ato e Opções Parametrizadas pela Entidade.
+
+=== people.86 (item 86) [Não implementado] ===
+Permitir a emissão da Certidão de Tempo de Serviço, contendo Grade de Efetividade detalhada por Ano, Mês e Tipo de Efetividade, com a indicação da Quantidade de Dias por Mês e do Total por Ano, bem como Resumo Final do Tempo Municipal e do Tempo de Efetividade (Tempo Atual acrescido do Tempo Anterior). Gestão de Recursos Humanos - eSocial
+
+=== people.87 (item 87) [Dependência externa] ===
+Permitir a realização do Diagnóstico da Qualificação Cadastral previamente à geração do arquivo, bem como a Geração do Arquivo de Informações para envio ao Portal Nacional do eSocial, referente à Qualificação Cadastral, o recebimento do Arquivo de Retorno do eSocial e a emissão de Relatório contendo as críticas apuradas.
+
+=== people.88 (item 88) [Dependência externa] ===
+Permitir o agrupamento de Empresas com o mesmo CNPJ para fins de envio das informações ao eSocial.
+
+=== people.89 (item 89) [Dependência externa] ===
+Utilizar mecanismo de Token para habilitar os novos campos referentes ao eSocial.
+
+=== people.90 (item 90) [Dependência externa] ===
+Permitir o cadastramento do Responsável pelo eSocial, contemplando todas as informações exigidas pelo eSocial Nacional.
+
+=== people.91 (item 91) [Dependência externa] ===
+Permitir a realização do relacionamento entre os Códigos de Verbas do Sistema de Gestão de Pessoas e as Rubricas do eSocial.
+
+=== people.92 (item 92) [Dependência externa] ===
+Permitir a geração de Relatório de Diagnóstico das informações do Empregador, Cargos, Escalas e Horários, bem como a listagem das inconsistências eventualmente identificadas.
+
+=== people.93 (item 93) [Dependência externa] ===
+Permitir a geração de Relatório de Diagnóstico do Empregado, contemplando Dados Pessoais, Documentação, Endereço, Formação e Informações Contratuais, bem como a listagem das inconsistências eventualmente identificadas.
+
+=== people.94 (item 94) [Dependência externa] ===
+Permitir a parametrização das Rubricas do eSocial com as respectivas Bases Legais (IRRF, INSS e FGTS), bem como a geração de relatórios de divergências.
+
+=== people.95 (item 95) [Implementado] ===
+Possuir rotina para Cadastramento de Certificado Digital do Tipo A1, que permita a listagem e a validação do Certificado, bem como disponibilize informações para o cadastro de Outorgado, contendo, no mínimo, os campos Nome, Tipo de Inscrição, Número de Inscrição, Início da Validade da Procuração e Fim da Validade da Procuração. Deverá, ainda, dispor de Alerta de Vencimento do Certificado, com antecedência mínima de 30 (trinta) dias em relação à data de término da validade.
+
+=== people.96 (item 96) [Implementado] ===
+Possuir rotina para importação de Arquivos XML dos Eventos Não Periódicos.
+
+=== people.97 (item 97) [Dependência externa] ===
+Dispor de rotina que permita a Geração, o Reenvio e a Exclusão de Eventos Periódicos, disponibilizando filtros para consulta que realizem a busca, no mínimo, por Empresa, Matrícula, Nome, CPF e Situação.
+
+=== people.98 (item 98) [Dependência externa] ===
+Dispor de rotina que permita a Geração, o Reenvio e a Exclusão de Eventos Periódicos, disponibilizando filtros para consulta que realizem a busca, no mínimo, por Empresa, Matrícula, Nome, CPF e Situação. Possuir funcionalidade de Conferência de INSS e FGTS, listando, no mínimo , a Matrícula do Servidor, o Nome e o CPF, realizando a comparação dos valores apurados por Servidor pelo Sistema de Gestão de Pessoas com os valores retornados pelo eSocial, contemplando, minimamente, as seguintes comparações: Base de INSS apurada pelo Si stema de Gestão de Pessoas × Base de INSS apurada pelo eSocial; Valor de INSS Descontado do Servidor apurado pelo Sistema de Gestão de Pessoas × INSS do Servidor apurado pelo eSocial; Base de FGTS calculada pelo Sistema de Gestão de Pessoas × Base de FGTS apurada pelo eSocial; FGTS do Servidor apurado pelo Sistema de Gestão de Pessoas × FGTS do Servidor apurado pelo eSocial, devendo listar as eventuais diferenças identificadas entre os valores comparados. Dispor, ainda, de Totalizador Sintético, realizando a comparação consolidada dos seguintes valores: Base de INSS apurada pelo Sistema de Gestão de Pessoas × Base de INSS apurada pelo eSocial; Valor de INSS Descontado do Servidor apurado pelo Sistema de Gestão de Pessoas × INSS do Servidor apurado pelo eSoci al; INSS Patronal apurado pelo Sistema de Gestão de Pessoas × INSS Patronal apurado pelo eSocial; Salário-Maternidade apurado pelo Sistema de Gestão de Pessoas × Salário - Maternidade apurado pelo eSocial; Salário-Família apurado pelo Sistema de Gestão de Pe ssoas × Salário -Família apurado pelo eSocial; Base de FGTS calculada pelo Sistema de Gestão de Pessoas × Base de FGTS apurada pelo eSocial; FGTS dos Servidores apurado pelo Sistema de Gestão de Pessoas × FGTS dos Servidores apurado pelo eSocial. A funcionalidade deverá apresentar, adicionalmente, a Quantidade de Servidores considerados na apuração, bem como disponibilizar Filtro para listagem exclusiva dos Servidores que apresentem divergências de valores.
+
+=== people.99 (item 99) [Dependência externa] ===
+Possuir funcionalidade de Conferência de IRRF , listando, no mínimo, a Matrícula do Servidor, o Nome e o CPF, bem como realizando a comparação entre os valores de Base de IRRF apurados pelo Sistema de Gestão de Pessoas e os valores de IRRF apurados a partir do retorno do eSocial. Deverá dispor de Status indicativo para alerta em caso de divergências, Totalizador de Servidores e opção de Filtro para apuração exclusiva dos Servidores com divergência de valores.
+
+=== people.100 (item 100) [Parcial] ===
+Deve dispor de rotina que permita a consulta de todos os Eventos registrados pelo Sistema de Gestão de Pessoas, possibilitando o acompanhamento do processamento dos Eventos por meio de seus respectivos Status, contemplando, no mínimo, os seguintes: Agendado, Aguardando Envio, Aguardando Exclusão, Aguardando Processamento, Aguardando Retificação, Excluído, Processado com Advertência, Processado com Erro, Processado com Erro – Permite Reenvio, Processado com Sucesso, Retificado e Todos. A consulta dos Eventos deverá disponibilizar, ainda, opções de filtro por Período, CPF do Trabalhador, Matríc ula, Empregador, Tipo de Evento (ID eSocial) e Descrição. Deverá conter, também, filtro específico para listagem da Competência do 13º Salário, de forma segregada das demais competências. Deverá, adicionalmente, dispor de rotina que permita o detalhamento dos Eventos, apresentando as ocorrências do Evento e do respectivo Lote, bem como a visualização do XML de Envio, XML de Retorno e das Informações Complementares, contendo, no mínimo, CPF do Trabalhador, Nome do Trabalhador e Recibo de Envio. A rotina deve rá, ainda, permitir a realização de Retificação e Exclusão dos Eventos Não Periódicos.
+
+=== people.101 (item 101) [Dependência externa] ===
+Possuir rotina para Retificação de Eventos por Vínculo Empregatício.
+
+=== people.102 (item 102) [Parcial] ===
+Deverá validar as informações recebidas nos Arquivos XML oriundos do Sistema de Gestão de Pessoas, com base nas regras definidas nos Layouts do eSocial.
+
+=== people.103 (item 103) [Implementado] ===
+Deverá realizar a Assinatura Digital dos Arquivos de Eventos em formato XML, por meio de Certificado Digital do tipo A1.
+
+=== people.104 (item 104) [Implementado] ===
+Dispor de rotina para o envio dos Arquivos de Eventos, devidamente Assinados Digitalmente, para o ambiente do eSocial.
+
+=== people.105 (item 105) [Implementado] ===
+Deverá receber e armazenar os Protocolos referentes ao envio dos Eventos para o ambiente do eSocial.
+
+=== people.106 (item 106) [Implementado] ===
+Permitir a consulta, por meio dos Protocolos armazenados, do resultado do processamento dos Eventos, possibilitando a identificação do Status do Evento, inclusive se foi Armazenado ou Rejeitado. Deverá, ainda, para os Eventos Rejeitados, exibir a respectiva mensagem contendo o motivo da rejeição.
+
+=== people.107 (item 107) [Implementado] ===
+Dispor de rotina para o reenvio dos Eventos do eSocial que tenham apresentado inconsistências.
+
+=== people.108 (item 108) [Parcial] ===
+Manter o controle dos Arquivos do eSocial enviados e validados para o fechamento da Competência da Folha de Pagamento. Gestão de Recursos Humanos - PPP
+
+=== people.109 (item 109) [Não implementado] ===
+Permitir o registro dos dados dos Responsáveis pelas informações de Monitoração Biológica, por Período, mantendo o Histórico atualizado.
+
+=== people.110 (item 110) [Não implementado] ===
+Permitir o registro dos dados dos Responsáveis pelas informações de Monitoração dos Registros Ambientais, por Período, mantendo o Histórico atualizado.
+
+=== people.111 (item 111) [Não implementado] ===
+Permitir o gerenciamento e a manutenção atualizada de todas as Informações Cadastrais pertinentes ao PPP – Perfil Profissiográfico Previdenciário, contemplando Alterações de Cargo, Mudanças de Agente Nocivo, Transferências, bem como a Descrição dos Cargos e das Atividades Exercidas pelo Servidor.
+
+=== people.112 (item 112) [Não implementado] ===
+Permitir o registro dos Exames Periódicos, Clínicos e Complementares, bem como a manutenção do Histórico das informações.
+
+=== people.113 (item 113) [Não implementado] ===
+Permitir o registro e a manutenção atualizada do Histórico de Exposição do Trabalhador aos Fatores de Risco.
+
+=== people.114 (item 114) [Não implementado] ===
+Permitir a emissão do PPP – Perfil Profissiográfico Previdenciário, de forma Individual ou por Grupo de Servidores.
+
+=== people.115 (item 115) [Não implementado] ===
+Dispor de funcionalidade de Busca e Consulta de CEP em base de dados dos Correios, possibilitando o preenchimento automático das informações de Endereço no cadastro de CAT – Comunicação de Acidente de Trabalho.
+
+=== people.116 (item 116) [Não implementado] ===
+Permitir o registro das informações referentes ao Acidente de Trabalho (CAT), contemplando, no mínimo: a) Identificação do Registrador, do Empregador e do Trabalhador; b) Comunicação do Acidente de Trabalho, contendo Data, Hora e Tipo do Acidente, Horas Trabalhadas antes do Acidente, Tipo da CAT e Indicativo de CAT; c) Local do Acidente; d) Detalhamento das Partes Atingidas pelo Acidente de Trabalho; e) Detalhamento dos Agentes Causadores do Acidente de Trabalho; f) Atestado Médico; g) Nome do Médico que emitiu o Atestado.
+
+=== people.117 (item 117) [Não implementado] ===
+Permitir o cadastramento de EPI – Equipamento de Proteção Individual, incluindo o Certificado de Aprovação (CA), as informações relativas às Medidas de Proteção Coletiva, bem como os dados pertinentes à Manutenção do Uso, tais como Higienização, Validade e Troca do EPI.
+

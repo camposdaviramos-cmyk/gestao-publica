@@ -1,0 +1,156 @@
+/* ── Obras Públicas · Rio Gestão ─────────────────────────────────── */
+.works-overview-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+@media (max-width: 900px) {
+    .works-overview-grid { grid-template-columns: 1fr; }
+}
+
+.works-map-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius, 8px);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.works-coords {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono, monospace);
+    font-size: 12px;
+    color: var(--muted);
+}
+.works-map-placeholder {
+    height: 180px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, rgba(23,134,105,0.08) 0%, rgba(23,134,105,0.02) 100%);
+    border: 1px dashed var(--line);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.works-indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 22px;
+}
+@media (max-width: 800px) {
+    .works-indicators-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.works-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+}
+.works-timeline-item {
+    display: grid;
+    grid-template-columns: 180px 1fr 100px;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+}
+.works-timeline-bar {
+    height: 8px;
+    background: var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.works-timeline-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.works-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+}
+.works-photo-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.works-photo-thumb {
+    height: 140px;
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+}
+.works-photo-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.works-photo-meta {
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.works-photo-caption {
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.works-tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 18px;
+    overflow-x: auto;
+}
+.works-tab-btn {
+    padding: 8px 14px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+.works-tab-btn.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.works-badge-calc {
+    font-size: 11px;
+    font-family: var(--mono, monospace);
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(23,134,105,0.1);
+    color: var(--accent);
+}

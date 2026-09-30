@@ -1,0 +1,417 @@
+/* ── Controle Interno e Controladoria · Rio Gestão ────────────────── */
+
+.control-container {
+    padding: 0 0 40px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.control-header {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.control-title h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-title p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0;
+}
+
+.control-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-bell-btn {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.control-bell-btn:hover {
+    background: var(--surface-2);
+    border-color: var(--accent);
+}
+
+.control-bell-badge {
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+/* Nav Tabs */
+.control-tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 24px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.control-tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+}
+
+.control-tab-btn:hover {
+    color: var(--ink);
+    background: var(--surface-2);
+}
+
+.control-tab-btn.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    background: var(--surface);
+}
+
+/* KPI Cards Grid */
+.control-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.control-kpi-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.control-kpi-card .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.control-kpi-card .value {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.control-kpi-card .sub {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+/* Calendar Styling */
+.control-calendar-wrap {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.control-calendar-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.control-calendar-filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.control-calendar-filters select,
+.control-calendar-filters input {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.control-calendar-legend {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+    flex-wrap: wrap;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.control-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.calendar-day-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--muted);
+    padding: 8px 0;
+    text-transform: uppercase;
+}
+
+.calendar-day-cell {
+    min-height: 110px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.calendar-day-cell.other-month {
+    opacity: 0.35;
+    background: transparent;
+}
+
+.calendar-day-cell .day-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 4px;
+}
+
+.calendar-event-chip {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: transform 0.1s ease;
+}
+
+.calendar-event-chip:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* SICONFI & Quality Dashboard */
+.control-siconfi-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .control-siconfi-charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+.siconfi-chart-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.siconfi-chart-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.progress-bar-wrap {
+    height: 16px;
+    background: #ef4444;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin: 12px 0;
+}
+
+.progress-bar-green {
+    height: 100%;
+    background: #10b981;
+    transition: width 0.3s ease;
+}
+
+.chart-stats-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* Conformance Table & Indicators */
+.control-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.badge-conforme {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.badge-nao-conforme {
+    background: rgba(239, 68, 68, 0.12);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.badge-pendente {
+    background: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+/* Notification Drawer / Dropdown */
+.control-notif-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 380px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+}
+
+.control-notif-dropdown.open {
+    display: block;
+}
+
+.control-notif-head {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--surface);
+}
+
+.control-notif-list {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.control-notif-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    font-size: 12px;
+    transition: background 0.15s ease;
+    cursor: pointer;
+}
+
+.control-notif-item:hover {
+    background: var(--surface-2);
+}
+
+.control-notif-item.unread {
+    background: rgba(59, 130, 246, 0.05);
+    border-left: 3px solid var(--accent);
+}
+
+.control-notif-item .title {
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+
+.control-notif-item .msg {
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+.control-notif-item .time {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 6px;
+}
+
+/* Version Timeline */
+.report-version-badge {
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+}
